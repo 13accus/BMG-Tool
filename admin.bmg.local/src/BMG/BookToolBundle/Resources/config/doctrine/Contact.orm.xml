@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="BMG\BookToolBundle\Entity\Contact" table="contact">
+    <indexes>
+      <index name="fk_contact_client_vendor1_idx" columns="client_vendor_id"/>
+    </indexes>
+    <id name="contactId" type="bigint" column="contact_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="contactFirstname" type="string" column="contact_firstname" length="45" nullable="true"/>
+    <field name="contactLastname" type="string" column="contact_lastname" length="45" nullable="true"/>
+    <field name="contactTitle" type="string" column="contact_title" length="45" nullable="true"/>
+    <field name="contactEmail" type="string" column="contact_email" length="200" nullable="true"/>
+    <field name="contactMobile" type="string" column="contact_mobile" length="10" nullable="true"/>
+    <field name="contactPhone" type="string" column="contact_phone" length="10" nullable="true"/>
+    <field name="contactPhoto" type="string" column="contact_photo" length="200" nullable="true"/>
+    <field name="contactNote" type="string" column="contact_note" length="2000" nullable="true"/>
+    <many-to-one field="clientVendor" target-entity="ClientVendor">
+      <join-columns>
+        <join-column name="client_vendor_id" referenced-column-name="client_vendor_id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

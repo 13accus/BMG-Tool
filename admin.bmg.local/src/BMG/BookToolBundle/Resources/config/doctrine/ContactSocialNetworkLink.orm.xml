@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="BMG\BookToolBundle\Entity\ContactSocialNetworkLink" table="contact_social_network_link">
+    <indexes>
+      <index name="fk_contact_social_network_link_contact1_idx" columns="contact_id"/>
+      <index name="fk_contact_social_network_link_social_network1_idx" columns="social_network_id"/>
+    </indexes>
+    <id name="contactSocialNetworkLinkId" type="bigint" column="contact_social_network_link_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="contactSocialNetworkLinkAccount" type="string" column="contact_social_network_link_account" length="45" nullable="false"/>
+    <field name="contactSocialNetworkLinkDatetime" type="datetime" column="contact_social_network_link_datetime" nullable="false"/>
+    <many-to-one field="socialNetwork" target-entity="SocialNetwork">
+      <join-columns>
+        <join-column name="social_network_id" referenced-column-name="social_network_id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="contact" target-entity="Contact">
+      <join-columns>
+        <join-column name="contact_id" referenced-column-name="contact_id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

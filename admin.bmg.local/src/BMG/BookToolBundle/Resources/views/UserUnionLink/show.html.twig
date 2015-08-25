@@ -1,0 +1,30 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>UserUnionLink</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+
+            </tr>
+            <tr>
+
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('userunionlink') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('userunionlink_edit', { 'id': entity.userUnionLinkId }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>ProjectCrew list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Projectcrewrating</th>
+                <th>Projectcrewratingreason</th>
+                <th>Projectcrewcontractpassword</th>
+                <th>Projectcrewdatetime</th>
+                <th>Projectcrewid</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('projectcrew_show', { 'id': entity.projectCrewId }) }}">{{ entity.projectCrewRating }}</a></td>
+                <td>{{ entity.projectCrewRatingReason }}</td>
+                <td>{{ entity.projectCrewContractPassword }}</td>
+                <td>{% if entity.projectCrewDatetime %}{{ entity.projectCrewDatetime|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ entity.projectCrewId }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('projectcrew_show', { 'id': entity.projectCrewId }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('projectcrew_edit', { 'id': entity.projectCrewId }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('projectcrew_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

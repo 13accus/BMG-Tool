@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="BMG\BookToolBundle\Entity\ClientVendor" table="client_vendor">
+    <indexes>
+      <index name="fk_vendor_city1_idx" columns="city_id"/>
+      <index name="fk_client_vendor_client_vendor_type1_idx" columns="client_vendor_type_id"/>
+      <index name="fk_client_vendor_status1_idx" columns="status_id"/>
+    </indexes>
+    <id name="clientVendorId" type="integer" column="client_vendor_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="clientVendorName" type="string" column="client_vendor_name" length="45" nullable="false"/>
+    <field name="clientVendorAddress1" type="string" column="client_vendor_address1" length="45" nullable="false"/>
+    <field name="clientVendorAddress2" type="string" column="client_vendor_address2" length="45" nullable="true"/>
+    <field name="clientVendorZipcode" type="string" column="client_vendor_zipcode" length="10" nullable="false"/>
+    <field name="clientVendorLogo" type="string" column="client_vendor_logo" length="200" nullable="true"/>
+    <field name="clientVendorWebsite" type="string" column="client_vendor_website" length="200" nullable="true"/>
+    <field name="clientVendorMainPhone" type="string" column="client_vendor_main_phone" length="10" nullable="true"/>
+    <field name="clientVendorMainEmail" type="string" column="client_vendor_main_email" length="200" nullable="true"/>
+    <field name="clientVendorTimezone" type="string" column="client_vendor_timezone" length="5" nullable="true"/>
+    <many-to-one field="city" target-entity="City">
+      <join-columns>
+        <join-column name="city_id" referenced-column-name="city_id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="status" target-entity="Status">
+      <join-columns>
+        <join-column name="status_id" referenced-column-name="status_id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="clientVendorType" target-entity="ClientVendorType">
+      <join-columns>
+        <join-column name="client_vendor_type_id" referenced-column-name="client_vendor_type_id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

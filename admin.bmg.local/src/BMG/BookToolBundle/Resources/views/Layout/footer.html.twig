@@ -1,0 +1,69 @@
+
+		<div class="footer clearfix">
+			<div class="footer-inner">
+                {% trans from "common" %}copyright{% endtrans %}
+			</div>
+			<div class="footer-items">
+				<span class="go-top"><i class="clip-chevron-up"></i></span>
+			</div>
+
+
+
+            <style>
+
+                .feedback{
+                    position:relative;
+                    left:0;
+                    bottom:0;
+                }
+                .feedback a {
+                    display:block;
+                    height:30px;
+                    width:80px;
+                    text-align:center;
+                    background:red;
+                    border:0px solid #fff;
+                    outline:0px solid #a1a1a1;
+                    padding:3px;
+                    float:right;
+                    cursor:pointer;
+
+                    /*Font*/
+                    color:#FFF;
+                    font-weight:bold;
+                    font-size:15px;
+                }
+
+                .feedback .form{
+                    clear:both;
+                    height:300px;
+                    width:600px;
+                    border:1px solid #000;
+                    background:#fff;
+                    padding:10px;
+                    display: none;
+                }
+                .feedback .form textarea{
+                    height:150px;
+                    width:560px;
+                    padding:5px;
+                }
+                .feedback .status{
+                    font-size:12px;
+                }
+
+            </style>
+
+            <div class="feedback">
+                <a id="feedback_button">{% trans from "common" %}btn_feedback{% endtrans %}.</a>
+
+                <div class="form">
+                    <h4>{% trans from "common" %}feedback_invitation{% endtrans %}</h4>
+                    <span class="status"><br></span>
+                    <textarea id="feedback_text"></textarea>
+                    <br>
+                    <input class="btn btn-teal" type="button" value="Send" id="submit_form" />
+                </div>
+            </div>
+
+		</div>

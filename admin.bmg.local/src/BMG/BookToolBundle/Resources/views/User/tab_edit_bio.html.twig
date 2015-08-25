@@ -1,0 +1,87 @@
+<!-- start: MAIN CSS -->
+<link rel="stylesheet" href="/bundles/bmgbooktool/plugins/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/bundles/bmgbooktool//plugins/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/bundles/bmgbooktool/fonts/style.css">
+<link rel="stylesheet" href="/bundles/bmgbooktool/css/main.css">
+<link rel="stylesheet" href="/bundles/bmgbooktool/css/main-responsive.css">
+<link rel="stylesheet" href="/bundles/bmgbooktool/plugins/iCheck/skins/all.css">
+<link rel="stylesheet" href="/bundles/bmgbooktool/plugins/bootstrap-colorpalette/css/bootstrap-colorpalette.css">
+<link rel="stylesheet" href="/bundles/bmgbooktool/plugins/perfect-scrollbar/src/perfect-scrollbar.css">
+<link rel="stylesheet" href="/bundles/bmgbooktool/css/theme_light.css" type="text/css" id="skin_color">
+<link rel="stylesheet" href="/bundles/bmgbooktool/css/print.css" type="text/css" media="print"/>
+<!--[if IE 7]>
+<link rel="stylesheet" href="/bundles/bmgbooktool/plugins/font-awesome/css/font-awesome-ie7.min.css">
+<![endif]-->
+<!-- end: MAIN CSS -->
+<!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
+<link rel="stylesheet" href="/bundles/bmgbooktool/plugins/summernote/build/summernote.css">
+
+			<div id="panel_edit_bio" class="tab-pane">
+
+										<form action="{{ path('user_update_bio', { 'id': entity.userId }) }}" role="form" id="form" method="POST">
+											<div class="row">
+												<div class="col-md-12">
+													<h3>Bio</h3>
+													<hr>
+												</div>
+												<div class="col-md-12">
+			
+													<div class="form-group">
+														<textarea class="ckeditor form-control" id="editor2" name="editor2" cols="10" rows="10">{{ entity.userBio|raw }}</textarea>
+													</div>
+												
+												</div>
+												
+											</div>
+											
+											<div class="row">
+												<div class="col-md-12">
+													<div>Required Fields<hr></div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-8">
+													
+												</div>
+												<div class="col-md-4">
+													<button class="btn btn-teal btn-block" type="submit">Update <i class="fa fa-arrow-circle-right"></i>
+													</button>
+												</div>
+											</div>
+										</form>
+									</div>
+									
+									
+<!-- start: MAIN JAVASCRIPTS -->
+<!--[if lt IE 9]>
+<script src="/bundles/bmgbooktool/plugins/respond.min.js"></script>
+<script src="/bundles/bmgbooktool/plugins/excanvas.min.js"></script>
+<script type="text/javascript" src="/bundles/bmgbooktool/plugins/jQuery-lib/1.10.2/jquery.min.js"></script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<script src="/bundles/bmgbooktool/plugins/jQuery-lib/2.0.3/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="/bundles/bmgbooktool/plugins/jquery-ui/jquery-ui-1.10.2.custom.min.js"></script>
+<script src="/bundles/bmgbooktool/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="/bundles/bmgbooktool/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+<script src="/bundles/bmgbooktool/plugins/blockUI/jquery.blockUI.js"></script>
+<script src="/bundles/bmgbooktool/plugins/iCheck/jquery.icheck.min.js"></script>
+<script src="/bundles/bmgbooktool/plugins/perfect-scrollbar/src/jquery.mousewheel.js"></script>
+<script src="/bundles/bmgbooktool/plugins/perfect-scrollbar/src/perfect-scrollbar.js"></script>
+<script src="/bundles/bmgbooktool/plugins/less/less-1.5.0.min.js"></script>
+<script src="/bundles/bmgbooktool/plugins/jquery-cookie/jquery.cookie.js"></script>
+<script src="/bundles/bmgbooktool/plugins/bootstrap-colorpalette/js/bootstrap-colorpalette.js"></script>
+<script src="/bundles/bmgbooktool/js/main.js"></script>
+<!-- end: MAIN JAVASCRIPTS -->
+<!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+<script src="/bundles/bmgbooktool/plugins/summernote/build/summernote.min.js"></script>
+<script src="/bundles/bmgbooktool/plugins/ckeditor/ckeditor.js"></script>
+<script src="/bundles/bmgbooktool/plugins/ckeditor/adapters/jquery.js"></script>
+
+<!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+<script>
+	jQuery(document).ready(function() {
+		Main.init();
+	});
+</script>
+

@@ -1,0 +1,60 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Contact</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Contactfirstname</th>
+                <td>{{ entity.contactFirstname }}</td>
+            </tr>
+            <tr>
+                <th>Contactlastname</th>
+                <td>{{ entity.contactLastname }}</td>
+            </tr>
+            <tr>
+                <th>Contacttitle</th>
+                <td>{{ entity.contactTitle }}</td>
+            </tr>
+            <tr>
+                <th>Contactemail</th>
+                <td>{{ entity.contactEmail }}</td>
+            </tr>
+            <tr>
+                <th>Contactmobile</th>
+                <td>{{ entity.contactMobile }}</td>
+            </tr>
+            <tr>
+                <th>Contactphone</th>
+                <td>{{ entity.contactPhone }}</td>
+            </tr>
+            <tr>
+                <th>Contactphoto</th>
+                <td>{{ entity.contactPhoto }}</td>
+            </tr>
+            <tr>
+                <th>Contactnote</th>
+                <td>{{ entity.contactNote }}</td>
+            </tr>
+            <tr>
+                <th>Contactid</th>
+                <td>{{ entity.contactId }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('contact') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('contact_edit', { 'id': entity.contactId }) }}">
+            Edit
+        </a>
+    </li>
+
+</ul>
+{% endblock %}

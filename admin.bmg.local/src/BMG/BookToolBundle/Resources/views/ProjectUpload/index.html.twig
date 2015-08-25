@@ -1,0 +1,47 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>ProjectUpload list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Projectuploadname</th>
+                <th>Projectuploaddescription</th>
+                <th>Projectuploadfilepath</th>
+                <th>Projectuploaddatetime</th>
+                <th>Projectuploadid</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('projectupload_show', { 'id': entity.projectUploadId }) }}">{{ entity.projectUploadName }}</a></td>
+                <td>{{ entity.projectUploadDescription }}</td>
+                <td>{{ entity.projectUploadFilePath }}</td>
+                <td>{% if entity.projectUploadDatetime %}{{ entity.projectUploadDatetime|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ entity.projectUploadId }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('projectupload_show', { 'id': entity.projectUploadId }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('projectupload_edit', { 'id': entity.projectUploadId }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('projectupload_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

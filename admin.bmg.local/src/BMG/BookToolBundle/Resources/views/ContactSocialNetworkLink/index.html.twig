@@ -1,0 +1,43 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>ContactSocialNetworkLink list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Contactsocialnetworklinkaccount</th>
+                <th>Contactsocialnetworklinkdatetime</th>
+                <th>Contactsocialnetworklinkid</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('contactsocialnetworklink_show', { 'id': entity.id }) }}">{{ entity.contactSocialNetworkLinkAccount }}</a></td>
+                <td>{% if entity.contactSocialNetworkLinkDatetime %}{{ entity.contactSocialNetworkLinkDatetime|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ entity.contactSocialNetworkLinkId }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('contactsocialnetworklink_show', { 'id': entity.contactSocialNetworkLinkId }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('contactsocialnetworklink_edit', { 'id': entity.contactSocialNetworkLinkId }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('contactsocialnetworklink_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

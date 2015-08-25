@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file date="2015-04-30T13:52:17Z" source-language="en" target-language="es" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="dc7f37c798b6bca9e59521fcc1e18b680f31968c" resname="change_password">
+        <source>change_password</source>
+        <target state="new">change_password</target>
+        <jms:reference-file line="332">views/Layout/top_navigation_menu.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="55525e1b3dfd8787fd202aed45fb04494e3242d0" resname="logout">
+        <source>logout</source>
+        <target state="new">logout</target>
+        <jms:reference-file line="353">views/Layout/top_navigation_menu.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="fa0865068f73c03a2913b8f62b2f3652cd200f46" resname="my_profile">
+        <source>my_profile</source>
+        <target state="new">my_profile</target>
+        <jms:reference-file line="326">views/Layout/top_navigation_menu.html.twig</jms:reference-file>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

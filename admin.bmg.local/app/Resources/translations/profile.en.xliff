@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file date="2015-04-30T13:52:38Z" source-language="en" target-language="en" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="efd77583da3e57bf30c9901a9ace3936ee962636" resname="account_info">
+        <source>account_info</source>
+        <target>Account Info</target>
+        <jms:reference-file line="7">views/User/tab_edit.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="4dcf88a8b8dfde86358930f9c6c9b5e51a9611a9" resname="additional_info">
+        <source>additional_info</source>
+        <target>Additional Information</target>
+        <jms:reference-file line="131">views/User/tab_edit.html.twig</jms:reference-file>
+        <jms:reference-file line="122">views/User/tab_overview.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="c662180230cad14787d4ab7e77aa08681ce783fa" resname="address">
+        <source>address</source>
+        <target>Address</target>
+        <jms:reference-file line="140">BookToolBundle/Controller/DefaultController.php</jms:reference-file>
+        <jms:reference-file line="56">views/User/tab_overview.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="02349b126fb2155b6f9d9f248099158c774fee3b" resname="address1">
+        <source>address1</source>
+        <target>Address 1</target>
+        <jms:reference-file line="89">views/User/tab_edit.html.twig</jms:reference-file>
+        <jms:reference-file line="90">views/User/tab_edit.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="bf706c8c2bf0282ef73ade550c405d2946a69f0a" resname="address2">
+        <source>address2</source>
+        <target>Address 2</target>
+        <jms:reference-file line="93">views/User/tab_edit.html.twig</jms:reference-file>
+        <jms:reference-file line="94">views/User/tab_edit.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="bf7d7e82b9df5767ba9a116978d55cb30dd19218" resname="biography">
+        <source>biography</source>
+        <target>Biography</target>
+        <jms:reference-file line="144">BookToolBundle/Controller/DefaultController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="dc7f37c798b6bca9e59521fcc1e18b680f31968c" resname="change_password">
+        <source>change_password</source>
+        <target>Change Password</target>
+        <jms:reference-file line="658">BookToolBundle/Controller/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="b8d3e93407a3b03f66293ad2ba78c6c2b125c457" resname="change_picture">
+        <source>change_picture</source>
+        <target>Change Picture</target>
+        <jms:reference-file line="118">views/User/tab_edit.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="2c54892c40a1751663d9aca4e03e6a833056bc9f" resname="city">
+        <source>city</source>
+        <target>City</target>
+        <jms:reference-file line="146">BookToolBundle/Controller/DefaultController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="b2c0a742cf4e89f804f2de03bf7b4851f8cdeea5" resname="city_state">
+        <source>city_state</source>
+        <target>City/State</target>
+        <jms:reference-file line="106">views/User/tab_edit.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="fd75906edce760f61452b7048ee594144418e206" resname="contact_information">
+        <source>contact_information</source>
+        <target>Contact Information</target>
+        <jms:reference-file line="30">views/User/tab_overview.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="9f3bd16c0105c48813958f3a06db9efe1c96b9bd" resname="create_date">
+        <source>create_date</source>
+        <target>Create Date</target>
+        <jms:reference-file line="135">BookToolBundle/Controller/DefaultController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="331309129f772dddfea8706d6b1c709a28687826" resname="dob">
+        <source>dob</source>
+        <target>Birthdate</target>
+        <jms:reference-file line="34">views/User/tab_edit.html.twig</jms:reference-file>
+        <jms:reference-file line="127">views/User/tab_overview.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="a88b7dcd1a9e3e17770bbaa6d7515b31a2d7e85d" resname="email">
+        <source>email</source>
+        <target>Email</target>
+        <jms:reference-file line="130">BookToolBundle/Controller/DefaultController.php</jms:reference-file>
+        <jms:reference-file line="20">views/User/tab_edit.html.twig</jms:reference-file>
+        <jms:reference-file line="42">views/User/tab_overview.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="004176c0d72e9f813503720ddf1c3c1436fd21ae" resname="email_already_in_use_error__message">
+        <source>email_already_in_use_error__message</source>
+        <target>Email address already in use</target>
+        <jms:reference-file line="95">BookToolBundle/Controller/RegisterController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="ea516fb9ce736acde1ef3958569dc8ffb913277b" resname="email_already_in_use_error_title">
+        <source>email_already_in_use_error_title</source>
+        <target>Oops</target>
+        <jms:reference-file line="94">BookToolBundle/Controller/RegisterController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="e8108b821aa8165140b5f968d0a4f979f2d0b615" resname="firstname">
+        <source>firstname</source>
+        <target>Firstname</target>
+        <jms:reference-file line="132">BookToolBundle/Controller/DefaultController.php</jms:reference-file>
+        <jms:reference-file line="12">views/User/tab_edit.html.twig</jms:reference-file>
+        <jms:reference-file line="13">views/User/tab_edit.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="b02b5038c335950b985f9feef296eee65848b394" resname="gender">
+        <source>gender</source>
+        <target>Gender</target>
+        <jms:reference-file line="139">BookToolBundle/Controller/DefaultController.php</jms:reference-file>
+        <jms:reference-file line="70">views/User/tab_edit.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="e4452ea276d3886dc4418335172594c725c5bb64" resname="general_information">
+        <source>general_information</source>
+        <target>General Information</target>
+        <jms:reference-file line="94">views/User/tab_overview.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="01bb5ffd9db5c2191314ca8f0a46d6672e22a75f" resname="high_five">
+        <source>high_five</source>
+        <target>High Five</target>
+        <jms:reference-file line="40">views/Dashboard/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="0b97a0a1a0881db8475f0dc6960c4d4d06cd4bd4" resname="image_upload">
+        <source>image_upload</source>
+        <target>Image Upload</target>
+        <jms:reference-file line="112">views/User/tab_edit.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="f9aba3f1299b4a48e75ee40ef3baf522152a817c" resname="ip">
+        <source>ip</source>
+        <target>IP Address</target>
+        <jms:reference-file line="134">BookToolBundle/Controller/DefaultController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="39d62c7a764cc6bfebd32346830032208a6c835e" resname="last_logged_in">
+        <source>last_logged_in</source>
+        <target>Last logged in</target>
+        <jms:reference-file line="105">views/User/tab_overview.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="1ca8c553a5c5e9947d70e1cdebf39f3ebbc383f5" resname="last_update">
+        <source>last_update</source>
+        <target>Last Update</target>
+        <jms:reference-file line="134">views/User/tab_overview.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="4e2cdd3b204e1576631be15f94076c91440497e7" resname="lastname">
+        <source>lastname</source>
+        <target>Lastname</target>
+        <jms:reference-file line="133">BookToolBundle/Controller/DefaultController.php</jms:reference-file>
+        <jms:reference-file line="16">views/User/tab_edit.html.twig</jms:reference-file>
+        <jms:reference-file line="17">views/User/tab_edit.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="ea6e9504bf73aca0da9dee20d7f866f1fdfba3a3" resname="locating">
+        <source>locating</source>
+        <target>Locating ...</target>
+        <jms:reference-file line="107">views/User/tab_edit.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="a73bd978651e77fa0203bbc4e7d4b3961b24d48c" resname="make_sure_you_follow_us">
+        <source>make_sure_you_follow_us</source>
+        <target>Make sure you follow us</target>
+        <jms:reference-file line="69">views/Dashboard/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="6bfa1e97f38a43b15ad570ea98622402ece32804" resname="member_since">
+        <source>member_since</source>
+        <target>Member since</target>
+        <jms:reference-file line="99">views/User/tab_overview.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="e10123e09892d51fac13ab2ec3528f4f5cf1425d" resname="missing_fields">
+        <source>missing_fields</source>
+        <target>What is missing in your profile?</target>
+        <jms:reference-file line="52">views/Dashboard/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="83d6311e87d4775ca4b3a411e3a334581ad8951e" resname="mobile">
+        <source>mobile</source>
+        <target>Mobile</target>
+        <jms:reference-file line="142">BookToolBundle/Controller/DefaultController.php</jms:reference-file>
+        <jms:reference-file line="24">views/User/tab_edit.html.twig</jms:reference-file>
+        <jms:reference-file line="25">views/User/tab_edit.html.twig</jms:reference-file>
+        <jms:reference-file line="48">views/User/tab_overview.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="3add7b9612102f2a7dbe4ed4fe886e07e847c24d" resname="notes">
+        <source>notes</source>
+        <target>Notes</target>
+        <jms:reference-file line="147">views/User/tab_overview.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8" resname="password">
+        <source>password</source>
+        <target>Password</target>
+        <jms:reference-file line="131">BookToolBundle/Controller/DefaultController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="0e66b49d04a43c19bcb2e13a53aff5d174f610fc" resname="picture">
+        <source>picture</source>
+        <target>Picture</target>
+        <jms:reference-file line="145">BookToolBundle/Controller/DefaultController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="5d45a009b0383b5b3064b9820c18530333c910f9" resname="profile">
+        <source>profile</source>
+        <target>Profile</target>
+        <jms:reference-file line="181">BookToolBundle/Controller/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="5f92e4d2535dde8bdc2f4d0c4e9c28dfccaa069c" resname="profile_complete">
+        <source>profile_complete</source>
+        <target><![CDATA[Your profile is complete!.  Be sure to keep your <a href="user/profile">account</a> current with recent projects so we know what you’ve been up to.]]></target>
+        <jms:reference-file line="45">views/Dashboard/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="bebbc9c1557098f184eb29d78bba871763db2440" resname="profile_not_complete">
+        <source>profile_not_complete</source>
+        <target><![CDATA[You’re so close!  Make sure your <a href="user/profile">profile</a>  is complete so we have all the necessary information about you and your experience.
+]]></target>
+        <jms:reference-file line="37">views/Dashboard/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="38ed5bc62946335224034680bbcae71ce4e6ab07" resname="registration_IP_address">
+        <source>registration_IP_address</source>
+        <target>Registration IP Address</target>
+        <jms:reference-file line="141">views/User/tab_overview.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="5382962b3b831b0f0213062815aa13a596062ced" resname="remove_picture">
+        <source>remove_picture</source>
+        <target>Remove Picture</target>
+        <jms:reference-file line="122">views/User/tab_edit.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="b6444bf66bcfc6060c65811e56993b17a6b082b3" resname="required_fields">
+        <source>required_fields</source>
+        <target>Required Fields</target>
+        <jms:reference-file line="177">views/User/tab_edit.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="f8cb594ad6dc7b8bd64a2d078b8e7e7fd7401911" resname="social_networks">
+        <source>social_networks</source>
+        <target>Social Networks</target>
+        <jms:reference-file line="75">views/User/tab_overview.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="48a3661d846478fa991a825ebd10b78671444b5b" resname="status">
+        <source>status</source>
+        <target>Status</target>
+        <jms:reference-file line="136">BookToolBundle/Controller/DefaultController.php</jms:reference-file>
+        <jms:reference-file line="112">views/User/tab_overview.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="ce620d6749880d79c700eb0ae2a56646f3a59bc5" resname="terms">
+        <source>terms</source>
+        <target><![CDATA[By clicking UPDATE, you are agreeing to the Policy and Terms &amp; Conditions.]]></target>
+        <jms:reference-file line="182">views/User/tab_edit.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="1321c7fc442de0649ef6fc7d25ebd0822b3095c1" resname="tweets_by">
+        <source>tweets_by</source>
+        <target>Tweets by</target>
+        <jms:reference-file line="75">views/Dashboard/index.html.twig</jms:reference-file>
+        <jms:reference-file line="77">views/Dashboard/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="cace4a159ff9f2512dd42373760608767b62855d" resname="user_id">
+        <source>user_id</source>
+        <target>User Id</target>
+        <jms:reference-file line="129">BookToolBundle/Controller/DefaultController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="3ab3e0b020a6d41f3d259ddd3ed8ff273843839b" resname="website">
+        <source>website</source>
+        <target>Website</target>
+        <jms:reference-file line="143">BookToolBundle/Controller/DefaultController.php</jms:reference-file>
+        <jms:reference-file line="29">views/User/tab_edit.html.twig</jms:reference-file>
+        <jms:reference-file line="30">views/User/tab_edit.html.twig</jms:reference-file>
+        <jms:reference-file line="35">views/User/tab_overview.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="f5beae90258db1a1c2e922711b22ab459b0663b1" resname="zipcode">
+        <source>zipcode</source>
+        <target>Zipcode</target>
+        <jms:reference-file line="141">BookToolBundle/Controller/DefaultController.php</jms:reference-file>
+        <jms:reference-file line="100">views/User/tab_edit.html.twig</jms:reference-file>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

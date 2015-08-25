@@ -1,0 +1,27 @@
+experiencejob:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:ExperienceJob:index" }
+
+experiencejob_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:ExperienceJob:show" }
+
+experiencejob_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:ExperienceJob:new" }
+
+experiencejob_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:ExperienceJob:create" }
+    requirements: { _method: post }
+
+experiencejob_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:ExperienceJob:edit" }
+
+experiencejob_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:ExperienceJob:update" }
+    requirements: { _method: post|put }
+
+

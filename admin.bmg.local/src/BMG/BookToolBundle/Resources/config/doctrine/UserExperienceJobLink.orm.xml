@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="BMG\BookToolBundle\Entity\UserExperienceJobLink" table="user_experience_job_link">
+    <indexes>
+      <index name="fk_user_experience_job_link_experience_job1_idx" columns="experience_job_id"/>
+      <index name="fk_user_experience_job_link_user1_idx" columns="user_id"/>
+    </indexes>
+    <id name="userExperienceJobLinkId" type="bigint" column="user_experience_job_link_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="userExperienceJobLinkDatetime" type="datetime" column="user_experience_job_link_datetime" nullable="false"/>
+    <many-to-one field="user" target-entity="User">
+      <join-columns>
+        <join-column name="user_id" referenced-column-name="user_id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="experienceJob" target-entity="ExperienceJob">
+      <join-columns>
+        <join-column name="experience_job_id" referenced-column-name="experience_job_id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

@@ -1,0 +1,73 @@
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+<!-- start: REGISTER BOX -->
+			<div class="box-register">
+				<h3 style="margin-top: 15px;">{% trans from "register" %}create_account{% endtrans %}</h3>
+				<p style="text-align: center; margin: 0 0 30px 0;">
+					{% trans from "login" %}enter_account_bellow{% endtrans %}
+				</p>
+				<form class="form-register" action="{{ path('doRegister') }}" method="POST" name="form-register">
+
+					<fieldset>
+						<div class="form-group">
+							<input type="text" class="form-control" name="first_name" placeholder="First Name">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" name="last_name" placeholder="Last Name">
+						</div>
+						<div class="form-group">
+							<div>
+								<label class="radio-inline"><input type="radio" class="grey" value="M" name="gender">Male</label>
+                                <label class="radio-inline"><input type="radio" class="grey" value="F" name="gender">Female</label>
+							</div>
+						</div>
+						<p>
+							{% trans from "login" %}enter_account_bellow{% endtrans %}
+						</p>
+						<div class="form-group">
+							<span class="input-icon">
+								<input type="email" class="form-control" id="registerEmail" name="registerEmail" placeholder="{% trans from "login" %}placeholder_email{% endtrans %}">
+								</span>
+						</div>
+
+                        {% if message_content_register is defined %}
+                            {% if message_content_register %}
+                                <div class="alert alert-{{ message_status }}">
+                                    <button data-dismiss="alert" class="close">x</button>
+                                    <i class="fa fa-check-circle"></i>
+                                    <strong>{{ message_title }}</strong> {{ message_content_register }}.
+                                </div>
+                            {% endif %}
+                        {% endif %}
+
+						<div class="form-group">
+							<span class="input-icon">
+								<input class="form-control" id="password" type="password" name="password" placeholder="{% trans from "login" %}placeholder_password{% endtrans %}">
+								</span>
+						</div>
+						<div class="form-group">
+							<div>
+								<label for="agree" class="checkbox-inline">
+									<input type="checkbox" class="grey agree" id="agree" name="agree">
+									{% trans from "login" %}terms_policy{% endtrans %}
+								</label>
+							</div>
+						</div>
+
+                        <div class="form-group" align="center">
+                            <div class="g-recaptcha" data-sitekey="6Le2bgUTAAAAAHYoz7KwOKqr6KOY19S29fUkiP6Y"></div>
+                        </div>
+
+						<div class="form-actions">
+							<a class="btn btn-light-grey go-back">
+								<i class="fa fa-circle-arrow-left"></i> {% trans from "login" %}btn_back{% endtrans %}
+							</a>
+							<button type="submit" class="btn btn-bricky pull-right">
+								{% trans from "login" %}btn_submit{% endtrans %} <i class="fa fa-arrow-circle-right"></i>
+							</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+			<!-- end: REGISTER BOX -->
+

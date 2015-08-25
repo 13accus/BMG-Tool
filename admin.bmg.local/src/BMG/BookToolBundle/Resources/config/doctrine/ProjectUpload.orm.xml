@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="BMG\BookToolBundle\Entity\ProjectUpload" table="project_upload">
+    <indexes>
+      <index name="fk_project_upload_project1_idx" columns="project_id"/>
+      <index name="fk_project_upload_project_crew1_idx" columns="project_crew_id"/>
+    </indexes>
+    <id name="projectUploadId" type="integer" column="project_upload_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="projectUploadName" type="string" column="project_upload_name" length="45" nullable="false"/>
+    <field name="projectUploadDescription" type="string" column="project_upload_description" length="2000" nullable="true"/>
+    <field name="projectUploadFilePath" type="string" column="project_upload_file_path" length="200" nullable="false"/>
+    <field name="projectUploadDatetime" type="datetime" column="project_upload_datetime" nullable="false"/>
+    <many-to-one field="projectCrew" target-entity="ProjectCrew">
+      <join-columns>
+        <join-column name="project_crew_id" referenced-column-name="project_crew_id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="project" target-entity="Project">
+      <join-columns>
+        <join-column name="project_id" referenced-column-name="project_id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

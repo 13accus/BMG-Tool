@@ -1,0 +1,25 @@
+history:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:History:index" }
+
+history_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:History:show" }
+
+history_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:History:new" }
+
+history_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:History:create" }
+    requirements: { _method: post }
+
+history_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:History:edit" }
+
+history_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:History:update" }
+    requirements: { _method: post|put }

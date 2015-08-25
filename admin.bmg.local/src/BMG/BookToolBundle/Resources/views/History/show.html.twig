@@ -1,0 +1,52 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>History</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Historydatetime</th>
+                <td>{{ entity.historyDatetime|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Tablename</th>
+                <td>{{ entity.tableName }}</td>
+            </tr>
+            <tr>
+                <th>Fieldname</th>
+                <td>{{ entity.fieldName }}</td>
+            </tr>
+            <tr>
+                <th>Rowid</th>
+                <td>{{ entity.rowId }}</td>
+            </tr>
+            <tr>
+                <th>Previousvalue</th>
+                <td>{{ entity.previousValue }}</td>
+            </tr>
+            <tr>
+                <th>Newvalue</th>
+                <td>{{ entity.newValue }}</td>
+            </tr>
+            <tr>
+                <th>Historyid</th>
+                <td>{{ entity.historyId }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('history') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('history_edit', { 'id': entity.historyId }) }}">
+            Edit
+        </a>
+    </li>
+
+</ul>
+{% endblock %}

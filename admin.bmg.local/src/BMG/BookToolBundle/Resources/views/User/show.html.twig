@@ -1,0 +1,55 @@
+<!-- start: PAGE CONTENT -->
+					<div class="row">
+					
+					{% if message_content %}
+					<div class="alert alert-{{ message_status }}">
+						<button data-dismiss="alert" class="close">x</button>
+						<i class="fa fa-check-circle"></i>
+						<strong>{{ message_title }}</strong> {{ message_content }}.
+					</div>
+					{% endif %}
+					
+						<div class="col-sm-12">
+							<div class="tabbable">
+								<ul class="nav nav-tabs tab-padding tab-space-3 tab-blue" id="myTab4">
+									<li class="active"><a data-toggle="tab" href="#panel_overview">{% trans from "profile_tab" %}overview{% endtrans %}</a></li>
+									<li><a data-toggle="tab" href="#panel_edit_account">{% trans from "profile_tab" %}edit_profile{% endtrans %}</a></li>
+									<li><a data-toggle="tab" href="#panel_edit_bio">{% trans from "profile_tab" %}edit_bio{% endtrans %}</a></li>
+									<li><a id="experience" class="experience" data-toggle="tab" href="#panel_experience">{% trans from "profile_tab" %}experience{% endtrans %}</a></li>
+									<li><a id="experience_job" class="experience_job" data-toggle="tab" href="#panel_industries">{% trans from "profile_tab" %}industries{% endtrans %}</a></li>
+									<li><a id="unions" class="unions" data-toggle="tab" href="#panel_union">{% trans from "profile_tab" %}unions{% endtrans %}</a></li>
+									<li><a id="clearance" class="clearance" data-toggle="tab" href="#panel_clearance">{% trans from "profile_tab" %}clearance{% endtrans %}</a></li>
+									
+								</ul>
+								<div class="tab-content">
+									
+									{% include 'BMGBookToolBundle:User:tab_overview.html.twig' %}
+									{% include 'BMGBookToolBundle:User:tab_edit.html.twig' %}
+									
+									{% include 'BMGBookToolBundle:User:tab_edit_bio.html.twig' %}
+									
+									<div id="panel_union" class="tab-pane">
+										<img src="{{ asset('bundles/bmgbooktool/images/loading.gif') }}">
+									</div>
+									
+									<div id="panel_experience" class="tab-pane">
+										<img src="{{ asset('bundles/bmgbooktool/images/loading.gif') }}">
+									</div>
+									
+									<div id="panel_industries" class="tab-pane">
+										<img src="{{ asset('bundles/bmgbooktool/images/loading.gif') }}">
+									</div>
+									
+									<div id="panel_clearance" class="tab-pane">
+										<img src="{{ asset('bundles/bmgbooktool/images/loading.gif') }}">
+									</div>
+									
+								</div>
+								
+								
+								
+								
+							</div>
+						</div>
+					</div>
+					<!-- end: PAGE CONTENT-->

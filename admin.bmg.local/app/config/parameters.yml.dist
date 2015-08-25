@@ -1,0 +1,31 @@
+# This file is a "template" of what your parameters.yml file should look like
+parameters:
+    database_driver:   pdo_mysql
+    database_host:     127.0.0.1
+    database_port:     ~
+    database_name:     symfony
+    database_user:     root
+    database_password: ~
+    # You should uncomment this if you want use pdo_sqlite
+    # database_path: "%kernel.root_dir%/data.db3"
+
+    mailer_transport:  smtp
+    mailer_host:       127.0.0.1
+    mailer_user:       ~
+    mailer_password:   ~
+    mailer_encryption: ssl
+    mailer_port:   465
+    mailer_email_from: info@broadcastmgmt.com 
+    mailer_envelope_from: BroadCastMgMt Group
+
+    locale:            en
+
+    # A secret key that's used to generate certain security-related tokens
+    secret:            ThisTokenIsNotSoSecretChangeIt
+
+    site_name:         BMG Tool
+    site_url:          http://admin.bmg.local
+    
+    cdn_path:          /Users/mike/Public/admin.bmg.local/web/assets
+    cdn_url:           %site_url%/              
+

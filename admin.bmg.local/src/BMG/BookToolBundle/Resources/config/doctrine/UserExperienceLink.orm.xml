@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="BMG\BookToolBundle\Entity\UserExperienceLink" table="user_experience_link">
+    <indexes>
+      <index name="fk_user_experience_link_user1_idx" columns="user_id"/>
+      <index name="fk_user_experience_link_experience1_idx" columns="experience_id"/>
+      <index name="fk_user_experience_link_time_period1_idx" columns="time_period_id"/>
+    </indexes>
+    <id name="userExperienceLinkId" type="bigint" column="user_experience_link_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="userExperienceLinkRate" type="float" column="user_experience_link_rate" precision="9" scale="2" nullable="false"/>
+    <field name="userExperienceLinkDatetime" type="datetime" column="user_experience_link_datetime" nullable="false"/>
+    <many-to-one field="user" target-entity="User">
+      <join-columns>
+        <join-column name="user_id" referenced-column-name="user_id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="timePeriod" target-entity="TimePeriod">
+      <join-columns>
+        <join-column name="time_period_id" referenced-column-name="time_period_id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="experience" target-entity="Experience">
+      <join-columns>
+        <join-column name="experience_id" referenced-column-name="experience_id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

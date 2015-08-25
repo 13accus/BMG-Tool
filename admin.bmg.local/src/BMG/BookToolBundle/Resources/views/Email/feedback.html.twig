@@ -1,0 +1,15 @@
+<h1>BMG Tool | Feedback</h1>
+
+<p>{{ message }}</p>
+
+<p>Browser information</p>
+<ul>
+    <li>HTTP_USER_AGENT: {{ HTTP_USER_AGENT }}</li>
+    <li>HTTP_REFERER: {{ HTTP_REFERER }}</li>
+    <li>REQUEST_URI: {{ REQUEST_URI }}</li>
+    <li>SCRIPT_NAME: {{ SCRIPT_NAME }}</li>
+    {% if TAB %}
+    <li>TAB: {{ TAB }}</li>
+    {% endif %}
+
+</ul>

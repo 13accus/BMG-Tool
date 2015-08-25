@@ -1,0 +1,25 @@
+experience:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:Experience:index" }
+
+experience_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:Experience:show" }
+
+experience_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:Experience:new" }
+
+experience_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:Experience:create" }
+    requirements: { _method: post }
+
+experience_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:Experience:edit" }
+
+experience_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:Experience:update" }
+    requirements: { _method: post|put }

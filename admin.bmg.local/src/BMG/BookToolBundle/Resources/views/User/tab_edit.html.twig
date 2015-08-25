@@ -1,0 +1,191 @@
+
+<div id="panel_edit_account" class="tab-pane">
+
+										<form action="{{ path('user_update', { 'id': entity.userId }) }}" enctype="multipart/form-data" role="form_profile" id="form_profile" name="form_profile" method="POST">
+											<div class="row">
+												<div class="col-md-12">
+													<h3>{% trans from "profile" %}account_info{% endtrans %}</h3>
+													<hr>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group">
+														<label class="control-label">{% trans from "profile" %}firstname{% endtrans %}</label>
+														<input type="text" placeholder="{% trans from "profile" %}firstname{% endtrans %}" class="form-control" id="firstname" name="firstname" value="{{ entity.userFirstname }}">
+													</div>
+													<div class="form-group">
+														<label class="control-label">{% trans from "profile" %}lastname{% endtrans %}</label>
+														<input type="text" placeholder="{% trans from "profile" %}lastname{% endtrans %}" class="form-control" id="lastname" name="lastname" value="{{ entity.userLastname }}">
+													</div>
+													<div class="form-group">
+														<label class="control-label">{% trans from "profile" %}email{% endtrans %}</label>
+														<input type="email" placeholder="Email Address" class="form-control" id="email" name="email" value="{{ entity.userEmail }}">
+													</div>
+													<div class="form-group">
+														<label class="control-label">{% trans from "profile" %}mobile{% endtrans %}</label>
+														<input type="tel" placeholder="{% trans from "profile" %}mobile{% endtrans %}" class="form-control" id="phone" name="phone" value="{% if entity.userMobile %}({{ entity.userMobile|slice(0, 3) }})-{{ entity.userMobile|slice(3, 3) }}-{{ entity.userMobile|slice(6, 4) }}{% endif %}">
+													</div>
+
+                                                    <div class="form-group">
+                                                        <label class="control-label">{% trans from "profile" %}website{% endtrans %}</label>
+                                                        <input type="tel" placeholder="{% trans from "profile" %}website{% endtrans %}" class="form-control" id="website" name="website" value="{{ entity.userWebsite  }}">
+                                                    </div>
+													
+													<div class="form-group connected-group">
+														<label class="control-label">{% trans from "profile" %}dob{% endtrans %}</label>
+														
+														<div class="row">
+															<div class="col-md-3">
+																<select name="dd" id="dd" class="form-control" >
+																	{% for i in 1..31 %}
+																	   <option value="{{ i }}" {% if dob['day'] == i %} selected="selected" {% endif %}>{{ i }}</option>
+																	{% endfor %}
+																</select>
+															</div>
+															<div class="col-md-3">
+																<select name="mm" id="mm" class="form-control" >
+																    <option value="1" {% if dob['month'] == 1 %} selected="selected" {% endif %}>January</option>
+																    <option value="2" {% if dob['month'] == 2 %} selected="selected" {% endif %}>February</option>
+																    <option value="3" {% if dob['month'] == 3 %} selected="selected" {% endif %}>March</option>
+																    <option value="4" {% if dob['month'] == 4 %} selected="selected" {% endif %}>April</option>
+																    <option value="5" {% if dob['month'] == 5 %} selected="selected" {% endif %}>May</option>
+																    <option value="6" {% if dob['month'] == 6 %} selected="selected" {% endif %}>June</option>
+																    <option value="7" {% if dob['month'] == 7 %} selected="selected" {% endif %}>July</option>
+																    <option value="8" {% if dob['month'] == 8 %} selected="selected" {% endif %}>August</option>
+																    <option value="9" {% if dob['month'] == 9 %} selected="selected" {% endif %}>September</option>
+																    <option value="10" {% if dob['month'] == 10 %} selected="selected" {% endif %}>October</option>
+																    <option value="11" {% if dob['month'] == 11 %} selected="selected" {% endif %}>November</option>
+																    <option value="12" {% if dob['month'] == 12 %} selected="selected" {% endif %}>December</option>
+																</select>
+															</div>
+															<div class="col-md-3">
+																<select name="yyyy" id="yyyy" class="form-control" >
+																	{% for i in 1937..2015 %}
+																	   <option value="{{ i }}" {% if dob['year'] == i %} selected="selected" {% endif %}>{{ i }}</option>
+																	{% endfor %}                                                  
+																</select>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="control-label">{% trans from "profile" %}gender{% endtrans %}</label>
+														<div>
+															<label class="radio-inline">
+																<input type="radio" class="grey" value="" name="gender" id="gender_female" {% if entity.userGender=="F" %}checked="checked"{% endif %}>
+																Female
+															</label>
+															<label class="radio-inline">
+																<input type="radio" class="grey" value="" name="gender"  id="gender_male" {% if entity.userGender=="M" %}checked="checked"{% endif %}>
+																Male
+															</label>
+														</div>
+													</div>
+													
+												</div>
+												
+												
+												<div class="col-md-6">
+													
+													<div class="form-group">
+														<label class="control-label">{% trans from "profile" %}address1{% endtrans %}</label>
+														<input class="form-control" placeholder="{% trans from "profile" %}address1{% endtrans %}" type="text" name="address1" id="address1" value="{{ entity.userAddress1 }}">
+													</div>
+													<div class="form-group">
+														<label class="control-label">{% trans from "profile" %}address2{% endtrans %}</label>
+														<input class="form-control" placeholder="{% trans from "profile" %}address2{% endtrans %}" type="text" name="address2" id="address2" value="{{ entity.userAddress2 }}">
+													</div>
+													
+													<div class="row">
+														<div class="col-md-4">
+															<div class="form-group">
+																<label class="control-label">{% trans from "profile" %}zipcode{% endtrans %}</label>
+																<input class="form-control" placeholder="Zipcode" type="text" name="zipcode" id="zipcode" value="{{ entity.userZipcode }}">
+															</div>
+														</div>
+														<div class="col-md-8">
+															<div class="form-group">
+																<label class="control-label">{% trans from "profile" %}city_state{% endtrans %}</label>
+																<div id="citystate_edit" name="citystate_edit"><i>{% trans from "profile" %}locating{% endtrans %}.</i></div>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<label>{% trans from "profile" %}image_upload{% endtrans %}</label>
+														<div class="fileupload fileupload-new" data-provides="fileupload">
+															<div class="fileupload-new thumbnail" style="width: 150px; height: 150px;"><img src="{% if picture %}data:image/jpg;base64,{{ picture }}{% else %}{{ asset ('bundles/bmgbooktool/images/profile.jpg') }}{% endif %}" alt="">
+															</div>
+															<div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 150px; max-height: 150px; line-height: 20px;"></div>
+															<div class="user-edit-image-buttons">
+																<span class="btn btn-light-grey btn-file"><span class="fileupload-new"><i class="fa fa-picture"></i> Select image</span><span class="fileupload-exists"><i class="fa fa-picture"></i> {% trans from "profile" %}change_picture{% endtrans %}</span>
+																	<input type="file" name="upload_picture" id="upload_picture">
+																</span>
+																<a href="#" class="btn fileupload-exists btn-light-grey" data-dismiss="fileupload">
+																	<i class="fa fa-times"></i> {% trans from "profile" %}remove_picture{% endtrans %}
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-12">
+													<h3>{% trans from "profile" %}additional_info{% endtrans %}</h3>
+													<hr>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group">
+														<label class="control-label">Twitter</label>
+														<span class="input-icon">
+															<input class="form-control" type="text" placeholder="Text Field" name="twitter" id="twitter" value="{% for key,value in social_networks %}{% if key == 'twitter' %}{{ value }}{% endif %}{% endfor %}">
+															<i class="clip-twitter"></i> </span>
+													</div>
+													<div class="form-group">
+														<label class="control-label">Facebook</label>
+														<span class="input-icon">
+															<input class="form-control" type="text" placeholder="Text Field" name="facebook" id="facebook" value="{% for key,value in social_networks %}{% if key == 'facebook' %}{{ value }}{% endif %}{% endfor %}">
+															<i class="clip-facebook"></i> </span>
+													</div>
+													<div class="form-group">
+														<label class="control-label">Google Plus</label>
+														<span class="input-icon">
+															<input class="form-control" type="text" placeholder="Text Field" name="google" id="google" value="{% for key,value in social_networks %}{% if key == 'google' %}{{ value }}{% endif %}{% endfor %}">
+															<i class="clip-google-plus"></i> </span>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group">
+														<label class="control-label">IMDb</label>
+														<span class="input-icon">
+															<input class="form-control" type="text" placeholder="Text Field" name="imdb" id="imdb" value="{% for key,value in social_networks %}{% if key == 'imdb' %}{{ value }}{% endif %}{% endfor %}">
+															<i class="clip-pictures"></i> </span>
+													</div>
+													<div class="form-group">
+														<label class="control-label">Linkedin</label>
+														<span class="input-icon">
+															<input class="form-control" type="text" placeholder="Text Field" name="linkedin" id="linkedin" value="{% for key,value in social_networks %}{% if key == 'linkedin' %}{{ value }}{% endif %}{% endfor %}">
+															<i class="clip-linkedin"></i> </span>
+													</div>
+													<div class="form-group">
+														<label class="control-label">Skype</label>
+														<span class="input-icon">
+															<input class="form-control" type="text" placeholder="Text Field" name="skype" id="skype" value="{% for key,value in social_networks %}{% if key == 'skype' %}{{ value }}{% endif %}{% endfor %}">
+															<i class="clip-skype"></i> </span>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-12">
+													<div>{% trans from "profile" %}required_fields{% endtrans %}<hr></div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-8">
+													<p>{% trans from "profile" %}terms{% endtrans %}</p>
+												</div>
+												<div class="col-md-4">
+													<button class="btn btn-teal btn-block" type="submit">Update <i class="fa fa-arrow-circle-right"></i>
+													</button>
+												</div>
+											</div>
+										</form>
+									</div>
+									

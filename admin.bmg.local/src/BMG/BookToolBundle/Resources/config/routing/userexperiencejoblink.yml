@@ -1,0 +1,30 @@
+userexperiencejoblink:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:UserExperienceJobLink:index" }
+
+userexperiencejoblink_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:UserExperienceJobLink:show" }
+
+userexperiencejoblink_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:UserExperienceJobLink:new" }
+
+userexperiencejoblink_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:UserExperienceJobLink:create" }
+    requirements: { _method: post }
+
+userexperiencejoblink_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:UserExperienceJobLink:edit" }
+
+userexperiencejoblink_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:UserExperienceJobLink:update" }
+    requirements: { _method: post|put }
+
+userexperiencejoblink_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "BMGBookToolBundle:UserExperienceJobLink:delete" }
+    requirements: { _method: post|delete }

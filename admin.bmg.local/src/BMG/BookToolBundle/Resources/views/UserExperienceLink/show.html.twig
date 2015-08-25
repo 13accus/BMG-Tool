@@ -1,0 +1,30 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>UserExperienceLink</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+
+            </tr>
+            <tr>
+
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('userexperiencelink') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('userexperiencelink_edit', { 'id': entity.userExperienceLinkId }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

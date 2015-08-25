@@ -1,0 +1,41 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>UserRecoveryPasswordHash list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Userrecoverypasswordhashvalue</th>
+                <th>Userrecoverypasswordhashid</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('userrecoverypasswordhash_show', { 'id': entity.userRecoveryPasswordHashId }) }}">{{ entity.userRecoveryPasswordHashValue }}</a></td>
+                <td>{{ entity.userRecoveryPasswordHashId }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('userrecoverypasswordhash_show', { 'id': entity.userRecoveryPasswordHashId }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('userrecoverypasswordhash_edit', { 'id': entity.userRecoveryPasswordHashId }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('userrecoverypasswordhash_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

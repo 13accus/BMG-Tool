@@ -1,0 +1,90 @@
+<link rel="stylesheet" href="/bundles/bmgbooktool/plugins/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/bundles/bmgbooktool/plugins/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/bundles/bmgbooktool/fonts/style.css">
+<link rel="stylesheet" href="/bundles/bmgbooktool/css/main.css">
+<link rel="stylesheet" href="/bundles/bmgbooktool/css/main-responsive.css">
+<link rel="stylesheet" href="/bundles/bmgbooktool/plugins/iCheck/skins/all.css">
+<link rel="stylesheet" href="/bundles/bmgbooktool/plugins/bootstrap-colorpalette/css/bootstrap-colorpalette.css">
+<link rel="stylesheet" href="/bundles/bmgbooktool/plugins/perfect-scrollbar/src/perfect-scrollbar.css">
+<link rel="stylesheet" href="/bundles/bmgbooktool/css/theme_light.css" type="text/css" id="skin_color">
+<link rel="stylesheet" href="/bundles/bmgbooktool/css/print.css" type="text/css" media="print"/>
+		
+{% if xcss is defined %}
+	{% for css in xcss %}
+	<link rel="stylesheet" href="{{ asset ('bundles/bmgbooktool/' ~ css ) }}">
+	{% endfor %}
+{% endif %}
+
+<div class="row">
+						<div class="col-md-12">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<i class="fa fa-external-link-square"></i>
+                                    {% trans from "profile_tab" %}industries{% endtrans %}
+									<div class="panel-tools">
+									
+										<a class="btn btn-xs btn-link panel-expand" href="#"> <i class="fa fa-resize-full"></i> </a>
+									</div>
+								</div>
+								
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-md-12 space20">
+
+                                            <p>{% trans from "profile_tab" %}industries_description{% endtrans %}</p><hr>
+
+											<button class="btn btn-green add-row">
+                                                {% trans from "common" %}add_new{% endtrans %} <i class="fa fa-plus"></i>
+											</button>
+											<div id="event-management" class="modal fade" tabindex="-1" data-width="760" style="display: none;">
+										</div>
+									</div>
+									
+									<div class="table-responsive">
+										<table class="table table-striped table-hover" id="aria_experience_job">
+											<thead>
+												<tr>
+													<th>{% trans from "profile_tab" %}industries{% endtrans %}</th>
+													<th>{% trans from "common" %}edit{% endtrans %}</th>
+													<th>{% trans from "common" %}delete{% endtrans %}</th>
+												</tr>
+											</thead>
+											<tbody>
+											
+											{% for entity in entities %}
+												<tr>
+													<td>{{ entity.getExperienceJob().getExperienceJobName() }}</td>
+													<td><a href="#" class="edit-row"> {% trans from "common" %}edit{% endtrans %}</a></td>
+													<td><a href="#" class="delete-row"> {% trans from "common" %}delete{% endtrans %} </a></td>
+												</tr>
+										 	{% endfor %}		
+												
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+<!--[if gte IE 9]><!-->
+	<script src="/bundles/bmgbooktool/plugins/jQuery-lib/2.0.3/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="/bundles/bmgbooktool/plugins/jquery-ui/jquery-ui-1.10.2.custom.min.js"></script>
+<script src="/bundles/bmgbooktool/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="/bundles/bmgbooktool/plugins/blockUI/jquery.blockUI.js"></script>
+<script src="/bundles/bmgbooktool/plugins/bootbox/bootbox.min.js"></script>
+<script src="/bundles/bmgbooktool/plugins/jquery-mockjax/jquery.mockjax.js"></script>
+<script src="/bundles/bmgbooktool/plugins/select2/select2.min.js"></script>
+<script src="/bundles/bmgbooktool/plugins/DataTables/media/js/jquery.dataTables.min.js"></script>
+<script src="/bundles/bmgbooktool/plugins/DataTables/media/js/DT_bootstrap.js"></script>
+<script src="/bundles/bmgbooktool/js/pages-user-experience-job-link.js"></script>
+					
+		<script>
+			jQuery(document).ready(function() {
+
+					TableData.init();
+									
+			});
+		</script>

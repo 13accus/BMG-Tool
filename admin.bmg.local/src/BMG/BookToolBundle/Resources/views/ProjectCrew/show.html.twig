@@ -1,0 +1,44 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>ProjectCrew</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Projectcrewrating</th>
+                <td>{{ entity.projectCrewRating }}</td>
+            </tr>
+            <tr>
+                <th>Projectcrewratingreason</th>
+                <td>{{ entity.projectCrewRatingReason }}</td>
+            </tr>
+            <tr>
+                <th>Projectcrewcontractpassword</th>
+                <td>{{ entity.projectCrewContractPassword }}</td>
+            </tr>
+            <tr>
+                <th>Projectcrewdatetime</th>
+                <td>{{ entity.projectCrewDatetime|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Projectcrewid</th>
+                <td>{{ entity.projectCrewId }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('projectcrew') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('projectcrew_edit', { 'id': entity.projectCrewId }) }}">
+            Edit
+        </a>
+    </li>
+
+</ul>
+{% endblock %}

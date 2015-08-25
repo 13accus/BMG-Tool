@@ -1,0 +1,26 @@
+projectrole:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:ProjectRole:index" }
+
+projectrole_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:ProjectRole:show" }
+
+projectrole_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:ProjectRole:new" }
+
+projectrole_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:ProjectRole:create" }
+    requirements: { _method: post }
+
+projectrole_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:ProjectRole:edit" }
+
+projectrole_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:ProjectRole:update" }
+    requirements: { _method: post|put }
+

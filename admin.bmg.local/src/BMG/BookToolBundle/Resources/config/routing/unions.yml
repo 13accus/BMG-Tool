@@ -1,0 +1,26 @@
+unions:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:Unions:index" }
+
+unions_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:Unions:show" }
+
+unions_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:Unions:new" }
+
+unions_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:Unions:create" }
+    requirements: { _method: post }
+
+unions_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:Unions:edit" }
+
+unions_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:Unions:update" }
+    requirements: { _method: post|put }
+

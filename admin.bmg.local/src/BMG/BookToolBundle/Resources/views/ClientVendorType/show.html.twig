@@ -1,0 +1,31 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>ClientVendorType</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Clientvendortypename</th>
+                <td>{{ entity.clientVendorTypeName }}</td>
+            </tr>
+            <tr>
+                <th>Clientvendortypeid</th>
+                <td>{{ entity.clientVendorTypeId }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('clientvendortype') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('clientvendortype_edit', { 'id': entity.clientVendorTypeId }) }}">
+            Edit
+        </a>
+    </li>
+</ul>
+{% endblock %}

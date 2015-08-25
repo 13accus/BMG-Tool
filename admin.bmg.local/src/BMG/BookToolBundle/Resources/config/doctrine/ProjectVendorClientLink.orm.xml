@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="BMG\BookToolBundle\Entity\ProjectVendorClientLink" table="project_vendor_client_link">
+    <indexes>
+      <index name="fk_project_vendor_client_link_project1_idx" columns="project_id"/>
+      <index name="fk_project_vendor_client_link_client_vendor1_idx" columns="client_vendor_id"/>
+    </indexes>
+    <id name="projectVendorClientLinkId" type="integer" column="project_vendor_client_link_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="projectVendorClientLinkDatetime" type="datetime" column="project_vendor_client_link_datetime" nullable="false"/>
+    <many-to-one field="project" target-entity="Project">
+      <join-columns>
+        <join-column name="project_id" referenced-column-name="project_id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="clientVendor" target-entity="ClientVendor">
+      <join-columns>
+        <join-column name="client_vendor_id" referenced-column-name="client_vendor_id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

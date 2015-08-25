@@ -1,0 +1,32 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>HearAbout</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Hearaboutname</th>
+                <td>{{ entity.hearAboutName }}</td>
+            </tr>
+            <tr>
+                <th>Hearaboutid</th>
+                <td>{{ entity.hearAboutId }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('hearabout') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('hearabout_edit', { 'id': entity.hearAboutId }) }}">
+            Edit
+        </a>
+    </li>
+
+</ul>
+{% endblock %}

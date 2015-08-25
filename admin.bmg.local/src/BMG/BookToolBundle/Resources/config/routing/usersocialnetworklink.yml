@@ -1,0 +1,30 @@
+usersocialnetworklink:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:UserSocialNetworkLink:index" }
+
+usersocialnetworklink_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:UserSocialNetworkLink:show" }
+
+usersocialnetworklink_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:UserSocialNetworkLink:new" }
+
+usersocialnetworklink_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:UserSocialNetworkLink:create" }
+    requirements: { _method: post }
+
+usersocialnetworklink_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:UserSocialNetworkLink:edit" }
+
+usersocialnetworklink_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:UserSocialNetworkLink:update" }
+    requirements: { _method: post|put }
+
+usersocialnetworklink_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "BMGBookToolBundle:UserSocialNetworkLink:delete" }
+    requirements: { _method: post|delete }

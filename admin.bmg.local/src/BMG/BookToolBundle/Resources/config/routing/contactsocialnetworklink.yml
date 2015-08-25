@@ -1,0 +1,26 @@
+contactsocialnetworklink:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:ContactSocialNetworkLink:index" }
+
+contactsocialnetworklink_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:ContactSocialNetworkLink:show" }
+
+contactsocialnetworklink_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:ContactSocialNetworkLink:new" }
+
+contactsocialnetworklink_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:ContactSocialNetworkLink:create" }
+    requirements: { _method: post }
+
+contactsocialnetworklink_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:ContactSocialNetworkLink:edit" }
+
+contactsocialnetworklink_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:ContactSocialNetworkLink:update" }
+    requirements: { _method: post|put }
+

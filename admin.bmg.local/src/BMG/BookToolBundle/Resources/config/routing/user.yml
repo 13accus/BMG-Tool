@@ -1,0 +1,39 @@
+user:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:User:index" }
+
+user_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:User:show" }
+
+user_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:User:new" }
+
+user_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:User:create" }
+    requirements: { _method: post }
+    
+user_profile:
+    path:     /profile
+    defaults: { _controller: "BMGBookToolBundle:User:profile" }
+
+user_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:User:edit" }
+
+user_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:User:update" }
+    requirements: { _method: post|put }
+    
+user_update_bio:
+    path:     /{id}/bio
+    defaults: { _controller: "BMGBookToolBundle:User:update_bio" }
+    requirements: { _method: post|put }
+
+user_change_password:
+    path:     /change-password
+    defaults: { _controller: "BMGBookToolBundle:User:changePassword" }
+    requirements: { _method: get|post|put }

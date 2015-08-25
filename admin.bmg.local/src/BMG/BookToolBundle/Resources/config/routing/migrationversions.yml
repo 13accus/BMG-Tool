@@ -1,0 +1,25 @@
+migrationversions:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:MigrationVersions:index" }
+
+migrationversions_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:MigrationVersions:show" }
+
+migrationversions_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:MigrationVersions:new" }
+
+migrationversions_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:MigrationVersions:create" }
+    requirements: { _method: post }
+
+migrationversions_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:MigrationVersions:edit" }
+
+migrationversions_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:MigrationVersions:update" }
+    requirements: { _method: post|put }

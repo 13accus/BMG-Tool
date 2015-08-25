@@ -1,0 +1,47 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Reference list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Referencedesc</th>
+                <th>Referenceemail</th>
+                <th>Referencephone</th>
+                <th>Referencedatetime</th>
+                <th>Referenceid</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('reference_show', { 'id': entity.referenceId }) }}">{{ entity.referenceDesc }}</a></td>
+                <td>{{ entity.referenceEmail }}</td>
+                <td>{{ entity.referencePhone }}</td>
+                <td>{% if entity.referenceDatetime %}{{ entity.referenceDatetime|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ entity.referenceId }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('reference_show', { 'id': entity.referenceId }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('reference_edit', { 'id': entity.referenceId }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('reference_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

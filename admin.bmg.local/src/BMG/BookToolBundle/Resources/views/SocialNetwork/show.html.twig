@@ -1,0 +1,31 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>SocialNetwork</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Socialnetworkname</th>
+                <td>{{ entity.socialNetworkName }}</td>
+            </tr>
+            <tr>
+                <th>Socialnetworkid</th>
+                <td>{{ entity.socialNetworkId }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('socialnetwork') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('socialnetwork_edit', { 'id': entity.socialNetworkId }) }}">
+            Edit
+        </a>
+    </li>
+</ul>
+{% endblock %}

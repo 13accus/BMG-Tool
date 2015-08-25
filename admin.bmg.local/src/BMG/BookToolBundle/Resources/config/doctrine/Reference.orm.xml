@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="BMG\BookToolBundle\Entity\Reference" table="reference">
+    <indexes>
+      <index name="fk_reference_user1_idx" columns="user_id"/>
+    </indexes>
+    <id name="referenceId" type="integer" column="reference_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="referenceDesc" type="string" column="reference_desc" length="145" nullable="false"/>
+    <field name="referenceEmail" type="string" column="reference_email" length="245" nullable="false"/>
+    <field name="referencePhone" type="string" column="reference_phone" length="10" nullable="true"/>
+    <field name="referenceDatetime" type="datetime" column="reference_datetime" nullable="false"/>
+    <many-to-one field="user" target-entity="User">
+      <join-columns>
+        <join-column name="user_id" referenced-column-name="user_id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

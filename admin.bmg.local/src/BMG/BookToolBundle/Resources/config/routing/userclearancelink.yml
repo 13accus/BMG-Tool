@@ -1,0 +1,30 @@
+userclearancelink:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:UserClearanceLink:index" }
+
+userclearancelink_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:UserClearanceLink:show" }
+
+userclearancelink_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:UserClearanceLink:new" }
+
+userclearancelink_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:UserClearanceLink:create" }
+    requirements: { _method: post }
+
+userclearancelink_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:UserClearanceLink:edit" }
+
+userclearancelink_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:UserClearanceLink:update" }
+    requirements: { _method: post|put }
+
+userclearancelink_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "BMGBookToolBundle:UserClearanceLink:delete" }
+    requirements: { _method: post|delete }

@@ -1,0 +1,25 @@
+reference:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:Reference:index" }
+
+reference_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:Reference:show" }
+
+reference_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:Reference:new" }
+
+reference_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:Reference:create" }
+    requirements: { _method: post }
+
+reference_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:Reference:edit" }
+
+reference_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:Reference:update" }
+    requirements: { _method: post|put }

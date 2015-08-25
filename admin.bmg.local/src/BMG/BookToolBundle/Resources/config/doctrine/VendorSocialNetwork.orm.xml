@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="BMG\BookToolBundle\Entity\VendorSocialNetwork" table="vendor_social_network">
+    <indexes>
+      <index name="fk_vendor_social_network_vendor1_idx" columns="vendor_id"/>
+      <index name="fk_vendor_social_network_social_network1_idx" columns="social_network_id"/>
+    </indexes>
+    <id name="vendorSocialNetworkId" type="bigint" column="vendor_social_network_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="vendorSocialNetworkAccount" type="string" column="vendor_social_network_account" length="45" nullable="true"/>
+    <many-to-one field="vendor" target-entity="ClientVendor">
+      <join-columns>
+        <join-column name="vendor_id" referenced-column-name="client_vendor_id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="socialNetwork" target-entity="SocialNetwork">
+      <join-columns>
+        <join-column name="social_network_id" referenced-column-name="social_network_id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

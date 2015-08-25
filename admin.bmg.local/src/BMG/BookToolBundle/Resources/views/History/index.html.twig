@@ -1,0 +1,51 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>History list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Historydatetime</th>
+                <th>Tablename</th>
+                <th>Fieldname</th>
+                <th>Rowid</th>
+                <th>Previousvalue</th>
+                <th>Newvalue</th>
+                <th>Historyid</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('history_show', { 'id': entity.historyId }) }}">{{ entity.historyDatetime }}</a></td>
+                <td>{{ entity.tableName }}</td>
+                <td>{{ entity.fieldName }}</td>
+                <td>{{ entity.rowId }}</td>
+                <td>{{ entity.previousValue }}</td>
+                <td>{{ entity.newValue }}</td>
+                <td>{{ entity.historyId }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('history_show', { 'id': entity.historyId }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('history_edit', { 'id': entity.historyId }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('history_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

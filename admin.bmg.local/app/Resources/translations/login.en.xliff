@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file date="2015-04-30T13:52:38Z" source-language="en" target-language="en" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="9076e0412f7663d28c31658c4673603c2b6177e7" resname="account_not_found">
+        <source>account_not_found</source>
+        <target>Account Not Found!</target>
+        <jms:reference-file line="109">BookToolBundle/Controller/LoginController.php</jms:reference-file>
+        <jms:reference-file line="49">views/Login/email_not_found.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="cd2c6c213140a5390304d3f506ab79542380ccdb" resname="account_not_found_message">
+        <source>account_not_found_message</source>
+        <target>Please create your account before sign in</target>
+        <jms:reference-file line="110">BookToolBundle/Controller/LoginController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="3e1d80c4b2752d6c5adf437008c4c5f8cca8a618" resname="btn_back">
+        <source>btn_back</source>
+        <target>Back</target>
+        <jms:reference-file line="19">views/Login/frorgot_password.html.twig</jms:reference-file>
+        <jms:reference-file line="63">views/Register/create-account-alternative.html.twig</jms:reference-file>
+        <jms:reference-file line="63">views/Register/create-account.html.twig</jms:reference-file>
+        <jms:reference-file line="105">views/Register/register.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="6fccb2ccc003ca26fc4c72cc3916f353b45306c1" resname="btn_create_password">
+        <source>btn_create_password</source>
+        <target>Activate your account</target>
+        <jms:reference-file line="59">views/Login/create_password.html.twig</jms:reference-file>
+        <jms:reference-file line="122">views/Login/create_password.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="91754e6421e4f89b422ada9655f28d3dcf2a89ce" resname="btn_login">
+        <source>btn_login</source>
+        <target>Login</target>
+        <jms:reference-file line="91">views/Login/index.html.twig</jms:reference-file>
+        <jms:reference-file line="74">views/Register/register.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="4e2a3f45ef19fab9db1d1c312fc12273172daee8" resname="btn_reset_password">
+        <source>btn_reset_password</source>
+        <target>Reset</target>
+        <jms:reference-file line="65">views/Login/password_recovery.html.twig</jms:reference-file>
+        <jms:reference-file line="136">views/Login/password_recovery.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="0fed46d7b29d39c22ec94f2579f76fd07ec5704a" resname="btn_reset_password_dont_match">
+        <source>btn_reset_password_dont_match</source>
+        <target>Password don't match</target>
+        <jms:reference-file line="128">views/Login/create_password.html.twig</jms:reference-file>
+        <jms:reference-file line="142">views/Login/password_recovery.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="2081ea97bd1b078b018d9d447e274e4f77e17dc1" resname="btn_submit">
+        <source>btn_submit</source>
+        <target>Submit</target>
+        <jms:reference-file line="22">views/Login/frorgot_password.html.twig</jms:reference-file>
+        <jms:reference-file line="66">views/Register/create-account-alternative.html.twig</jms:reference-file>
+        <jms:reference-file line="66">views/Register/create-account.html.twig</jms:reference-file>
+        <jms:reference-file line="108">views/Register/register.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="667503358b4b35c98a25717c1323b48348201ab2" resname="create_account">
+        <source>create_account</source>
+        <target>Create Account</target>
+        <jms:reference-file line="104">views/Login/index.html.twig</jms:reference-file>
+        <jms:reference-file line="80">views/Register/register.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="5e6edf01574fc5580d09e6b69939622bf8ed1b85" resname="create_password_content">
+        <source>create_password_content</source>
+        <target>Please enter your new password twice in order to activate your account.</target>
+        <jms:reference-file line="40">views/Login/create_password.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="5e7481a3538e9b972d9fdfe69cc48febc3b7815b" resname="create_password_title">
+        <source>create_password_title</source>
+        <target>Create Password to Activate your account</target>
+        <jms:reference-file line="234">BookToolBundle/Controller/LoginController.php</jms:reference-file>
+        <jms:reference-file line="38">views/Login/create_password.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="f49c2dba7854957078e50dc9e7b3d9b489825af5" resname="email_already_exists">
+        <source>email_already_exists</source>
+        <target>Email Already Exists</target>
+        <jms:reference-file line="44">views/Email/email_already_exists.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="e20258b4f67896b04632e20bd6dc62b4f6167532" resname="email_already_registered">
+        <source>email_already_registered</source>
+        <target>Email Already Registered</target>
+        <jms:reference-file line="46">views/Email/email_already_exists.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="f310e430530d55f25757e6392ff0ce82d2629141" resname="email_not_found">
+        <source>email_not_found</source>
+        <target>Email not found</target>
+        <jms:reference-file line="47">views/Login/email_not_found.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="7f0ac8d453346c571b9efdc99ab57f3a232a29b4" resname="email_update_content">
+        <source>email_update_content</source>
+        <target>Your email has been updated successfully !</target>
+        <jms:reference-file line="46">views/Email/email_updated.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="67974c992ecb8cb08c05739ce3ea79b1eaa88c49" resname="email_updated_title ">
+        <source>email_updated_title </source>
+        <target>Email updated</target>
+        <jms:reference-file line="44">views/Email/email_updated.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="cdbb912ed1388168f6a116682a54845265689370" resname="enter_account_bellow">
+        <source>enter_account_bellow</source>
+        <target>Enter your personal details below:</target>
+        <jms:reference-file line="7">views/Register/create-account-alternative.html.twig</jms:reference-file>
+        <jms:reference-file line="25">views/Register/create-account-alternative.html.twig</jms:reference-file>
+        <jms:reference-file line="7">views/Register/create-account.html.twig</jms:reference-file>
+        <jms:reference-file line="25">views/Register/create-account.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="c67140e11957e6300f880102c7bd9d8e9dc87fd7" resname="enter_email_password">
+        <source>enter_email_password</source>
+        <target>Enter your email and password</target>
+        <jms:reference-file line="44">views/Login/index.html.twig</jms:reference-file>
+        <jms:reference-file line="49">views/Register/register.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="c0861c2370eaa989d198b025cef2f16585985719" resname="enter_recovery_password">
+        <source>enter_recovery_password</source>
+        <target>Enter your e-mail address below to reset your password.</target>
+        <jms:reference-file line="44">views/Login/password_recovery.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="570043596e41f9067d43fbff99f1acb348a090bf" resname="errors">
+        <source>errors</source>
+        <target> You have some form errors. Please check below.</target>
+        <jms:reference-file line="53">views/Register/register.html.twig</jms:reference-file>
+        <jms:reference-file line="95">views/Register/register.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="9e3183adc4eebf3adb598d35aa507d9d6f503070" resname="forgot_password">
+        <source>forgot_password</source>
+        <target>Forgot Password</target>
+        <jms:reference-file line="72">views/Login/index.html.twig</jms:reference-file>
+        <jms:reference-file line="65">views/Register/register.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="7671863a265fb195d78d1b9dd245556106589e44" resname="forgot_password_instructions">
+        <source>forgot_password_instructions</source>
+        <target>Enter your e-mail address below to reset your password.</target>
+        <jms:reference-file line="7">views/Login/frorgot_password.html.twig</jms:reference-file>
+        <jms:reference-file line="126">views/Login/index.html.twig</jms:reference-file>
+        <jms:reference-file line="91">views/Register/register.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="f48290045dcd8e22146b859f2145e405001cf59d" resname="invalid_token_content">
+        <source>invalid_token_content</source>
+        <target>Your password recovery cannot be processed</target>
+        <jms:reference-file line="258">BookToolBundle/Controller/LoginController.php</jms:reference-file>
+        <jms:reference-file line="55">views/Login/password_recovery_invalid_hash.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="a3c811441e342b8febd0de13d36940f149b45110" resname="invitation_to_login">
+        <source>invitation_to_login</source>
+        <target>Login</target>
+        <jms:reference-file line="59">views/Login/password_recovery_success.html.twig</jms:reference-file>
+        <jms:reference-file line="61">views/Login/password_recovery_success.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="55da0c4a316df0364ad50f7f01c51daed65b35a7" resname="keep_me_signed_in">
+        <source>keep_me_signed_in</source>
+        <target>Keep me signed in</target>
+        <jms:reference-file line="84">views/Login/index.html.twig</jms:reference-file>
+        <jms:reference-file line="71">views/Register/register.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="2736fab291f04e69b62d490c3c09361f5b82461a" resname="login">
+        <source>login</source>
+        <target>Login</target>
+        <jms:reference-file line="70">views/Login/password_recovery.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="8fb756620f944731c2d8642ef6ebc1a8a4b40d5c" resname="no_account_yet">
+        <source>no_account_yet</source>
+        <target>Don't have an account yet? </target>
+        <jms:reference-file line="100">views/Login/index.html.twig</jms:reference-file>
+        <jms:reference-file line="78">views/Register/register.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="16490577e23c7ec40e5aac663d9db16691ccebbd" resname="password_incorrect_message">
+        <source>password_incorrect_message</source>
+        <target>The password you entered is incorrect</target>
+        <jms:reference-file line="104">BookToolBundle/Controller/LoginController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="477a039859e28d8135280308146853f523b015c2" resname="password_incorrect_title">
+        <source>password_incorrect_title</source>
+        <target>Wrong!</target>
+        <jms:reference-file line="103">BookToolBundle/Controller/LoginController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="a80fb33ee61b326a67cbbcf12977d07739a42866" resname="password_recovery_confirmation_message">
+        <source>password_recovery_confirmation_message</source>
+        <target>Please check your Inbox for the recovery password email</target>
+        <jms:reference-file line="193">BookToolBundle/Controller/LoginController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="ecb89609108c7cb4d9504e52b570eef9a289da59" resname="password_recovery_confirmation_text">
+        <source>password_recovery_confirmation_text</source>
+        <target><![CDATA[<p>We just sent an email with the instruction you need in order to reset your password</p>
+
+<p>Please check your mailbox and proceed accordingly</p> ]]></target>
+        <jms:reference-file line="49">views/Login/password_recovery_confirmation.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="384c8e78953defeed3b0e9b20b1f0b1c4c4f3ec6" resname="password_recovery_confirmation_title">
+        <source>password_recovery_confirmation_title</source>
+        <target>Great job !</target>
+        <jms:reference-file line="192">BookToolBundle/Controller/LoginController.php</jms:reference-file>
+        <jms:reference-file line="47">views/Login/password_recovery_confirmation.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="dec736d000e7b291fd8c3ea037c4a67f650f286a" resname="password_recovery_invalid_account_message">
+        <source>password_recovery_invalid_account_message</source>
+        <target>The email address you specified is invalid.</target>
+        <jms:reference-file line="208">BookToolBundle/Controller/LoginController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="fe4d2980e770db70085a21388a59afd35c1051d6" resname="password_recovery_success_message">
+        <source>password_recovery_success_message</source>
+        <target>You password has been updated. Please use the new password to login.</target>
+        <jms:reference-file line="319">BookToolBundle/Controller/LoginController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="af8c390d63832a5c42a8681fdb7a4859ded7e1f6" resname="password_recovery_success_title">
+        <source>password_recovery_success_title</source>
+        <target>Great Job !</target>
+        <jms:reference-file line="318">BookToolBundle/Controller/LoginController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="c62cfe5b8fc58fc16539e18c6a129a7856c7184c" resname="password_recovery_title">
+        <source>password_recovery_title</source>
+        <target>Password Recovery</target>
+        <jms:reference-file line="231">BookToolBundle/Controller/LoginController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="ca6267c5b4edd5c5ab3e0f4f8fa0c60c05446889" resname="placeholder_email">
+        <source>placeholder_email</source>
+        <target>Email</target>
+        <jms:reference-file line="14">views/Login/frorgot_password.html.twig</jms:reference-file>
+        <jms:reference-file line="59">views/Login/index.html.twig</jms:reference-file>
+        <jms:reference-file line="140">views/Login/index.html.twig</jms:reference-file>
+        <jms:reference-file line="29">views/Register/create-account-alternative.html.twig</jms:reference-file>
+        <jms:reference-file line="29">views/Register/create-account.html.twig</jms:reference-file>
+        <jms:reference-file line="58">views/Register/register.html.twig</jms:reference-file>
+        <jms:reference-file line="100">views/Register/register.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="02d77d6a56e52e535eb9bb8868fbbfcd8292f826" resname="placeholder_password">
+        <source>placeholder_password</source>
+        <target>Password</target>
+        <jms:reference-file line="68">views/Login/index.html.twig</jms:reference-file>
+        <jms:reference-file line="45">views/Register/create-account-alternative.html.twig</jms:reference-file>
+        <jms:reference-file line="45">views/Register/create-account.html.twig</jms:reference-file>
+        <jms:reference-file line="63">views/Register/register.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="83ed8212f6b3a9bc696df4352530beb79b027c5a" resname="placeholder_reset_password">
+        <source>placeholder_reset_password</source>
+        <target>Password</target>
+        <jms:reference-file line="48">views/Login/create_password.html.twig</jms:reference-file>
+        <jms:reference-file line="52">views/Login/password_recovery.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="099d221e8c58325a724f0fe46da0b1b6a816f876" resname="placeholder_reset_password_confirmation">
+        <source>placeholder_reset_password_confirmation</source>
+        <target>Confirm Password</target>
+        <jms:reference-file line="53">views/Login/create_password.html.twig</jms:reference-file>
+        <jms:reference-file line="58">views/Login/password_recovery.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="9554b2b543839f5d9d3dc4738454b3066aaba783" resname="reset_password_success_content">
+        <source>reset_password_success_content</source>
+        <target>Your password has been reset successfully  </target>
+        <jms:reference-file line="55">views/Login/password_recovery_success.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="a89fbd2d91f3a3824e5ab0f5cf6da520d5a0075c" resname="terms_policy">
+        <source>terms_policy</source>
+        <target>I agree to the Terms of Service and Privacy Policy</target>
+        <jms:reference-file line="52">views/Register/create-account-alternative.html.twig</jms:reference-file>
+        <jms:reference-file line="52">views/Register/create-account.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="c59b88567c5f988166c0442773f1b17937ea2540" resname="title_forgot_password">
+        <source>title_forgot_password</source>
+        <target>Forgot Password</target>
+        <jms:reference-file line="5">views/Login/frorgot_password.html.twig</jms:reference-file>
+        <jms:reference-file line="122">views/Login/index.html.twig</jms:reference-file>
+        <jms:reference-file line="89">views/Register/register.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="63d5b44b040dac2fc3b791c8af6c7d81eb58fc4a" resname="title_invalid_token">
+        <source>title_invalid_token</source>
+        <target>Invalid Token!</target>
+        <jms:reference-file line="257">BookToolBundle/Controller/LoginController.php</jms:reference-file>
+        <jms:reference-file line="47">views/Login/password_recovery_invalid_hash.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="854944f59c25134c05527ba548d14712e70a1065" resname="title_login">
+        <source>title_login</source>
+        <target>Sign in</target>
+        <jms:reference-file line="40">views/Login/index.html.twig</jms:reference-file>
+        <jms:reference-file line="47">views/Register/register.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="ee79e6954945220561ae2cca91359a142ade343c" resname="title_password_reset_success">
+        <source>title_password_reset_success</source>
+        <target>Success</target>
+        <jms:reference-file line="47">views/Login/password_recovery_success.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="e2415981f44c27948b1f2ae05dee0f7289df5963" resname="title_recovery_password">
+        <source>title_recovery_password</source>
+        <target>Reset Password</target>
+        <jms:reference-file line="42">views/Login/password_recovery.html.twig</jms:reference-file>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

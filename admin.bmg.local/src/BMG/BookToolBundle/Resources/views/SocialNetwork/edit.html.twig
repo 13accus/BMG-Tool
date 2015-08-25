@@ -1,0 +1,15 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>SocialNetwork edit</h1>
+
+    {{ form(edit_form) }}
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('socialnetwork') }}">
+            Back to the list
+        </a>
+    </li>
+</ul>
+{% endblock %}

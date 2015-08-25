@@ -1,0 +1,25 @@
+projectvendorclientlink:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:ProjectVendorClientLink:index" }
+
+projectvendorclientlink_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:ProjectVendorClientLink:show" }
+
+projectvendorclientlink_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:ProjectVendorClientLink:new" }
+
+projectvendorclientlink_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:ProjectVendorClientLink:create" }
+    requirements: { _method: post }
+
+projectvendorclientlink_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:ProjectVendorClientLink:edit" }
+
+projectvendorclientlink_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:ProjectVendorClientLink:update" }
+    requirements: { _method: post|put }

@@ -1,0 +1,30 @@
+userexperiencelink:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:UserExperienceLink:index" }
+
+userexperiencelink_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:UserExperienceLink:show" }
+
+userexperiencelink_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:UserExperienceLink:new" }
+
+userexperiencelink_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:UserExperienceLink:create" }
+    requirements: { _method: post }
+
+userexperiencelink_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:UserExperienceLink:edit" }
+
+userexperiencelink_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:UserExperienceLink:update" }
+    requirements: { _method: post|put }
+
+userexperiencelink_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "BMGBookToolBundle:UserExperienceLink:delete" }
+    requirements: { _method: post|delete }

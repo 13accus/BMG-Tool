@@ -1,0 +1,25 @@
+page:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:Page:index" }
+
+page_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:Page:show" }
+
+page_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:Page:new" }
+
+page_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:Page:create" }
+    requirements: { _method: post }
+
+page_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:Page:edit" }
+
+page_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:Page:update" }
+    requirements: { _method: post|put }

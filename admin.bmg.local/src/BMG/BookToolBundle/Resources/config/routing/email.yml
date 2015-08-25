@@ -1,0 +1,8 @@
+email_home:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:Email:index" }
+
+
+email:
+    path:     /{process}
+    defaults: { _controller: "BMGBookToolBundle:Email:index" }

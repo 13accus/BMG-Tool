@@ -1,0 +1,91 @@
+app:
+    resource: @AppBundle/Controller/
+    type:     annotation
+
+BMGBookToolBundle_api:
+    pattern:  /api
+    defaults: { _controller: "BMGBookToolBundle:Api:index" }
+    requirements: 
+        methods: POST     
+
+BMGBookToolBundle_api_catalog:
+    pattern:  /api/catalog/{catalog}
+    defaults: { _controller: "BMGBookToolBundle:Api:catalog" }    
+    
+logout:
+    path:     /{_locale}/logout
+    defaults: { _controller: BMGBookToolBundle:Login:logout }
+
+doLogin:
+    path:     /doLogin
+    defaults: { _controller: BMGBookToolBundle:Login:doLogin }
+    requirements: 
+        methods: POST
+
+login:
+    path:     /{_locale}/login
+    defaults: { _controller: BMGBookToolBundle:Login:login }
+    requirements: 
+        methods: GET    
+
+login_check:
+    path:     /login_check
+    defaults: { _controller: BMGBookToolBundle:Login:securityCheck }
+
+checkLoginEmail:
+    path:     /{_locale}/checkLoginEmail
+    defaults: { _controller: BMGBookToolBundle:Login:checkLoginEmail }
+    
+forgotPassword:
+    path:     /forgot-password
+    defaults: { _controller: BMGBookToolBundle:Login:forgotPassword }
+    requirements: 
+        methods: POST
+
+recoveryPassword:
+    path:     /password-recovery
+    defaults: { _controller: BMGBookToolBundle:Login:recoveryPassword }
+    requirements: 
+        methods: GET
+
+createPassword:
+    path:     /create-password
+    defaults: { _controller: BMGBookToolBundle:Login:recoveryPassword }
+    requirements:
+        methods: GET
+
+doRecoveryPassword:
+    path:     /doPasswordRecovery
+    defaults: { _controller: BMGBookToolBundle:Login:doRecoveryPassword }
+    requirements: 
+        methods: POST
+
+activateAccount:
+    path:     /activate-account
+    defaults: { _controller: BMGBookToolBundle:Register:activateAccount }
+    requirements: 
+        methods: GET
+
+validateEmail:
+    path:     /{_locale}/validateEmail
+    defaults: { _controller: BMGBookToolBundle:Register:validateEmail }
+    requirements:
+        methods: POST 
+       
+locale_redirect:
+    path:     /
+    defaults: { _controller: BMGBookToolBundle:Default:index }
+
+BMGBookToolBundle_feedback:
+    path:     /{_locale}/feedback
+    defaults: { _controller: BMGBookToolBundle:Default:feedback }
+    requirements:
+        methods: POST
+
+bmg_book_tool:
+    resource: "@BMGBookToolBundle/Resources/config/routing.yml"
+    prefix:   /{_locale}/
+
+BMGBookToolBundle_user:
+    resource: "@BMGBookToolBundle/Resources/config/routing/user.yml"
+    prefix:   /{_locale}/user

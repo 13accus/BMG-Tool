@@ -1,0 +1,25 @@
+clientvendortype:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:ClientVendorType:index" }
+
+clientvendortype_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:ClientVendorType:show" }
+
+clientvendortype_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:ClientVendorType:new" }
+
+clientvendortype_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:ClientVendorType:create" }
+    requirements: { _method: post }
+
+clientvendortype_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:ClientVendorType:edit" }
+
+clientvendortype_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:ClientVendorType:update" }
+    requirements: { _method: post|put }

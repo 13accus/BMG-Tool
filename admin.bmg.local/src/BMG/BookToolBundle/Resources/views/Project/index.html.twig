@@ -1,0 +1,73 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Project list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Projectname</th>
+                <th>Projectdatetimestart</th>
+                <th>Projectdatetimeend</th>
+                <th>Projectairdatetimestart</th>
+                <th>Projectairdatetimeend</th>
+                <th>Projectsetupstagingdatetimestart</th>
+                <th>Projectsetupstagingdatetimeend</th>
+                <th>Projectsetupdatetimestart</th>
+                <th>Projectsetupdatetimeend</th>
+                <th>Projectshootdatetimestart</th>
+                <th>Projectshootdatetimeend</th>
+                <th>Projectloadoutdatetimestart</th>
+                <th>Projectloadoutdatetimeend</th>
+                <th>Projectlocation</th>
+                <th>Projectaddress1</th>
+                <th>Projectaddress2</th>
+                <th>Projectzipcode</th>
+                <th>Projectid</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('project_show', { 'id': entity.projectId }) }}">{{ entity.projectName }}</a></td>
+                <td>{% if entity.projectDatetimeStart %}{{ entity.projectDatetimeStart|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if entity.projectDatetimeEnd %}{{ entity.projectDatetimeEnd|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if entity.projectAirDatetimeStart %}{{ entity.projectAirDatetimeStart|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if entity.projectAirDatetimeEnd %}{{ entity.projectAirDatetimeEnd|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if entity.projectSetupStagingDatetimeStart %}{{ entity.projectSetupStagingDatetimeStart|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if entity.projectSetupStagingDatetimeEnd %}{{ entity.projectSetupStagingDatetimeEnd|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if entity.projectSetupDatetimeStart %}{{ entity.projectSetupDatetimeStart|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if entity.projectSetupDatetimeEnd %}{{ entity.projectSetupDatetimeEnd|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if entity.projectShootDatetimeStart %}{{ entity.projectShootDatetimeStart|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if entity.projectShootDatetimeEnd %}{{ entity.projectShootDatetimeEnd|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if entity.projectLoadOutDatetimeStart %}{{ entity.projectLoadOutDatetimeStart|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if entity.projectLoadOutDatetimeEnd %}{{ entity.projectLoadOutDatetimeEnd|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ entity.projectLocation }}</td>
+                <td>{{ entity.projectAddress1 }}</td>
+                <td>{{ entity.projectAddress2 }}</td>
+                <td>{{ entity.projectZipcode }}</td>
+                <td>{{ entity.projectId }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('project_show', { 'id': entity.projectId }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('project_edit', { 'id': entity.projectId }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('project_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

@@ -1,0 +1,26 @@
+contact:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:Contact:index" }
+
+contact_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:Contact:show" }
+
+contact_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:Contact:new" }
+
+contact_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:Contact:create" }
+    requirements: { _method: post }
+
+contact_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:Contact:edit" }
+
+contact_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:Contact:update" }
+    requirements: { _method: post|put }
+

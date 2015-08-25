@@ -1,0 +1,30 @@
+userunionlink:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:UserUnionLink:index" }
+
+userunionlink_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:UserUnionLink:show" }
+
+userunionlink_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:UserUnionLink:new" }
+
+userunionlink_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:UserUnionLink:create" }
+    requirements: { _method: post }
+
+userunionlink_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:UserUnionLink:edit" }
+
+userunionlink_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:UserUnionLink:update" }
+    requirements: { _method: post|put }
+
+userunionlink_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "BMGBookToolBundle:UserUnionLink:delete" }
+    requirements: { _method: post|delete }

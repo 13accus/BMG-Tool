@@ -1,0 +1,32 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Experience</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Experiencename</th>
+                <td>{{ entity.experienceName }}</td>
+            </tr>
+            <tr>
+                <th>Experienceid</th>
+                <td>{{ entity.experienceId }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('experience') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('experience_edit', { 'id': entity.experienceId }) }}">
+            Edit
+        </a>
+    </li>
+
+</ul>
+{% endblock %}

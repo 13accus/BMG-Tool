@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="BMG\BookToolBundle\Entity\ProjectCrew" table="project_crew">
+    <indexes>
+      <index name="fk_project_crew_user1_idx" columns="user_id"/>
+      <index name="fk_project_crew_role1_idx" columns="project_role_id"/>
+    </indexes>
+    <id name="projectCrewId" type="bigint" column="project_crew_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="projectCrewRating" type="boolean" column="project_crew_rating" nullable="true"/>
+    <field name="projectCrewRatingReason" type="string" column="project_crew_rating_reason" length="2000" nullable="true"/>
+    <field name="projectCrewContractPassword" type="string" column="project_crew_contract_password" length="45" nullable="true"/>
+    <field name="projectCrewDatetime" type="datetime" column="project_crew_datetime" nullable="false"/>
+    <many-to-one field="user" target-entity="User">
+      <join-columns>
+        <join-column name="user_id" referenced-column-name="user_id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="projectRole" target-entity="ProjectRole">
+      <join-columns>
+        <join-column name="project_role_id" referenced-column-name="role_id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

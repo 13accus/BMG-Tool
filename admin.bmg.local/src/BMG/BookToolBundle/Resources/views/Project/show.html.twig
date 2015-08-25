@@ -1,0 +1,96 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Project</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Projectname</th>
+                <td>{{ entity.projectName }}</td>
+            </tr>
+            <tr>
+                <th>Projectdatetimestart</th>
+                <td>{{ entity.projectDatetimeStart|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Projectdatetimeend</th>
+                <td>{{ entity.projectDatetimeEnd|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Projectairdatetimestart</th>
+                <td>{{ entity.projectAirDatetimeStart|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Projectairdatetimeend</th>
+                <td>{{ entity.projectAirDatetimeEnd|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Projectsetupstagingdatetimestart</th>
+                <td>{{ entity.projectSetupStagingDatetimeStart|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Projectsetupstagingdatetimeend</th>
+                <td>{{ entity.projectSetupStagingDatetimeEnd|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Projectsetupdatetimestart</th>
+                <td>{{ entity.projectSetupDatetimeStart|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Projectsetupdatetimeend</th>
+                <td>{{ entity.projectSetupDatetimeEnd|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Projectshootdatetimestart</th>
+                <td>{{ entity.projectShootDatetimeStart|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Projectshootdatetimeend</th>
+                <td>{{ entity.projectShootDatetimeEnd|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Projectloadoutdatetimestart</th>
+                <td>{{ entity.projectLoadOutDatetimeStart|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Projectloadoutdatetimeend</th>
+                <td>{{ entity.projectLoadOutDatetimeEnd|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Projectlocation</th>
+                <td>{{ entity.projectLocation }}</td>
+            </tr>
+            <tr>
+                <th>Projectaddress1</th>
+                <td>{{ entity.projectAddress1 }}</td>
+            </tr>
+            <tr>
+                <th>Projectaddress2</th>
+                <td>{{ entity.projectAddress2 }}</td>
+            </tr>
+            <tr>
+                <th>Projectzipcode</th>
+                <td>{{ entity.projectZipcode }}</td>
+            </tr>
+            <tr>
+                <th>Projectid</th>
+                <td>{{ entity.projectId }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('project') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('project_edit', { 'id': entity.projectId }) }}">
+            Edit
+        </a>
+    </li>
+
+</ul>
+{% endblock %}

@@ -1,0 +1,40 @@
+<!-- start: DYNAMIC TABLE PANEL -->
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <i class="fa fa-external-link-square"></i>
+        {{ page_title }}
+        <div class="panel-tools">
+            <a class="btn btn-xs btn-link panel-config" href="#panel-config" data-toggle="modal"> <i class="fa fa-wrench"></i> </a>
+            <a class="btn btn-xs btn-link panel-refresh" href="#"> <i class="fa fa-refresh"></i> </a>
+            <a class="btn btn-xs btn-link panel-expand" href="#"> <i class="fa fa-resize-full"></i> </a>
+        </div>
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped table-bordered table-hover table-full-width" id="sample_1">
+            <thead>
+            <tr>
+                <th>{% trans from "profile" %}id{% endtrans %}</th>
+                <th>{% trans from "profile" %}firstname{% endtrans %}</th>
+                <th>{% trans from "profile" %}lastname{% endtrans %}</th>
+                <th>{% trans from "profile" %}email{% endtrans %}</th>
+                <th>{% trans from "profile" %}member_since{% endtrans %}</th>
+                <th>{% trans from "common" %}status{% endtrans %}</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('user_show', { 'id': entity.userId }) }}">{{ entity.userId }}</a></td>
+                <td>{{ entity.userFirstname }}</td>
+                <td>{{ entity.userLastname }}</td>
+                <td>{{ entity.userMobile }}</td>
+                <td>{% if entity.userCreateDatetime %}{{ entity.userCreateDatetime|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ entity.status }}</td>
+            </tr>
+            {% endfor %}
+
+            </tbody>
+        </table>
+    </div>
+</div>
+<!-- end: DYNAMIC TABLE PANEL -->

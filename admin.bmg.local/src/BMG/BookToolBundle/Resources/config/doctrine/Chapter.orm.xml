@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="BMG\BookToolBundle\Entity\Chapter" table="chapter">
+    <indexes>
+      <index name="fk_chapter_book1_idx" columns="book_id"/>
+      <index name="fk_chapter_status1_idx" columns="status_id"/>
+      <index name="fk_chapter_role1_idx" columns="project_role_id"/>
+    </indexes>
+    <id name="chapterId" type="bigint" column="chapter_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="chapterNumber" type="smallint" column="chapter_number" nullable="false"/>
+    <many-to-one field="status" target-entity="Status">
+      <join-columns>
+        <join-column name="status_id" referenced-column-name="status_id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="projectRole" target-entity="ProjectRole">
+      <join-columns>
+        <join-column name="project_role_id" referenced-column-name="role_id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="book" target-entity="Book">
+      <join-columns>
+        <join-column name="book_id" referenced-column-name="book_id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

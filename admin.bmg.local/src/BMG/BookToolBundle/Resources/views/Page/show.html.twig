@@ -1,0 +1,40 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Page</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Pagenumber</th>
+                <td>{{ entity.pageNumber }}</td>
+            </tr>
+            <tr>
+                <th>Pagetypeid</th>
+                <td>{{ entity.pageTypeId }}</td>
+            </tr>
+            <tr>
+                <th>Pagecontent</th>
+                <td>{{ entity.pageContent }}</td>
+            </tr>
+            <tr>
+                <th>Pageid</th>
+                <td>{{ entity.pageId }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('page') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('page_edit', { 'id': entity.Pageid }) }}">
+            Edit
+        </a>
+    </li>
+
+</ul>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>UserCityWorkLink list</h1>
+
+<table class="records_list" width="100%">
+        <thead>
+            <tr>
+                <th>Usercityworklinkdatetime</th>
+                <th>Usercityworklinkid</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+
+                <td>{{ entity.userCityWorkLinkId }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('usercityworklink_show', { 'id': entity.userCityWorkLinkId }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('usercityworklink_edit', { 'id': entity.userCityWorkLinkId }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('usercityworklink_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

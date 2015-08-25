@@ -1,0 +1,37 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>UserRentalLink list</h1>
+
+    <table class="records_list" width="100%">
+        <thead>
+            <tr>
+                <th>Equipment</th>
+                <th>Fee</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('userrentallink_show', { 'id': entity.rentalId }) }}">{{ entity.equipment }}</a></td>
+                <td>{{ entity.userRentalLinkFee }}</td>
+                <td>
+                <ul>
+                        <a href="{{ path('userrentallink_show', { 'id': entity.rentalId }) }}">show</a> | <a href="{{ path('userrentallink_edit', { 'id': entity.rentalId }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('userrentallink_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

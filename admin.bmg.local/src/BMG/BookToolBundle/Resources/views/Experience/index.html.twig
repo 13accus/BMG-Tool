@@ -1,0 +1,41 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Experience list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Experiencename</th>
+                <th>Experienceid</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('experience_show', { 'id': entity.experienceId }) }}">{{ entity.experienceName }}</a></td>
+                <td>{{ entity.experienceId }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('experience_show', { 'id': entity.experienceId }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('experience_edit', { 'id': entity.experienceId }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('experience_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

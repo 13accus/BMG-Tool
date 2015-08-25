@@ -1,0 +1,26 @@
+vendorsocialnetwork:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:VendorSocialNetwork:index" }
+
+vendorsocialnetwork_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:VendorSocialNetwork:show" }
+
+vendorsocialnetwork_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:VendorSocialNetwork:new" }
+
+vendorsocialnetwork_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:VendorSocialNetwork:create" }
+    requirements: { _method: post }
+
+vendorsocialnetwork_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:VendorSocialNetwork:edit" }
+
+vendorsocialnetwork_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:VendorSocialNetwork:update" }
+    requirements: { _method: post|put }
+

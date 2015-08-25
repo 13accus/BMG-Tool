@@ -1,0 +1,170 @@
+<div id="panel_overview" class="tab-pane in active">
+	<div class="row">
+		<div class="col-sm-5 col-md-4">
+			<div class="user-left">
+				<div class="center">
+					<h4>{{ entity.userFirstname }} {{ entity.userLastname }}</h4>
+					<div class="fileupload fileupload-new" data-provides="fileupload">
+						<div class="user-image">
+							<div class="fileupload-new thumbnail">
+								<img src="{% if picture %}data:image/jpg;base64,{{ picture }}{% else %}{{ asset ('bundles/bmgbooktool/images/profile.jpg') }}{% endif %}" width="400px" />
+							</div>
+							<div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
+
+						</div>
+					</div>
+                    {% if 1 == 2 %}
+					<hr>
+					<p>
+						<a class="btn btn-twitter btn-sm btn-squared"> <i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-linkedin btn-sm btn-squared"> <i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-google-plus btn-sm btn-squared"> <i class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-github btn-sm btn-squared"> <i class="fa fa-github"></i></a>
+					</p>
+                    {% endif %}
+					<hr>
+				</div>
+				<table class="table table-condensed table-hover">
+					<thead>
+						<tr>
+							<th colspan="3">{% trans from "profile" %}contact_information{% endtrans %}</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>{% trans from "profile" %}website{% endtrans %}</td>
+							<td><a href="{{ entity.userWebsite }}" target="_blank">{{
+									entity.userWebsite }}</a></td>
+							<td><a href="#panel_edit_account" class="show-tab"><i
+									class="fa fa-pencil edit-user-info"></i></a></td>
+						</tr>
+						<tr>
+							<td>{% trans from "profile" %}email{% endtrans %}:</td>
+							<td><a href="">{{ entity.userEmail }}</a></td>
+							<td><a href="#panel_edit_account" class="show-tab"><i
+									class="fa fa-pencil edit-user-info"></i></a></td>
+						</tr>
+						<tr>
+							<td>{% trans from "profile" %}mobile{% endtrans %}:</td>
+							<td>{% if entity.userMobile %}({{ entity.userMobile|slice(0, 3) }})-{{
+								entity.userMobile|slice(3, 3) }}-{{ entity.userMobile|slice(6,
+								4) }}{% endif %}</td>
+							<td><a href="#panel_edit_account" class="show-tab"><i
+									class="fa fa-pencil edit-user-info"></i></a></td>
+						</tr>
+						<tr>
+							<td valign="top">{% trans from "profile" %}address{% endtrans %}</td>
+							<td valign="top"> 
+									{{ entity.userAddress1 }}
+									<br> {{entity.userAddress2 }}<br>
+									<br><span id="citystate_overview" name="citystate_overview"></span>
+									<br>{{entity.userZipcode }}
+							</td>
+							<td><a href="#panel_edit_account" class="show-tab"><i
+									class="fa fa-pencil edit-user-info"></i></a></td>
+						</tr>
+
+
+
+					</tbody>
+				</table>
+
+				<table class="table table-condensed table-hover">
+					<thead>
+						<tr>
+							<th colspan="3">{% trans from "profile" %}social_networks{% endtrans %}</th>
+						</tr>
+					</thead>
+					<tbody>
+
+                    {% for key,value in social_networks %}
+                        <tr>
+                            <td>{{ key }}</td>
+                            <td>{{ value }}</td>
+                            <td><a href="#panel_edit_account" class="show-tab"><i class="fa fa-pencil edit-user-info"></i></a></td>
+                        </tr>
+                    {% endfor %}
+
+                    </tbody>
+				</table>
+
+				<table class="table table-condensed table-hover">
+					<thead>
+						<tr>
+							<th colspan="3">{% trans from "profile" %}general_information{% endtrans %}</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>{% trans from "profile" %}member_since{% endtrans %}</td>
+							<td>{{ entity.userCreateDatetime|date('M d, Y') }}</td>
+							<td></td>
+						</tr>
+                        {% if 1 == 2 %}
+						<tr>
+							<td>{% trans from "profile" %}last_logged_in{% endtrans %}</td>
+							<td>56 mins</td>
+							<td><a href="#panel_edit_account" class="show-tab"><i
+									class="fa fa-pencil edit-user-info"></i></a></td>
+						</tr>
+                        {% endif %}
+						<tr>
+							<td>{% trans from "profile" %}status{% endtrans %}</td>
+							<td><span class="label label-sm label-info">{{ entity.status }}</span></td>
+							<td><a href="#panel_edit_account" class="show-tab"><i
+									class="fa fa-pencil edit-user-info"></i></a></td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-condensed table-hover">
+					<thead>
+						<tr>
+							<th colspan="3">{% trans from "profile" %}additional_info{% endtrans %}</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>{% trans from "profile" %}dob{% endtrans %}</td>
+							<td>{% if entity.getUserBirthdate %}{{ entity.getUserBirthdate|date('M d, Y') }}{% endif %}</td>
+							<td><a href="#panel_edit_account" class="show-tab"><i
+									class="fa fa-pencil edit-user-info"></i></a></td>
+						</tr>
+
+						<tr>
+							<td>{% trans from "profile" %}last_update{% endtrans %}</td>
+							<td>{{ entity.userLastupdateDatetime|date('M d, Y') }}</td>
+							<td><a href="#panel_edit_account" class="show-tab"><i
+									class="fa fa-pencil edit-user-info"></i></a></td>
+						</tr>
+                        {% if 1 == 2 %}
+						<tr>
+							<td>{% trans from "profile" %}registration_IP_address{% endtrans %}</td>
+							<td>{{ entity.userIp }}</td>
+							<td></td>
+						</tr>
+
+						<tr>
+							<td>{% trans from "profile" %}notes{% endtrans %}</td>
+							<td>{{ entity.userNotes }}</td>
+							<td><a href="#panel_edit_account" class="show-tab"><i
+									class="fa fa-pencil edit-user-info"></i></a></td>
+						</tr>
+						{% endif %}
+
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="col-sm-7 col-md-8">
+			<p>
+                {% if entity.userBio is empty %}
+                    {% include 'BMGBookToolBundle:User:sample_bio.html.twig' %}
+                {% else %}
+                    {{ entity.userBio|raw }}
+                {% endif %}
+
+            </p>
+		</div>
+	</div>
+</div>

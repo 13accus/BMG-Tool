@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file date="2015-04-30T13:52:38Z" source-language="en" target-language="en" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="6e157c5da4410b7e9de85f5c93026b9176e69064" resname="Create">
+        <source>Create</source>
+        <target>Create</target>
+        <jms:reference-file line="92">BookToolBundle/Controller/BookController.php</jms:reference-file>
+        <jms:reference-file line="95">BookToolBundle/Controller/BookTypeController.php</jms:reference-file>
+        <jms:reference-file line="91">BookToolBundle/Controller/ChapterController.php</jms:reference-file>
+        <jms:reference-file line="89">BookToolBundle/Controller/CityController.php</jms:reference-file>
+        <jms:reference-file line="91">BookToolBundle/Controller/ClearanceController.php</jms:reference-file>
+        <jms:reference-file line="90">BookToolBundle/Controller/ClientVendorController.php</jms:reference-file>
+        <jms:reference-file line="91">BookToolBundle/Controller/ClientVendorTypeController.php</jms:reference-file>
+        <jms:reference-file line="92">BookToolBundle/Controller/ContactController.php</jms:reference-file>
+        <jms:reference-file line="91">BookToolBundle/Controller/ContactSocialNetworkLinkController.php</jms:reference-file>
+        <jms:reference-file line="91">BookToolBundle/Controller/CountryController.php</jms:reference-file>
+        <jms:reference-file line="91">BookToolBundle/Controller/EquipmentController.php</jms:reference-file>
+        <jms:reference-file line="91">BookToolBundle/Controller/EventController.php</jms:reference-file>
+        <jms:reference-file line="92">BookToolBundle/Controller/EventTypeController.php</jms:reference-file>
+        <jms:reference-file line="92">BookToolBundle/Controller/ExperienceController.php</jms:reference-file>
+        <jms:reference-file line="91">BookToolBundle/Controller/ExperienceJobController.php</jms:reference-file>
+        <jms:reference-file line="92">BookToolBundle/Controller/HearAboutController.php</jms:reference-file>
+        <jms:reference-file line="92">BookToolBundle/Controller/HistoryController.php</jms:reference-file>
+        <jms:reference-file line="92">BookToolBundle/Controller/MigrationVersionsController.php</jms:reference-file>
+        <jms:reference-file line="92">BookToolBundle/Controller/PageController.php</jms:reference-file>
+        <jms:reference-file line="92">BookToolBundle/Controller/ProjectController.php</jms:reference-file>
+        <jms:reference-file line="92">BookToolBundle/Controller/ProjectCrewController.php</jms:reference-file>
+        <jms:reference-file line="92">BookToolBundle/Controller/ProjectRoleController.php</jms:reference-file>
+        <jms:reference-file line="92">BookToolBundle/Controller/ProjectUploadController.php</jms:reference-file>
+        <jms:reference-file line="92">BookToolBundle/Controller/ProjectVendorClientLinkController.php</jms:reference-file>
+        <jms:reference-file line="92">BookToolBundle/Controller/ReferenceController.php</jms:reference-file>
+        <jms:reference-file line="92">BookToolBundle/Controller/SocialNetworkController.php</jms:reference-file>
+        <jms:reference-file line="92">BookToolBundle/Controller/StateController.php</jms:reference-file>
+        <jms:reference-file line="92">BookToolBundle/Controller/StatusController.php</jms:reference-file>
+        <jms:reference-file line="92">BookToolBundle/Controller/UnionsController.php</jms:reference-file>
+        <jms:reference-file line="100">BookToolBundle/Controller/UserCityWorkLinkController.php</jms:reference-file>
+        <jms:reference-file line="95">BookToolBundle/Controller/UserClearanceLinkController.php</jms:reference-file>
+        <jms:reference-file line="99">BookToolBundle/Controller/UserController.php</jms:reference-file>
+        <jms:reference-file line="95">BookToolBundle/Controller/UserExperienceJobLinkController.php</jms:reference-file>
+        <jms:reference-file line="95">BookToolBundle/Controller/UserExperienceLinkController.php</jms:reference-file>
+        <jms:reference-file line="92">BookToolBundle/Controller/UserRecoveryPasswordHashController.php</jms:reference-file>
+        <jms:reference-file line="100">BookToolBundle/Controller/UserRentalLinkController.php</jms:reference-file>
+        <jms:reference-file line="110">BookToolBundle/Controller/UserSocialNetworkLinkController.php</jms:reference-file>
+        <jms:reference-file line="95">BookToolBundle/Controller/UserUnionLinkController.php</jms:reference-file>
+        <jms:reference-file line="92">BookToolBundle/Controller/VendorSocialNetworkController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="f6fdbe48dc54dd86f63097a03bd24094dedd713a" resname="Delete">
+        <source>Delete</source>
+        <target>Delete</target>
+        <jms:reference-file line="248">BookToolBundle/Controller/UserCityWorkLinkController.php</jms:reference-file>
+        <jms:reference-file line="243">BookToolBundle/Controller/UserClearanceLinkController.php</jms:reference-file>
+        <jms:reference-file line="243">BookToolBundle/Controller/UserExperienceJobLinkController.php</jms:reference-file>
+        <jms:reference-file line="243">BookToolBundle/Controller/UserExperienceLinkController.php</jms:reference-file>
+        <jms:reference-file line="247">BookToolBundle/Controller/UserRentalLinkController.php</jms:reference-file>
+        <jms:reference-file line="258">BookToolBundle/Controller/UserSocialNetworkLinkController.php</jms:reference-file>
+        <jms:reference-file line="243">BookToolBundle/Controller/UserUnionLinkController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="65a1b0f2af50b84581460267dc155990a9c41ef5" resname="Enter new Password ">
+        <source>Enter new Password </source>
+        <target>Enter new Password </target>
+        <jms:reference-file line="23">BookToolBundle/Form/UserPasswordType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="93ffc1356bc0d52bdd17260ec64e88dd690ed841" resname="Repeat Password ">
+        <source>Repeat Password </source>
+        <target>Repeat Password </target>
+        <jms:reference-file line="24">BookToolBundle/Form/UserPasswordType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="fb91e24fa52d8d2b32937bf04d843f730319a902" resname="Update">
+        <source>Update</source>
+        <target>Update</target>
+        <jms:reference-file line="167">BookToolBundle/Controller/BookController.php</jms:reference-file>
+        <jms:reference-file line="173">BookToolBundle/Controller/BookTypeController.php</jms:reference-file>
+        <jms:reference-file line="166">BookToolBundle/Controller/ChapterController.php</jms:reference-file>
+        <jms:reference-file line="164">BookToolBundle/Controller/CityController.php</jms:reference-file>
+        <jms:reference-file line="167">BookToolBundle/Controller/ClearanceController.php</jms:reference-file>
+        <jms:reference-file line="165">BookToolBundle/Controller/ClientVendorController.php</jms:reference-file>
+        <jms:reference-file line="167">BookToolBundle/Controller/ClientVendorTypeController.php</jms:reference-file>
+        <jms:reference-file line="167">BookToolBundle/Controller/ContactController.php</jms:reference-file>
+        <jms:reference-file line="167">BookToolBundle/Controller/ContactSocialNetworkLinkController.php</jms:reference-file>
+        <jms:reference-file line="167">BookToolBundle/Controller/CountryController.php</jms:reference-file>
+        <jms:reference-file line="165">BookToolBundle/Controller/EquipmentController.php</jms:reference-file>
+        <jms:reference-file line="167">BookToolBundle/Controller/EventController.php</jms:reference-file>
+        <jms:reference-file line="168">BookToolBundle/Controller/EventTypeController.php</jms:reference-file>
+        <jms:reference-file line="170">BookToolBundle/Controller/ExperienceController.php</jms:reference-file>
+        <jms:reference-file line="167">BookToolBundle/Controller/ExperienceJobController.php</jms:reference-file>
+        <jms:reference-file line="168">BookToolBundle/Controller/HearAboutController.php</jms:reference-file>
+        <jms:reference-file line="169">BookToolBundle/Controller/HistoryController.php</jms:reference-file>
+        <jms:reference-file line="167">BookToolBundle/Controller/MigrationVersionsController.php</jms:reference-file>
+        <jms:reference-file line="172">BookToolBundle/Controller/PageController.php</jms:reference-file>
+        <jms:reference-file line="170">BookToolBundle/Controller/ProjectController.php</jms:reference-file>
+        <jms:reference-file line="168">BookToolBundle/Controller/ProjectCrewController.php</jms:reference-file>
+        <jms:reference-file line="168">BookToolBundle/Controller/ProjectRoleController.php</jms:reference-file>
+        <jms:reference-file line="169">BookToolBundle/Controller/ProjectUploadController.php</jms:reference-file>
+        <jms:reference-file line="168">BookToolBundle/Controller/ProjectVendorClientLinkController.php</jms:reference-file>
+        <jms:reference-file line="168">BookToolBundle/Controller/ReferenceController.php</jms:reference-file>
+        <jms:reference-file line="168">BookToolBundle/Controller/SocialNetworkController.php</jms:reference-file>
+        <jms:reference-file line="168">BookToolBundle/Controller/StateController.php</jms:reference-file>
+        <jms:reference-file line="168">BookToolBundle/Controller/StatusController.php</jms:reference-file>
+        <jms:reference-file line="168">BookToolBundle/Controller/UnionsController.php</jms:reference-file>
+        <jms:reference-file line="179">BookToolBundle/Controller/UserCityWorkLinkController.php</jms:reference-file>
+        <jms:reference-file line="174">BookToolBundle/Controller/UserClearanceLinkController.php</jms:reference-file>
+        <jms:reference-file line="290">BookToolBundle/Controller/UserController.php</jms:reference-file>
+        <jms:reference-file line="644">BookToolBundle/Controller/UserController.php</jms:reference-file>
+        <jms:reference-file line="174">BookToolBundle/Controller/UserExperienceJobLinkController.php</jms:reference-file>
+        <jms:reference-file line="174">BookToolBundle/Controller/UserExperienceLinkController.php</jms:reference-file>
+        <jms:reference-file line="168">BookToolBundle/Controller/UserRecoveryPasswordHashController.php</jms:reference-file>
+        <jms:reference-file line="178">BookToolBundle/Controller/UserRentalLinkController.php</jms:reference-file>
+        <jms:reference-file line="189">BookToolBundle/Controller/UserSocialNetworkLinkController.php</jms:reference-file>
+        <jms:reference-file line="174">BookToolBundle/Controller/UserUnionLinkController.php</jms:reference-file>
+        <jms:reference-file line="168">BookToolBundle/Controller/VendorSocialNetworkController.php</jms:reference-file>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

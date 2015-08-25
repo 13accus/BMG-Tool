@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file date="2015-04-30T13:52:17Z" source-language="en" target-language="es" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="69c9a6e2707c753f8dc167ddd54f2e290aa55f26" resname="add_new">
+        <source>add_new</source>
+        <target state="new">add_new</target>
+        <jms:reference-file line="37">views/UserClearanceLink/index.html.twig</jms:reference-file>
+        <jms:reference-file line="37">views/UserExperienceJobLink/index.html.twig</jms:reference-file>
+        <jms:reference-file line="37">views/UserExperienceLink/index.html.twig</jms:reference-file>
+        <jms:reference-file line="38">views/UserUnionLink/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="d0278de5f6e5df29d9c928bcb6d5a285ea17ce11" resname="attention">
+        <source>attention</source>
+        <target state="new">attention</target>
+        <jms:reference-file line="207">BookToolBundle/Controller/LoginController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="3e1d80c4b2752d6c5adf437008c4c5f8cca8a618" resname="btn_back">
+        <source>btn_back</source>
+        <target state="new">btn_back</target>
+        <jms:reference-file line="150">views/Login/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="2773390d179d4f5c7e44c3a419dc550d8101d098" resname="btn_feedback">
+        <source>btn_feedback</source>
+        <target state="new">btn_feedback</target>
+        <jms:reference-file line="58">views/Layout/footer.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="2081ea97bd1b078b018d9d447e274e4f77e17dc1" resname="btn_submit">
+        <source>btn_submit</source>
+        <target state="new">btn_submit</target>
+        <jms:reference-file line="156">views/Login/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="521307ddb67a4abc14248801dae5e5989aca76c1" resname="copyright">
+        <source>copyright</source>
+        <target><![CDATA[2015 &copy BroadCast MgMt Group]]></target>
+        <jms:reference-file line="57">views/Email/email_already_exists.html.twig</jms:reference-file>
+        <jms:reference-file line="53">views/Email/email_updated.html.twig</jms:reference-file>
+        <jms:reference-file line="4">views/Layout/footer.html.twig</jms:reference-file>
+        <jms:reference-file line="60">views/Login/email_not_found.html.twig</jms:reference-file>
+        <jms:reference-file line="60">views/Login/password_recovery_confirmation.html.twig</jms:reference-file>
+        <jms:reference-file line="69">views/Login/password_recovery_invalid_hash.html.twig</jms:reference-file>
+        <jms:reference-file line="76">views/Login/password_recovery_success.html.twig</jms:reference-file>
+        <jms:reference-file line="76">views/Register/account_activated.html.twig</jms:reference-file>
+        <jms:reference-file line="59">views/Register/account_alreaday_exist.html.twig</jms:reference-file>
+        <jms:reference-file line="60">views/Register/account_created_confirmation.html.twig</jms:reference-file>
+        <jms:reference-file line="120">views/Register/register.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="9485989ff514b5106b7738850fd73c23e8c1e3f7" resname="delete">
+        <source>delete</source>
+        <target state="new">delete</target>
+        <jms:reference-file line="47">views/UserClearanceLink/index.html.twig</jms:reference-file>
+        <jms:reference-file line="56">views/UserClearanceLink/index.html.twig</jms:reference-file>
+        <jms:reference-file line="49">views/UserExperienceJobLink/index.html.twig</jms:reference-file>
+        <jms:reference-file line="58">views/UserExperienceJobLink/index.html.twig</jms:reference-file>
+        <jms:reference-file line="50">views/UserExperienceLink/index.html.twig</jms:reference-file>
+        <jms:reference-file line="60">views/UserExperienceLink/index.html.twig</jms:reference-file>
+        <jms:reference-file line="50">views/UserUnionLink/index.html.twig</jms:reference-file>
+        <jms:reference-file line="59">views/UserUnionLink/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="9ead47a82a0d25985f22f10651d1f93b3abba317" resname="edit">
+        <source>edit</source>
+        <target state="new">edit</target>
+        <jms:reference-file line="46">views/UserClearanceLink/index.html.twig</jms:reference-file>
+        <jms:reference-file line="55">views/UserClearanceLink/index.html.twig</jms:reference-file>
+        <jms:reference-file line="48">views/UserExperienceJobLink/index.html.twig</jms:reference-file>
+        <jms:reference-file line="57">views/UserExperienceJobLink/index.html.twig</jms:reference-file>
+        <jms:reference-file line="49">views/UserExperienceLink/index.html.twig</jms:reference-file>
+        <jms:reference-file line="59">views/UserExperienceLink/index.html.twig</jms:reference-file>
+        <jms:reference-file line="49">views/UserUnionLink/index.html.twig</jms:reference-file>
+        <jms:reference-file line="58">views/UserUnionLink/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="67d090f9442c5ce84fd5b4855c8ec3562ce299cb" resname="feedback_invitation">
+        <source>feedback_invitation</source>
+        <target state="new">feedback_invitation</target>
+        <jms:reference-file line="61">views/Layout/footer.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="66d60d87acdb36cbce554c116b16c9bb61a0cfcf" resname="hello_message">
+        <source>hello_message</source>
+        <target state="new">hello_message</target>
+        <jms:reference-file line="53">views/Register/account_created_confirmation.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="725e5ed60ea63b45d2c6610a0f874fd455ee2164" resname="oops">
+        <source>oops</source>
+        <target state="new">oops</target>
+        <jms:reference-file line="30">BookToolBundle/Controller/LoginController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="1e01d215bc098e7f5225c6dae6edb189ed879b5f" resname="rate">
+        <source>rate</source>
+        <target state="new">rate</target>
+        <jms:reference-file line="48">views/UserExperienceLink/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="3559d7accf00360971961ca18989adc0614089c0" resname="search">
+        <source>search</source>
+        <target state="new">search</target>
+        <jms:reference-file line="15">views/Layout/breadcrumb.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="f04e70463f35bf97bbc9b3a8e5bf7e8d31036480" resname="site_title">
+        <source>site_title</source>
+        <target>BMG Tool</target>
+        <jms:reference-file line="41">views/Email/email_already_exists.html.twig</jms:reference-file>
+        <jms:reference-file line="41">views/Email/email_updated.html.twig</jms:reference-file>
+        <jms:reference-file line="2">views/Layout/head.html.twig</jms:reference-file>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

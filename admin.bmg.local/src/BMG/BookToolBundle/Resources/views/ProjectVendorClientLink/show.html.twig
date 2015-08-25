@@ -1,0 +1,31 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>ProjectVendorClientLink</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Projectvendorclientlinkdatetime</th>
+                <td>{{ entity.projectVendorClientLinkDatetime|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Projectvendorclientlinkid</th>
+                <td>{{ entity.projectVendorClientLinkId }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('projectvendorclientlink') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('projectvendorclientlink_edit', { 'id': entity.projectVendorClientLinkId }) }}">
+            Edit
+        </a>
+    </li>
+</ul>
+{% endblock %}

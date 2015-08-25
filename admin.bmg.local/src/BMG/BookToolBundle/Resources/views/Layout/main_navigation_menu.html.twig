@@ -1,0 +1,24 @@
+<ul class="main-navigation-menu">
+	<li class="{% if "bmg_book_tool_welcome" ==  app.request.attributes.get('_route') %}active{% endif %}"</span>
+		<a href="{{ path('bmg_book_tool_welcome') }}"><i class="clip-home-2"></i>
+			<span class="title"> {% trans from "left_menu" %}dashboard{% endtrans %} </span>{% if "bmg_book_tool_welcome" ==  app.request.attributes.get('_route') %}<span class="selected"></span>{% endif %}
+		</a>
+	</li>
+	
+	<li class="{% if "user_show" ==  app.request.attributes.get('_route') %}active{% endif %}"</span>
+		<a href="{{ path('user_profile') }}"><i class="clip-user"></i>
+			<span class="title"> {% trans from "left_menu" %}profile{% endtrans %} </span>{% if "user_show" ==  app.request.attributes.get('_route') %}<span class="selected"></span>{% endif %}
+		</a>
+	</li>
+
+    {% if app.session.get('isAdmin') %}
+
+        <li class="{% if "user" ==  app.request.attributes.get('_route') %}active{% endif %}"</span>
+		<a href="{{ path('user') }}"><i class="clip-users-2"></i>
+			<span class="title"> {% trans from "left_menu" %}admin_user_list{% endtrans %} </span>{% if "user" ==  app.request.attributes.get('_route') %}<span class="selected"></span>{% endif %}
+		</a>
+	</li>
+
+    {% endif %}
+
+</ul>

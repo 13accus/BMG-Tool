@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file date="2015-04-30T13:52:17Z" source-language="en" target-language="es" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="ffc179813d50b739dc33e422b558ff59620fe660" resname="clearance">
+        <source>clearance</source>
+        <target state="new">clearance</target>
+        <jms:reference-file line="21">views/User/show.html.twig</jms:reference-file>
+        <jms:reference-file line="23">views/UserClearanceLink/index.html.twig</jms:reference-file>
+        <jms:reference-file line="45">views/UserClearanceLink/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="b45a583afc25a5e270f785018159d37aca02f909" resname="clearance_description">
+        <source>clearance_description</source>
+        <target state="new">clearance_description</target>
+        <jms:reference-file line="34">views/UserClearanceLink/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="9acfd2ccf5a5383b629958191d399abefc0e9350" resname="edit_bio">
+        <source>edit_bio</source>
+        <target state="new">edit_bio</target>
+        <jms:reference-file line="17">views/User/show.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="3ea060688d0ba66c0125dca2df1d148e2fd87c7e" resname="edit_profile">
+        <source>edit_profile</source>
+        <target state="new">edit_profile</target>
+        <jms:reference-file line="16">views/User/show.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="f96da029a6daa4321d73225f5e2ccda25f55816b" resname="experience">
+        <source>experience</source>
+        <target state="new">experience</target>
+        <jms:reference-file line="18">views/User/show.html.twig</jms:reference-file>
+        <jms:reference-file line="23">views/UserExperienceLink/index.html.twig</jms:reference-file>
+        <jms:reference-file line="47">views/UserExperienceLink/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="51207202d82df2bdad6284bf7c0883799a96614c" resname="experience_description">
+        <source>experience_description</source>
+        <target state="new">experience_description</target>
+        <jms:reference-file line="34">views/UserExperienceLink/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="ea86d55f6e8d1067a1fcd38e0896db55b3f57f39" resname="industries">
+        <source>industries</source>
+        <target state="new">industries</target>
+        <jms:reference-file line="19">views/User/show.html.twig</jms:reference-file>
+        <jms:reference-file line="23">views/UserExperienceJobLink/index.html.twig</jms:reference-file>
+        <jms:reference-file line="47">views/UserExperienceJobLink/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="8c06f0a0d1243229608286c319ada67c70edbd33" resname="industries_description">
+        <source>industries_description</source>
+        <target state="new">industries_description</target>
+        <jms:reference-file line="34">views/UserExperienceJobLink/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="fed758b7a842befdf49b6ed6ad47249f81f1bbb1" resname="overview">
+        <source>overview</source>
+        <target state="new">overview</target>
+        <jms:reference-file line="15">views/User/show.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="425d945b704e9b9e6043cff2bffecc03ab39febc" resname="union_description">
+        <source>union_description</source>
+        <target state="new">union_description</target>
+        <jms:reference-file line="34">views/UserUnionLink/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="b0c77b22b4ae5f68687b2320f8889b16f8ab80f6" resname="unions">
+        <source>unions</source>
+        <target state="new">unions</target>
+        <jms:reference-file line="20">views/User/show.html.twig</jms:reference-file>
+        <jms:reference-file line="23">views/UserUnionLink/index.html.twig</jms:reference-file>
+        <jms:reference-file line="48">views/UserUnionLink/index.html.twig</jms:reference-file>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="BMG\BookToolBundle\Entity\State" table="state">
+    <indexes>
+      <index name="fk_state_country1_idx" columns="country_id"/>
+    </indexes>
+    <id name="stateId" type="integer" column="state_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="stateCode" type="string" column="state_code" length="2" nullable="false"/>
+    <field name="stateName" type="string" column="state_name" length="45" nullable="false"/>
+    <many-to-one field="country" target-entity="Country">
+      <join-columns>
+        <join-column name="country_id" referenced-column-name="country_id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

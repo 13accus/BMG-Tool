@@ -1,0 +1,26 @@
+city:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:City:index" }
+
+city_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:City:show" }
+
+city_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:City:new" }
+
+city_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:City:create" }
+    requirements: { _method: post }
+
+city_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:City:edit" }
+
+city_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:City:update" }
+    requirements: { _method: post|put }
+

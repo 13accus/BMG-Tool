@@ -1,0 +1,32 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>UserRentalLink</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Userrentallinkfee</th>
+                <td>{{ entity.userRentalLinkFee }}</td>
+            </tr>
+            <tr>
+                <th>Rentalid</th>
+                <td>{{ entity.rentalId }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('userrentallink') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('userrentallink_edit', { 'id': entity.rentalId }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>UserSocialNetworkLink</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Usersocialnetworkaccount</th>
+                <td>{{ entity.userSocialNetworkAccount }}</td>
+            </tr>
+            <tr>
+                <th>Usersocialnetworklinkdatetime</th>
+                <td>{{ entity.userSocialNetworkLinkDatetime|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Usersocialnetworkdatetime</th>
+                <td>{{ entity.userSocialNetworkDatetime|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Usersocialnetworklinkid</th>
+                <td>{{ entity.userSocialNetworkLinkId }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('usersocialnetworklink') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('usersocialnetworklink_edit', { 'id': entity.userSocialNetworkLinkId }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

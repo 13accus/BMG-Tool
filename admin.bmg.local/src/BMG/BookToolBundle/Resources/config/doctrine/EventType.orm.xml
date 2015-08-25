@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="BMG\BookToolBundle\Entity\EventType" table="event_type">
+    <id name="eventTypeId" type="integer" column="event_type_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="eventTypeName" type="string" column="event_type_name" length="45" nullable="true"/>
+  </entity>
+</doctrine-mapping>

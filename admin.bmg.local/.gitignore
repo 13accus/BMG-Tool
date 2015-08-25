@@ -1,0 +1,13 @@
+/.buildpath
+/.project
+/.settings/
+/app/config/parameters.yml
+/vendor/
+/app/cache/
+/app/logs/
+/app/sessions/
+/web/bundles
+/web/assets
+web/assets/*
+/composer.lock
+/.idea/

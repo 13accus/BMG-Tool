@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file date="2015-04-30T13:54:09Z" source-language="en" target-language="en" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="cda7437e914c4d8245ac5d955f7d88793ec0b8d2" resname="activate_account">
+        <source>activate_account</source>
+        <target>Please activate your BMG account</target>
+        <jms:reference-file line="141">BookToolBundle/Controller/RegisterController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="46be520168662add8a2cfb7b55745c0bef4114a5" resname="email_invitation_subject">
+        <source>email_invitation_subject</source>
+        <target>Welcome to BMGoLive !</target>
+        <jms:reference-file line="90">BookToolBundle/Controller/EmailController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="c1100d40e65f1c5f50bb5c8bbcfd6460896d9f52" resname="email_modified_error_message">
+        <source>email_modified_error_message</source>
+        <target>The email address you set is already in use, please try using a different one.</target>
+        <jms:reference-file line="385">BookToolBundle/Controller/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="250934688ca44ff3fc5e33f508d03bef70477c6a" resname="email_modified_error_title">
+        <source>email_modified_error_title</source>
+        <target>Oops</target>
+        <jms:reference-file line="384">BookToolBundle/Controller/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="cf072af196498bdfa0aef0847e2b5a4d3343cdaf" resname="email_modified_success_message">
+        <source>email_modified_success_message</source>
+        <target>Your email were successfully updated in our system. Please check your inbox for the confirmation email..</target>
+        <jms:reference-file line="418">BookToolBundle/Controller/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="ffae01b0a4c5b2a93def9252c6a2e53f3371dc79" resname="email_modified_success_title">
+        <source>email_modified_success_title</source>
+        <target>Well done!</target>
+        <jms:reference-file line="417">BookToolBundle/Controller/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="df9b8b98f6668a3472b1ccc9b6f48343d00b63f2" resname="email_reset_password">
+        <source>email_reset_password</source>
+        <target>Please reset your password</target>
+        <jms:reference-file line="174">BookToolBundle/Controller/LoginController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="90fc28facb2ece12e21e497402eb896887f4505e" resname="email_title_password_reset_success">
+        <source>email_title_password_reset_success</source>
+        <target>Success !</target>
+        <jms:reference-file line="304">BookToolBundle/Controller/LoginController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="e90e6d3931fc72c242672fbcf9e71762b5ab0a4a" resname="email_verification_subject">
+        <source>email_verification_subject</source>
+        <target>Please verify your email address</target>
+        <jms:reference-file line="410">BookToolBundle/Controller/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="6546438a1098775210254d10e2d523eb92de31be" resname="invalid_email_address_content">
+        <source>invalid_email_address_content</source>
+        <target>The email address your specified is invalid!</target>
+        <jms:reference-file line="369">BookToolBundle/Controller/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="97552628149b11c5d6e77e154eb67014f0915160" resname="invalid_email_address_title">
+        <source>invalid_email_address_title</source>
+        <target>Oh no!</target>
+        <jms:reference-file line="368">BookToolBundle/Controller/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="25147a5ee571c3981de06bcf2952521c1af200cc" resname="profile_update_success_message">
+        <source>profile_update_success_message</source>
+        <target>Your profile has been updated successfully</target>
+        <jms:reference-file line="585">BookToolBundle/Controller/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="eec893fda77d1fbe2d740e016dd8baef00c3ab9e" resname="profile_update_success_title">
+        <source>profile_update_success_title</source>
+        <target>Great!</target>
+        <jms:reference-file line="584">BookToolBundle/Controller/UserController.php</jms:reference-file>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

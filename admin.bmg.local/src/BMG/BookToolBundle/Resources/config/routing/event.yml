@@ -1,0 +1,26 @@
+event:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:Event:index" }
+
+event_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:Event:show" }
+
+event_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:Event:new" }
+
+event_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:Event:create" }
+    requirements: { _method: post }
+
+event_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:Event:edit" }
+
+event_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:Event:update" }
+    requirements: { _method: post|put }
+

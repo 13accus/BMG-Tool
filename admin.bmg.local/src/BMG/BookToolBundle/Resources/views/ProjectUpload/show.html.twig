@@ -1,0 +1,44 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>ProjectUpload</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Projectuploadname</th>
+                <td>{{ entity.projectUploadName }}</td>
+            </tr>
+            <tr>
+                <th>Projectuploaddescription</th>
+                <td>{{ entity.projectUploadDescription }}</td>
+            </tr>
+            <tr>
+                <th>Projectuploadfilepath</th>
+                <td>{{ entity.projectUploadFilePath }}</td>
+            </tr>
+            <tr>
+                <th>Projectuploaddatetime</th>
+                <td>{{ entity.projectUploadDatetime|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Projectuploadid</th>
+                <td>{{ entity.projectUploadId }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('projectupload') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('projectupload_edit', { 'id': entity.projectUploadId }) }}">
+            Edit
+        </a>
+    </li>
+
+</ul>
+{% endblock %}

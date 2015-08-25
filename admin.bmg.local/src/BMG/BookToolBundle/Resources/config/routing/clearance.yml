@@ -1,0 +1,25 @@
+clearance:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:Clearance:index" }
+
+clearance_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:Clearance:show" }
+
+clearance_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:Clearance:new" }
+
+clearance_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:Clearance:create" }
+    requirements: { _method: post }
+
+clearance_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:Clearance:edit" }
+
+clearance_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:Clearance:update" }
+    requirements: { _method: post|put }

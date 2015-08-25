@@ -1,0 +1,25 @@
+projectcrew:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:ProjectCrew:index" }
+
+projectcrew_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:ProjectCrew:show" }
+
+projectcrew_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:ProjectCrew:new" }
+
+projectcrew_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:ProjectCrew:create" }
+    requirements: { _method: post }
+
+projectcrew_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:ProjectCrew:edit" }
+
+projectcrew_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:ProjectCrew:update" }
+    requirements: { _method: post|put }

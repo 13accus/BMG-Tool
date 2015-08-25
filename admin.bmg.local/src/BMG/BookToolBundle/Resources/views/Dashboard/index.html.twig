@@ -1,0 +1,86 @@
+<div class="row">
+						<div class="col-md-12">
+
+                            {% if message_content %}
+                                <div class="alert alert-{{ message_status }}">
+                                    <button data-dismiss="alert" class="close">x</button>
+                                    <i class="fa fa-check-circle"></i>
+                                    <strong>{{ message_title }}</strong> {{ message_content }}.
+                                </div>
+                            {% endif %}
+
+							<!-- start: GENERAL PANEL -->
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<i class="clip-user"></i>
+                                    {{ attribute(app.session.get('user'), 'userFirstname') }}'s profile!
+									<div class="panel-tools">
+
+										<a class="btn btn-xs btn-link panel-refresh" href="#">
+											<i class="fa fa-refresh"></i>
+										</a>
+
+
+									</div>
+								</div>
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-md-6">
+                                            {% if profileCompletionPercentaje < 100 %}
+											<h3>{{ attribute(app.session.get('user'), 'userFirstname') }}, your <a href="{{ path('user_profile') }}">profile</a> is {{ profileCompletionPercentaje }}% complete !</h3>
+											<div class="progress progress-striped active progress-sm content">
+												<div aria-valuemax="100" aria-valuemin="0" role="progressbar" class="progress-bar progress-bar-success step-bar" style="width: {{ profileCompletionPercentaje }}%;">
+													<span class="sr-only"> 0% Complete (success)</span>
+												</div>
+											</div>
+											<p class="lead">
+                                                {% trans from "profile" %}profile_not_complete{% endtrans %}
+                                            </p>
+                                            {% else %}
+                                                <h3>{% trans from "profile" %}high_five{% endtrans %} {{ attribute(app.session.get('user'), 'userFirstname') }}!</h3>
+                                                <div class="progress progress-striped active progress-sm content">
+                                                    <div aria-valuemax="100" aria-valuemin="0" role="progressbar" class="progress-bar progress-bar-success step-bar" style="width: 100%;">
+                                                    </div>
+                                                </div>
+                                                <p class="lead">{% trans from "profile" %}profile_complete{% endtrans %}</p>
+
+                                            {% endif %}
+
+                                            {% if profileCompletionPercentaje < 100 %}
+                                            <div class="col-sm-12">
+
+                                                <p> {% trans from "profile" %}missing_fields{% endtrans %}</p>
+
+                                                <table class="table">
+                                                    <tbody>
+                                                    {% for e in missing_fields %}
+                                                        <tr>
+                                                            <td><a href="{{ path('user_profile') }}">{{ e }}</a></td>
+                                                        </tr>
+                                                    {% endfor %}
+
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+
+                                            {% endif %}
+
+                                            <p>{% trans from "profile" %}make_sure_you_follow_us{% endtrans %} <a target="_blank" href="https://www.facebook.com/BroadcastManagementGroup">Facebook</a>, <a target="_blank" href="https://twitter.com/Broadcast_Mgmt">Twitter</a> and <a target="_blank" href="http://www.linkedin.com/company/broadcast-management-group-llc?trk=hb_tab_compy_id_219976">LinkedIn</a> so you can see what we’ve been working on. <br><br>We hope to be able to work together soon.</p>
+
+
+
+                                        </div>
+										<div class="col-md-6">
+											<h3>{% trans from "profile" %}tweets_by{% endtrans %} @Broadcast_Mgmt</h3>
+											<p>
+                                                <a class="twitter-timeline" href="https://twitter.com/Broadcast_Mgmt" data-widget-id="590195921155067905">{% trans from "profile" %}tweets_by{% endtrans %} @Broadcast_Mgmt</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                                            </p>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<!-- end: GENERAL PANEL -->
+						</div>
+					</div>

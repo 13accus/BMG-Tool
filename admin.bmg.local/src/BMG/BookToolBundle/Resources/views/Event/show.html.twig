@@ -1,0 +1,47 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Event</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Eventdatetime</th>
+                <td>{{ entity.eventDatetime|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Eventip</th>
+                <td>{{ entity.eventIp }}</td>
+            </tr>
+            <tr>
+                <th>Eventdescription</th>
+                <td>{{ entity.eventDescription }}</td>
+            </tr>
+            <tr>
+                <th>Eventcontroller</th>
+                <td>{{ entity.eventController }}</td>
+            </tr>
+            <tr>
+                <th>Eventextra</th>
+                <td>{{ entity.eventExtra }}</td>
+            </tr>
+            <tr>
+                <th>Eventid</th>
+                <td>{{ entity.eventId }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('event') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('event_edit', { 'id': entity.eventId }) }}">
+            Edit
+        </a>
+    </li>
+</ul>
+{% endblock %}

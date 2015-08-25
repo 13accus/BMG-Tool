@@ -1,0 +1,26 @@
+chapter:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:Chapter:index" }
+
+chapter_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:Chapter:show" }
+
+chapter_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:Chapter:new" }
+
+chapter_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:Chapter:create" }
+    requirements: { _method: post }
+
+chapter_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:Chapter:edit" }
+
+chapter_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:Chapter:update" }
+    requirements: { _method: post|put }
+

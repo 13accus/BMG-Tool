@@ -1,0 +1,41 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Clearance list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Clearancedesc</th>
+                <th>Clearanceid</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('clearance_show', { 'id': entity.clearanceId }) }}">{{ entity.clearanceDesc }}</a></td>
+                <td>{{ entity.clearanceId }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('clearance_show', { 'id': entity.clearanceId }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('clearance_edit', { 'id': entity.clearanceId }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('clearance_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

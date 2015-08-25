@@ -1,0 +1,64 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>ClientVendor</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Clientvendorname</th>
+                <td>{{ entity.clientVendorName }}</td>
+            </tr>
+            <tr>
+                <th>Clientvendoraddress1</th>
+                <td>{{ entity.clientVendorAddress1 }}</td>
+            </tr>
+            <tr>
+                <th>Clientvendoraddress2</th>
+                <td>{{ entity.clientVendorAddress2 }}</td>
+            </tr>
+            <tr>
+                <th>Clientvendorzipcode</th>
+                <td>{{ entity.clientVendorZipcode }}</td>
+            </tr>
+            <tr>
+                <th>Clientvendorlogo</th>
+                <td>{{ entity.clientVendorLogo }}</td>
+            </tr>
+            <tr>
+                <th>Clientvendorwebsite</th>
+                <td>{{ entity.clientVendorWebsite }}</td>
+            </tr>
+            <tr>
+                <th>Clientvendormainphone</th>
+                <td>{{ entity.clientVendorMainPhone }}</td>
+            </tr>
+            <tr>
+                <th>Clientvendormainemail</th>
+                <td>{{ entity.clientVendorMainEmail }}</td>
+            </tr>
+            <tr>
+                <th>Clientvendortimezone</th>
+                <td>{{ entity.clientVendorTimezone }}</td>
+            </tr>
+            <tr>
+                <th>Clientvendorid</th>
+                <td>{{ entity.clientVendorId }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('clientvendor') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('clientvendor_edit', { 'id': entity.ClientVendorid }) }}">
+            Edit
+        </a>
+    </li>
+  
+</ul>
+{% endblock %}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="BMG\BookToolBundle\Entity\UserRentalLink" table="user_rental_link">
+    <indexes>
+      <index name="fk_rental_user1_idx" columns="user_id"/>
+      <index name="fk_user_rental_link_equipment1_idx" columns="equipment_id"/>
+      <index name="fk_user_rental_link_time_period1_idx" columns="time_period_id"/>
+    </indexes>
+    <id name="rentalId" type="bigint" column="rental_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="userRentalLinkFee" type="float" column="user_rental_link_fee" precision="9" scale="2" nullable="false"/>
+    <field name="userRentalLinkDatetime" type="datetime" column="user_rental_link_datetime" nullable="false"/>
+    <many-to-one field="timePeriod" target-entity="TimePeriod">
+      <join-columns>
+        <join-column name="time_period_id" referenced-column-name="time_period_id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="equipment" target-entity="Equipment">
+      <join-columns>
+        <join-column name="equipment_id" referenced-column-name="equipment_id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="user" target-entity="User">
+      <join-columns>
+        <join-column name="user_id" referenced-column-name="user_id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

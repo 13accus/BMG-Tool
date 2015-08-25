@@ -1,0 +1,41 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>ClientVendorType list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Clientvendortypename</th>
+                <th>Clientvendortypeid</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('clientvendortype_show', { 'id': entity.clientVendorTypeId }) }}">{{ entity.clientVendorTypeName }}</a></td>
+                <td>{{ entity.clientVendorTypeId }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('clientvendortype_show', { 'id': entity.clientVendorTypeId }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('clientvendortype_edit', { 'id': entity.clientVendorTypeId }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('clientvendortype_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

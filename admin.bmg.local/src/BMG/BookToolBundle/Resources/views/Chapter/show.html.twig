@@ -1,0 +1,32 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Chapter</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Chapternumber</th>
+                <td>{{ entity.chapterNumber }}</td>
+            </tr>
+            <tr>
+                <th>Chapterid</th>
+                <td>{{ entity.chapterId }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('chapter') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('chapter_edit', { 'id': entity.chapterId}) }}">
+            Edit
+        </a>
+    </li>
+
+</ul>
+{% endblock %}

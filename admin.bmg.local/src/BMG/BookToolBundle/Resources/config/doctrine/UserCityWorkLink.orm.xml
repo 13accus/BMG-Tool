@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="BMG\BookToolBundle\Entity\UserCityWorkLink" table="user_city_work_link">
+    <indexes>
+      <index name="fk_user_city_link_city1_idx" columns="city_id"/>
+      <index name="fk_user_city_link_user1_idx" columns="user_id"/>
+    </indexes>
+    <id name="userCityWorkLinkId" type="integer" column="user_city_work_link_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="userCityWorkLinkDatetime" type="datetime" column="user_city_work_link_datetime" nullable="false"/>
+    <many-to-one field="user" target-entity="User">
+      <join-columns>
+        <join-column name="user_id" referenced-column-name="user_id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="city" target-entity="City">
+      <join-columns>
+        <join-column name="city_id" referenced-column-name="city_id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

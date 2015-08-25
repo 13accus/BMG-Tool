@@ -1,0 +1,26 @@
+equipment:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:Equipment:index" }
+
+equipment_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:Equipment:show" }
+
+equipment_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:Equipment:new" }
+
+equipment_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:Equipment:create" }
+    requirements: { _method: post }
+
+equipment_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:Equipment:edit" }
+
+equipment_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:Equipment:update" }
+    requirements: { _method: post|put }
+

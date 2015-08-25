@@ -1,0 +1,7 @@
+parameters:
+#    bmg_book_tool.example.class: BMG\BookToolBundle\Example
+
+services:
+    common:
+        class: BMG\BookToolBundle\BookToolBundleCommon
+        arguments: ['@service_container']

@@ -1,0 +1,35 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>State</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Statecode</th>
+                <td>{{ entity.stateCode }}</td>
+            </tr>
+            <tr>
+                <th>Statename</th>
+                <td>{{ entity.stateName }}</td>
+            </tr>
+            <tr>
+                <th>Stateid</th>
+                <td>{{ entity.stateId }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('state') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('state_edit', { 'id': entity.stateId }) }}">
+            Edit
+        </a>
+    </li>
+</ul>
+{% endblock %}

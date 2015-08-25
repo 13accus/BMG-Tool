@@ -1,0 +1,41 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>SocialNetwork list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Socialnetworkname</th>
+                <th>Socialnetworkid</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('socialnetwork_show', { 'id': entity.socialNetworkId }) }}">{{ entity.socialNetworkName }}</a></td>
+                <td>{{ entity.socialNetworkId }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('socialnetwork_show', { 'id': entity.socialNetworkId }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('socialnetwork_edit', { 'id': entity.socialNetworkId }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('socialnetwork_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

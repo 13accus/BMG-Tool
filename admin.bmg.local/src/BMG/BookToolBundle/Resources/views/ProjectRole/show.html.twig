@@ -1,0 +1,31 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>ProjectRole</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Rolename</th>
+                <td>{{ entity.roleName }}</td>
+            </tr>
+            <tr>
+                <th>Roleid</th>
+                <td>{{ entity.roleId }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('projectrole') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('projectrole_edit', { 'id': entity.roleId }) }}">
+            Edit
+        </a>
+    </li>
+</ul>
+{% endblock %}

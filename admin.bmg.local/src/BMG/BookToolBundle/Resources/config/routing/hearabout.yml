@@ -1,0 +1,27 @@
+hearabout:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:HearAbout:index" }
+
+hearabout_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:HearAbout:show" }
+
+hearabout_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:HearAbout:new" }
+
+hearabout_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:HearAbout:create" }
+    requirements: { _method: post }
+
+hearabout_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:HearAbout:edit" }
+
+hearabout_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:HearAbout:update" }
+    requirements: { _method: post|put }
+
+

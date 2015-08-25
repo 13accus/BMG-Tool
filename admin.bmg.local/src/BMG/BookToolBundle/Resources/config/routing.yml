@@ -1,0 +1,182 @@
+bmg_book_tool_homepage:
+    path:     /
+    defaults: { _controller: BMGBookToolBundle:Default:index }
+
+bmg_book_tool_welcome:
+    path:     /welcome
+    defaults: { _controller: BMGBookToolBundle:Default:welcome }
+
+bmg_book_tool_dashboard:
+    path:     /dashboard
+    defaults: { _controller: BMGBookToolBundle:Default:dashboard }
+
+register:
+    path:     /register
+    defaults: { _controller: BMGBookToolBundle:Register:register }
+
+doRegister:
+    path:     /doRegister
+    defaults: { _controller: BMGBookToolBundle:Register:doRegister }
+    requirements:
+        methods: POST
+
+BMGBookToolBundle_book:
+    resource: "@BMGBookToolBundle/Resources/config/routing/book.yml"
+    prefix:   /book
+
+BMGBookToolBundle_booktype:
+    resource: "@BMGBookToolBundle/Resources/config/routing/booktype.yml"
+    prefix:   /booktype
+
+BMGBookToolBundle_chapter:
+    resource: "@BMGBookToolBundle/Resources/config/routing/chapter.yml"
+    prefix:   /chapter
+
+BMGBookToolBundle_city:
+    resource: "@BMGBookToolBundle/Resources/config/routing/city.yml"
+    prefix:   /city
+
+BMGBookToolBundle_clearance:
+    resource: "@BMGBookToolBundle/Resources/config/routing/clearance.yml"
+    prefix:   /clearance
+
+BMGBookToolBundle_contact:
+    resource: "@BMGBookToolBundle/Resources/config/routing/contact.yml"
+    prefix:   /contact
+
+BMGBookToolBundle_clientvendor:
+    resource: "@BMGBookToolBundle/Resources/config/routing/clientvendor.yml"
+    prefix:   /clientvendor
+
+BMGBookToolBundle_clientvendortype:
+    resource: "@BMGBookToolBundle/Resources/config/routing/clientvendortype.yml"
+    prefix:   /clientvendortype
+
+BMGBookToolBundle_contactsocialnetworklink:
+    resource: "@BMGBookToolBundle/Resources/config/routing/contactsocialnetworklink.yml"
+    prefix:   /contactsocialnetworklink
+
+BMGBookToolBundle_country:
+    resource: "@BMGBookToolBundle/Resources/config/routing/country.yml"
+    prefix:   /country
+
+BMGBookToolBundle_equipment:
+    resource: "@BMGBookToolBundle/Resources/config/routing/equipment.yml"
+    prefix:   /equipment
+
+BMGBookToolBundle_event:
+    resource: "@BMGBookToolBundle/Resources/config/routing/event.yml"
+    prefix:   /event
+
+BMGBookToolBundle_eventtype:
+    resource: "@BMGBookToolBundle/Resources/config/routing/eventtype.yml"
+    prefix:   /eventtype
+
+BMGBookToolBundle_experience:
+    resource: "@BMGBookToolBundle/Resources/config/routing/experience.yml"
+    prefix:   /experience
+
+BMGBookToolBundle_experiencejob:
+    resource: "@BMGBookToolBundle/Resources/config/routing/experiencejob.yml"
+    prefix:   /experiencejob
+
+BMGBookToolBundle_page:
+    resource: "@BMGBookToolBundle/Resources/config/routing/page.yml"
+    prefix:   /page
+
+
+BMGBookToolBundle_hearabout:
+    resource: "@BMGBookToolBundle/Resources/config/routing/hearabout.yml"
+    prefix:   /hearabout
+
+BMGBookToolBundle_history:
+    resource: "@BMGBookToolBundle/Resources/config/routing/history.yml"
+    prefix:   /history
+
+BMGBookToolBundle_migrationversions:
+    resource: "@BMGBookToolBundle/Resources/config/routing/migrationversions.yml"
+    prefix:   /migrationversions
+
+BMGBookToolBundle_project:
+    resource: "@BMGBookToolBundle/Resources/config/routing/project.yml"
+    prefix:   /project
+
+BMGBookToolBundle_projectcrew:
+    resource: "@BMGBookToolBundle/Resources/config/routing/projectcrew.yml"
+    prefix:   /projectcrew
+
+BMGBookToolBundle_projectrole:
+    resource: "@BMGBookToolBundle/Resources/config/routing/projectrole.yml"
+    prefix:   /projectrole
+
+BMGBookToolBundle_projectupload:
+    resource: "@BMGBookToolBundle/Resources/config/routing/projectupload.yml"
+    prefix:   /projectupload
+
+BMGBookToolBundle_projectvendorclientlink:
+    resource: "@BMGBookToolBundle/Resources/config/routing/projectvendorclientlink.yml"
+    prefix:   /projectvendorclientlink
+
+BMGBookToolBundle_reference:
+    resource: "@BMGBookToolBundle/Resources/config/routing/reference.yml"
+    prefix:   /reference
+
+BMGBookToolBundle_socialnetwork:
+    resource: "@BMGBookToolBundle/Resources/config/routing/socialnetwork.yml"
+    prefix:   /socialnetwork
+
+BMGBookToolBundle_state:
+    resource: "@BMGBookToolBundle/Resources/config/routing/state.yml"
+    prefix:   /state
+
+BMGBookToolBundle_status:
+    resource: "@BMGBookToolBundle/Resources/config/routing/status.yml"
+    prefix:   /status
+
+BMGBookToolBundle_unions:
+    resource: "@BMGBookToolBundle/Resources/config/routing/unions.yml"
+    prefix:   /unions
+
+BMGBookToolBundle_user:
+    resource: "@BMGBookToolBundle/Resources/config/routing/user.yml"
+    prefix:   /user
+
+BMGBookToolBundle_usercityworklink:
+    resource: "@BMGBookToolBundle/Resources/config/routing/usercityworklink.yml"
+    prefix:   /usercityworklink
+
+BMGBookToolBundle_userclearancelink:
+    resource: "@BMGBookToolBundle/Resources/config/routing/userclearancelink.yml"
+    prefix:   /userclearancelink
+
+BMGBookToolBundle_userexperiencejoblink:
+    resource: "@BMGBookToolBundle/Resources/config/routing/userexperiencejoblink.yml"
+    prefix:   /userexperiencejoblink
+
+BMGBookToolBundle_userexperiencelink:
+    resource: "@BMGBookToolBundle/Resources/config/routing/userexperiencelink.yml"
+    prefix:   /userexperiencelink
+
+BMGBookToolBundle_userrecoverypasswordhash:
+    resource: "@BMGBookToolBundle/Resources/config/routing/userrecoverypasswordhash.yml"
+    prefix:   /userrecoverypasswordhash
+
+BMGBookToolBundle_userrentallink:
+    resource: "@BMGBookToolBundle/Resources/config/routing/userrentallink.yml"
+    prefix:   /userrentallink
+
+BMGBookToolBundle_usersocialnetworklink:
+    resource: "@BMGBookToolBundle/Resources/config/routing/usersocialnetworklink.yml"
+    prefix:   /usersocialnetworklink
+
+BMGBookToolBundle_userunionlink:
+    resource: "@BMGBookToolBundle/Resources/config/routing/userunionlink.yml"
+    prefix:   /userunionlink
+
+BMGBookToolBundle_vendorsocialnetwork:
+    resource: "@BMGBookToolBundle/Resources/config/routing/vendorsocialnetwork.yml"
+    prefix:   /vendorsocialnetwork
+
+BMGBookToolBundle_email:
+    resource: "@BMGBookToolBundle/Resources/config/routing/email.yml"
+    prefix:   /email

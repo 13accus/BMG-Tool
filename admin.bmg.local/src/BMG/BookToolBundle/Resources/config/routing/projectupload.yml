@@ -1,0 +1,25 @@
+projectupload:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:ProjectUpload:index" }
+
+projectupload_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:ProjectUpload:show" }
+
+projectupload_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:ProjectUpload:new" }
+
+projectupload_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:ProjectUpload:create" }
+    requirements: { _method: post }
+
+projectupload_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:ProjectUpload:edit" }
+
+projectupload_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:ProjectUpload:update" }
+    requirements: { _method: post|put }

@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file date="2015-04-30T13:52:17Z" source-language="en" target-language="es" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="80d04de51e7f51bd34461d93739a4659a3c8404a" resname="BMGBookToolBundle_api">
+        <source>/api</source>
+        <target state="new">/api</target>
+      </trans-unit>
+      <trans-unit id="00eb60608880b2181cab2bc0bf8fdb0cde7c1a82" resname="BMGBookToolBundle_api_catalog">
+        <source>/api/catalog/{catalog}</source>
+        <target state="new">/api/catalog/{catalog}</target>
+      </trans-unit>
+      <trans-unit id="06a6d7acb084e15dba95234dd4205b8569d6cf96" resname="BMGBookToolBundle_feedback">
+        <source>/{_locale}/feedback</source>
+        <target state="new">/{_locale}/feedback</target>
+      </trans-unit>
+      <trans-unit id="2fad97c326ff9015caada20e0deddce0e363b47e" resname="activateAccount">
+        <source>/activate-account</source>
+        <target state="new">/activate-account</target>
+      </trans-unit>
+      <trans-unit id="fb30f5ca81d3799da9d186be3929969587be5249" resname="bmg_book_tool_dashboard">
+        <source>/{_locale}/dashboard</source>
+        <target state="new">/{_locale}/dashboard</target>
+      </trans-unit>
+      <trans-unit id="12da4024a25782a19f7b67b201a52936afc18019" resname="bmg_book_tool_homepage">
+        <source>/{_locale}/</source>
+        <target state="new">/{_locale}/</target>
+      </trans-unit>
+      <trans-unit id="407b237b32ad4e19830afe978d6c604c04b91e44" resname="bmg_book_tool_welcome">
+        <source>/{_locale}/welcome</source>
+        <target state="new">/{_locale}/welcome</target>
+      </trans-unit>
+      <trans-unit id="e7e694c58cd50e0324ec96918800bc35cd17629b" resname="book">
+        <source>/{_locale}/book/</source>
+        <target state="new">/{_locale}/book/</target>
+      </trans-unit>
+      <trans-unit id="6160a47475b69012a5385268a679297b599849aa" resname="book_create">
+        <source>/{_locale}/book/create</source>
+        <target state="new">/{_locale}/book/create</target>
+      </trans-unit>
+      <trans-unit id="7b9478e997f2558cc1bb92a391af490abea129c7" resname="book_edit">
+        <source>/{_locale}/book/{id}/edit</source>
+        <target state="new">/{_locale}/book/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="8294448fed5e92fca4eb0f28559855280293ff97" resname="book_new">
+        <source>/{_locale}/book/new</source>
+        <target state="new">/{_locale}/book/new</target>
+      </trans-unit>
+      <trans-unit id="f3e77116b34bf26d4505d82c9fc3b51074657155" resname="book_show">
+        <source>/{_locale}/book/{id}/show</source>
+        <target state="new">/{_locale}/book/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="8818f74e6f3aca007ffc0047ead2553da51d0b0b" resname="book_update">
+        <source>/{_locale}/book/{id}/update</source>
+        <target state="new">/{_locale}/book/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="09b41fdce95f8768b34308edc729a3a48714d907" resname="booktype">
+        <source>/{_locale}/booktype/</source>
+        <target state="new">/{_locale}/booktype/</target>
+      </trans-unit>
+      <trans-unit id="705db2a23566fb2841f22891938e59fadceffd9e" resname="booktype_create">
+        <source>/{_locale}/booktype/create</source>
+        <target state="new">/{_locale}/booktype/create</target>
+      </trans-unit>
+      <trans-unit id="979b003f20f8e4ff581bf05d8c9dee869e12685d" resname="booktype_edit">
+        <source>/{_locale}/booktype/{id}/edit</source>
+        <target state="new">/{_locale}/booktype/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="ca4732bed82e8b59ee9ad260dd3d512f91051d7e" resname="booktype_new">
+        <source>/{_locale}/booktype/new</source>
+        <target state="new">/{_locale}/booktype/new</target>
+      </trans-unit>
+      <trans-unit id="d4154deb2d579f1e1a53d92cafde411b4fbd51f5" resname="booktype_show">
+        <source>/{_locale}/booktype/{id}/show</source>
+        <target state="new">/{_locale}/booktype/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="20a1235aef9a787e50a4191744a79ea1afe36ce2" resname="booktype_update">
+        <source>/{_locale}/booktype/{id}/update</source>
+        <target state="new">/{_locale}/booktype/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="09d4c7f101e277d08a6bb5a520f3ebab1ed9d575" resname="chapter">
+        <source>/{_locale}/chapter/</source>
+        <target state="new">/{_locale}/chapter/</target>
+      </trans-unit>
+      <trans-unit id="ee98f636b2298d1a1d466d57b0d162dedeb18ded" resname="chapter_create">
+        <source>/{_locale}/chapter/create</source>
+        <target state="new">/{_locale}/chapter/create</target>
+      </trans-unit>
+      <trans-unit id="4a07b27b89f0030251746ee300b2d52433ea224a" resname="chapter_edit">
+        <source>/{_locale}/chapter/{id}/edit</source>
+        <target state="new">/{_locale}/chapter/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="aaf10cc39d660d1194f805945ee89e648d98e2d5" resname="chapter_new">
+        <source>/{_locale}/chapter/new</source>
+        <target state="new">/{_locale}/chapter/new</target>
+      </trans-unit>
+      <trans-unit id="d2a62e3af8c4332aacc9972fab586da2441a9203" resname="chapter_show">
+        <source>/{_locale}/chapter/{id}/show</source>
+        <target state="new">/{_locale}/chapter/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="60d91431b2e6251f1a0a51ef6b59284abf2e0ab3" resname="chapter_update">
+        <source>/{_locale}/chapter/{id}/update</source>
+        <target state="new">/{_locale}/chapter/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="09c59cfb87e02b5a5eb91d7a68f78376822f53e0" resname="checkLoginEmail">
+        <source>/{_locale}/checkLoginEmail</source>
+        <target state="new">/{_locale}/checkLoginEmail</target>
+      </trans-unit>
+      <trans-unit id="2c54892c40a1751663d9aca4e03e6a833056bc9f" resname="city">
+        <source>/{_locale}/city/</source>
+        <target state="new">/{_locale}/city/</target>
+      </trans-unit>
+      <trans-unit id="aecb55868eb04054f4c5e945e9127272db652900" resname="city_create">
+        <source>/{_locale}/city/create</source>
+        <target state="new">/{_locale}/city/create</target>
+      </trans-unit>
+      <trans-unit id="1442b293f76c713d35d3ffa4ddd24bb6eccba9f0" resname="city_edit">
+        <source>/{_locale}/city/{id}/edit</source>
+        <target state="new">/{_locale}/city/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="fcceedfee605e0d03319d702e93134245a5ccb75" resname="city_new">
+        <source>/{_locale}/city/new</source>
+        <target state="new">/{_locale}/city/new</target>
+      </trans-unit>
+      <trans-unit id="9abaa5129c72bd2c598a6d8d57f6025e67ee3310" resname="city_show">
+        <source>/{_locale}/city/{id}/show</source>
+        <target state="new">/{_locale}/city/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="a10ba7fd9d643ae8ef601d4cf4426e897934e395" resname="city_update">
+        <source>/{_locale}/city/{id}/update</source>
+        <target state="new">/{_locale}/city/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="ffc179813d50b739dc33e422b558ff59620fe660" resname="clearance">
+        <source>/{_locale}/clearance/</source>
+        <target state="new">/{_locale}/clearance/</target>
+      </trans-unit>
+      <trans-unit id="c138832d9212d204a4f8ced1096bda65cb9fa975" resname="clearance_create">
+        <source>/{_locale}/clearance/create</source>
+        <target state="new">/{_locale}/clearance/create</target>
+      </trans-unit>
+      <trans-unit id="b0fea9e29d20d792ed3848d69fec7cc0c63667be" resname="clearance_edit">
+        <source>/{_locale}/clearance/{id}/edit</source>
+        <target state="new">/{_locale}/clearance/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="18037ff46b23690fa5cb985fec170c14215f2b64" resname="clearance_new">
+        <source>/{_locale}/clearance/new</source>
+        <target state="new">/{_locale}/clearance/new</target>
+      </trans-unit>
+      <trans-unit id="0e8ebb06b6b447a9649107070f52f34a9f5839d5" resname="clearance_show">
+        <source>/{_locale}/clearance/{id}/show</source>
+        <target state="new">/{_locale}/clearance/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="33f523573abb9f93ab165c818d1f1e87d72983bc" resname="clearance_update">
+        <source>/{_locale}/clearance/{id}/update</source>
+        <target state="new">/{_locale}/clearance/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="4cef0d88106917d26a7ae4f74984b997a3789a00" resname="clientvendor">
+        <source>/{_locale}/clientvendor/</source>
+        <target state="new">/{_locale}/clientvendor/</target>
+      </trans-unit>
+      <trans-unit id="84579206604bcb43a5d3fa87f5d06c6764f74564" resname="clientvendor_create">
+        <source>/{_locale}/clientvendor/create</source>
+        <target state="new">/{_locale}/clientvendor/create</target>
+      </trans-unit>
+      <trans-unit id="0cd26a65a0c71ae9cf3022ac1624d51c86768c19" resname="clientvendor_edit">
+        <source>/{_locale}/clientvendor/{id}/edit</source>
+        <target state="new">/{_locale}/clientvendor/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="62c7f9abe64b0fede512c7315cb28cadd4eb4cd7" resname="clientvendor_new">
+        <source>/{_locale}/clientvendor/new</source>
+        <target state="new">/{_locale}/clientvendor/new</target>
+      </trans-unit>
+      <trans-unit id="8e52c827b664c9cc24750041af9d3daacda1f83d" resname="clientvendor_show">
+        <source>/{_locale}/clientvendor/{id}/show</source>
+        <target state="new">/{_locale}/clientvendor/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="1c7064ecc18db4b0c8fe7343d3a1a8acd5f406c9" resname="clientvendor_update">
+        <source>/{_locale}/clientvendor/{id}/update</source>
+        <target state="new">/{_locale}/clientvendor/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="bed2c53bdb74d5ebcb3e0f9eee53f44b76a1255d" resname="clientvendortype">
+        <source>/{_locale}/clientvendortype/</source>
+        <target state="new">/{_locale}/clientvendortype/</target>
+      </trans-unit>
+      <trans-unit id="ffb792459a29932733fe857cbf1cb07f75f3532f" resname="clientvendortype_create">
+        <source>/{_locale}/clientvendortype/create</source>
+        <target state="new">/{_locale}/clientvendortype/create</target>
+      </trans-unit>
+      <trans-unit id="bec03d35a689cf026716820341583719ad9de7d6" resname="clientvendortype_edit">
+        <source>/{_locale}/clientvendortype/{id}/edit</source>
+        <target state="new">/{_locale}/clientvendortype/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="e0fe01fd9f5767512f63c4440d6f30236b4e08f1" resname="clientvendortype_new">
+        <source>/{_locale}/clientvendortype/new</source>
+        <target state="new">/{_locale}/clientvendortype/new</target>
+      </trans-unit>
+      <trans-unit id="99d34d49e52ae081c75d1303a46aed8fbe337937" resname="clientvendortype_show">
+        <source>/{_locale}/clientvendortype/{id}/show</source>
+        <target state="new">/{_locale}/clientvendortype/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="6ab7af4425600ea6941e8da02f91b37546da619a" resname="clientvendortype_update">
+        <source>/{_locale}/clientvendortype/{id}/update</source>
+        <target state="new">/{_locale}/clientvendortype/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="1a73af9e7ae00182733b2292511b814be66f065f" resname="contact">
+        <source>/{_locale}/contact/</source>
+        <target state="new">/{_locale}/contact/</target>
+      </trans-unit>
+      <trans-unit id="40854147cd03ddb4825272c43fc834dbfda43cf7" resname="contact_create">
+        <source>/{_locale}/contact/create</source>
+        <target state="new">/{_locale}/contact/create</target>
+      </trans-unit>
+      <trans-unit id="ea36dafd5cfe72a079b2443926a81ff8ff7d5a4c" resname="contact_edit">
+        <source>/{_locale}/contact/{id}/edit</source>
+        <target state="new">/{_locale}/contact/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="3fda6cdd1c56274537a07777832a4f9af89e52fd" resname="contact_new">
+        <source>/{_locale}/contact/new</source>
+        <target state="new">/{_locale}/contact/new</target>
+      </trans-unit>
+      <trans-unit id="0ddba3e457a80d9d3d8575c723fb104c9ae4d4b6" resname="contact_show">
+        <source>/{_locale}/contact/{id}/show</source>
+        <target state="new">/{_locale}/contact/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="44d1321f58cf0b762fa7b1b259e4bdf49cd7f033" resname="contact_update">
+        <source>/{_locale}/contact/{id}/update</source>
+        <target state="new">/{_locale}/contact/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="d4d635fc4f77c882b8f38cc75a2805fb284d3b0e" resname="contactsocialnetworklink">
+        <source>/{_locale}/contactsocialnetworklink/</source>
+        <target state="new">/{_locale}/contactsocialnetworklink/</target>
+      </trans-unit>
+      <trans-unit id="098c7043cb75f6a86e8294efe503dc339a62c914" resname="contactsocialnetworklink_create">
+        <source>/{_locale}/contactsocialnetworklink/create</source>
+        <target state="new">/{_locale}/contactsocialnetworklink/create</target>
+      </trans-unit>
+      <trans-unit id="367c4fa0c0800a02cb759981d94fe5454ae90d77" resname="contactsocialnetworklink_edit">
+        <source>/{_locale}/contactsocialnetworklink/{id}/edit</source>
+        <target state="new">/{_locale}/contactsocialnetworklink/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="494bbb7dc4710f7615eed02719c9a867c90caa23" resname="contactsocialnetworklink_new">
+        <source>/{_locale}/contactsocialnetworklink/new</source>
+        <target state="new">/{_locale}/contactsocialnetworklink/new</target>
+      </trans-unit>
+      <trans-unit id="bcafdf6cdfc6eee03ae7bf31b7ec93fb37c835e9" resname="contactsocialnetworklink_show">
+        <source>/{_locale}/contactsocialnetworklink/{id}/show</source>
+        <target state="new">/{_locale}/contactsocialnetworklink/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="feaf0c1d87f446c3cd1cc200254a229b69b12ec8" resname="contactsocialnetworklink_update">
+        <source>/{_locale}/contactsocialnetworklink/{id}/update</source>
+        <target state="new">/{_locale}/contactsocialnetworklink/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="8e68b3e5af636475363c23b52ade8e6064b05806" resname="country">
+        <source>/{_locale}/country/</source>
+        <target state="new">/{_locale}/country/</target>
+      </trans-unit>
+      <trans-unit id="b541c6cb1c79ee9e5907baab9e755c2a8a6ad6eb" resname="country_create">
+        <source>/{_locale}/country/create</source>
+        <target state="new">/{_locale}/country/create</target>
+      </trans-unit>
+      <trans-unit id="20a5062376334fc4d63d300b452b525d518f978b" resname="country_edit">
+        <source>/{_locale}/country/{id}/edit</source>
+        <target state="new">/{_locale}/country/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="9e1b38fa563463d5f631cb90a189d0880d8816aa" resname="country_new">
+        <source>/{_locale}/country/new</source>
+        <target state="new">/{_locale}/country/new</target>
+      </trans-unit>
+      <trans-unit id="691fecb527998ef3b787624a1e84e31c3fdd6465" resname="country_show">
+        <source>/{_locale}/country/{id}/show</source>
+        <target state="new">/{_locale}/country/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="3ede186ba6ac06843c4764baf52a20214ef3b348" resname="country_update">
+        <source>/{_locale}/country/{id}/update</source>
+        <target state="new">/{_locale}/country/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="9be9b25ea39fdbad3c63ee4d805a522499521b65" resname="createPassword">
+        <source>/create-password</source>
+        <target state="new">/create-password</target>
+      </trans-unit>
+      <trans-unit id="8f7d25aecbd7fc6ee7fb9254f33e1a206f4aaca1" resname="doLogin">
+        <source>/doLogin</source>
+        <target state="new">/doLogin</target>
+      </trans-unit>
+      <trans-unit id="68476476d454bcc98132f70308310b1f555149ef" resname="doRecoveryPassword">
+        <source>/doPasswordRecovery</source>
+        <target state="new">/doPasswordRecovery</target>
+      </trans-unit>
+      <trans-unit id="2c5386cb2f2f82317639bc3e16b88ec6a54c9895" resname="doRegister">
+        <source>/{_locale}/doRegister</source>
+        <target state="new">/{_locale}/doRegister</target>
+      </trans-unit>
+      <trans-unit id="a88b7dcd1a9e3e17770bbaa6d7515b31a2d7e85d" resname="email">
+        <source>/{_locale}/email/{process}</source>
+        <target state="new">/{_locale}/email/{process}</target>
+      </trans-unit>
+      <trans-unit id="acf7613e05c676676a0abfe3f7490f4bb739c12b" resname="email_home">
+        <source>/{_locale}/email/</source>
+        <target state="new">/{_locale}/email/</target>
+      </trans-unit>
+      <trans-unit id="bedcc40ee5df32a892ba203376f7a1fa79617ec8" resname="equipment">
+        <source>/{_locale}/equipment/</source>
+        <target state="new">/{_locale}/equipment/</target>
+      </trans-unit>
+      <trans-unit id="7d0023497731056157c28fffeb88927f2091bc4c" resname="equipment_create">
+        <source>/{_locale}/equipment/create</source>
+        <target state="new">/{_locale}/equipment/create</target>
+      </trans-unit>
+      <trans-unit id="d64c083c4447c98eb8967f2b0c6154f11bc1c6bb" resname="equipment_edit">
+        <source>/{_locale}/equipment/{id}/edit</source>
+        <target state="new">/{_locale}/equipment/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="7539a7db727bf6282a7d617a524d03d560804bce" resname="equipment_new">
+        <source>/{_locale}/equipment/new</source>
+        <target state="new">/{_locale}/equipment/new</target>
+      </trans-unit>
+      <trans-unit id="a8a8dae8ec3d14321b29bcd890eeeaabccfcf732" resname="equipment_show">
+        <source>/{_locale}/equipment/{id}/show</source>
+        <target state="new">/{_locale}/equipment/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="63aef89f6a6c830f9ffe4b8db114a42a05ea2e29" resname="equipment_update">
+        <source>/{_locale}/equipment/{id}/update</source>
+        <target state="new">/{_locale}/equipment/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="5006ed0248a019713b762563076292379daf07b4" resname="event">
+        <source>/{_locale}/event/</source>
+        <target state="new">/{_locale}/event/</target>
+      </trans-unit>
+      <trans-unit id="c915377fa8ef7e52e3338406c47815717e1bbcf8" resname="event_create">
+        <source>/{_locale}/event/create</source>
+        <target state="new">/{_locale}/event/create</target>
+      </trans-unit>
+      <trans-unit id="f3e84ea2c9fdfe9b63e48f8f7186938145bbec7c" resname="event_edit">
+        <source>/{_locale}/event/{id}/edit</source>
+        <target state="new">/{_locale}/event/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="187ec935f67cf387d0354e8e6f6b7b8a272e4d1f" resname="event_new">
+        <source>/{_locale}/event/new</source>
+        <target state="new">/{_locale}/event/new</target>
+      </trans-unit>
+      <trans-unit id="5ac33c2e8e2b85da64c39d47b4f2589336212073" resname="event_show">
+        <source>/{_locale}/event/{id}/show</source>
+        <target state="new">/{_locale}/event/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="35ba0d065b7d4ce3520804dc60e5c0346ea1ffa5" resname="event_update">
+        <source>/{_locale}/event/{id}/update</source>
+        <target state="new">/{_locale}/event/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="aea96519c12df87085175a98a9e4045909d11d55" resname="eventtype">
+        <source>/{_locale}/eventtype/</source>
+        <target state="new">/{_locale}/eventtype/</target>
+      </trans-unit>
+      <trans-unit id="3f6d6a53a56c05ba420f7f4badc9c1fc49083ab5" resname="eventtype_create">
+        <source>/{_locale}/eventtype/create</source>
+        <target state="new">/{_locale}/eventtype/create</target>
+      </trans-unit>
+      <trans-unit id="5f06ef9e2ab11803deb65dedc491b22e9e177184" resname="eventtype_edit">
+        <source>/{_locale}/eventtype/{id}/edit</source>
+        <target state="new">/{_locale}/eventtype/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="0d809add85f9d4e3500c8abce45937f97599a64c" resname="eventtype_new">
+        <source>/{_locale}/eventtype/new</source>
+        <target state="new">/{_locale}/eventtype/new</target>
+      </trans-unit>
+      <trans-unit id="474765bd79f35edfb9c7f4367ecd7589b6e85387" resname="eventtype_show">
+        <source>/{_locale}/eventtype/{id}/show</source>
+        <target state="new">/{_locale}/eventtype/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="754e9c6a5dc7d0ed2c754d68ab24f7795dc1c659" resname="eventtype_update">
+        <source>/{_locale}/eventtype/{id}/update</source>
+        <target state="new">/{_locale}/eventtype/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="f96da029a6daa4321d73225f5e2ccda25f55816b" resname="experience">
+        <source>/{_locale}/experience/</source>
+        <target state="new">/{_locale}/experience/</target>
+      </trans-unit>
+      <trans-unit id="161ddf7670c38897d69f759f810a25b769ccd93c" resname="experience_create">
+        <source>/{_locale}/experience/create</source>
+        <target state="new">/{_locale}/experience/create</target>
+      </trans-unit>
+      <trans-unit id="56b73cf9a89ab0fbf5a61d72e76d6c69077bbc0d" resname="experience_edit">
+        <source>/{_locale}/experience/{id}/edit</source>
+        <target state="new">/{_locale}/experience/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="513946b9a52fffec9c31511ff7dacfd426e2427c" resname="experience_new">
+        <source>/{_locale}/experience/new</source>
+        <target state="new">/{_locale}/experience/new</target>
+      </trans-unit>
+      <trans-unit id="447dd4be029ebb2f1c21a3f3a1248efeab01e04a" resname="experience_show">
+        <source>/{_locale}/experience/{id}/show</source>
+        <target state="new">/{_locale}/experience/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="69bd7e4336ee685118814a4b49a322ca0d82c5a8" resname="experience_update">
+        <source>/{_locale}/experience/{id}/update</source>
+        <target state="new">/{_locale}/experience/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="e5c680f5cc526e6e59d941ac71c6f5012b020642" resname="experiencejob">
+        <source>/{_locale}/experiencejob/</source>
+        <target state="new">/{_locale}/experiencejob/</target>
+      </trans-unit>
+      <trans-unit id="45fdee4e4a64ddd08a917df8cf3b97570c7a0c5d" resname="experiencejob_create">
+        <source>/{_locale}/experiencejob/create</source>
+        <target state="new">/{_locale}/experiencejob/create</target>
+      </trans-unit>
+      <trans-unit id="24cded6366f2488b7f88727958ca2e37d4f5694e" resname="experiencejob_edit">
+        <source>/{_locale}/experiencejob/{id}/edit</source>
+        <target state="new">/{_locale}/experiencejob/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="610dde83f48c46b74ee32654e251175b866ac057" resname="experiencejob_new">
+        <source>/{_locale}/experiencejob/new</source>
+        <target state="new">/{_locale}/experiencejob/new</target>
+      </trans-unit>
+      <trans-unit id="ed7a953a06dc7cd2ee7f36cc43bb744874a26759" resname="experiencejob_show">
+        <source>/{_locale}/experiencejob/{id}/show</source>
+        <target state="new">/{_locale}/experiencejob/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="22c0d5d377a81e36c603c7b4983f6f4183549593" resname="experiencejob_update">
+        <source>/{_locale}/experiencejob/{id}/update</source>
+        <target state="new">/{_locale}/experiencejob/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="7f189faefacab2c60550f62c14c16f9c494f4c5c" resname="forgotPassword">
+        <source>/forgot-password</source>
+        <target state="new">/forgot-password</target>
+      </trans-unit>
+      <trans-unit id="2f24edf62f211260cf3f54878dac4d9789bdb619" resname="hearabout">
+        <source>/{_locale}/hearabout/</source>
+        <target state="new">/{_locale}/hearabout/</target>
+      </trans-unit>
+      <trans-unit id="0d8b5ca7221d623c71f4f8670ba756493a965b40" resname="hearabout_create">
+        <source>/{_locale}/hearabout/create</source>
+        <target state="new">/{_locale}/hearabout/create</target>
+      </trans-unit>
+      <trans-unit id="e269a517d48432e742a5ef58b0c1c9bf6bc4eeaf" resname="hearabout_edit">
+        <source>/{_locale}/hearabout/{id}/edit</source>
+        <target state="new">/{_locale}/hearabout/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="cf18eea1791753b0211110069e7f659bb709bd14" resname="hearabout_new">
+        <source>/{_locale}/hearabout/new</source>
+        <target state="new">/{_locale}/hearabout/new</target>
+      </trans-unit>
+      <trans-unit id="85984bcba4ce25dfb66725559391247f51e02ee8" resname="hearabout_show">
+        <source>/{_locale}/hearabout/{id}/show</source>
+        <target state="new">/{_locale}/hearabout/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="d84bcb3ef7aadfec7c39b530693f7172ecb5bfa6" resname="hearabout_update">
+        <source>/{_locale}/hearabout/{id}/update</source>
+        <target state="new">/{_locale}/hearabout/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="66f79d8a6327c82c9033e6d65ff03322a3766c87" resname="history">
+        <source>/{_locale}/history/</source>
+        <target state="new">/{_locale}/history/</target>
+      </trans-unit>
+      <trans-unit id="bac37ea6e8c137d189a22f1774a52a6a5d46a9a0" resname="history_create">
+        <source>/{_locale}/history/create</source>
+        <target state="new">/{_locale}/history/create</target>
+      </trans-unit>
+      <trans-unit id="2ce38a171041f57112a44f7d59ff83b01b0ebb9d" resname="history_edit">
+        <source>/{_locale}/history/{id}/edit</source>
+        <target state="new">/{_locale}/history/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="503a15ba31ee51784cbdbcfeed745a3639b5077e" resname="history_new">
+        <source>/{_locale}/history/new</source>
+        <target state="new">/{_locale}/history/new</target>
+      </trans-unit>
+      <trans-unit id="29d18482891bdf76a8c28606b6643697452a0ddc" resname="history_show">
+        <source>/{_locale}/history/{id}/show</source>
+        <target state="new">/{_locale}/history/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="974d48beb7f284854d3b003e6107bf45c1f3e589" resname="history_update">
+        <source>/{_locale}/history/{id}/update</source>
+        <target state="new">/{_locale}/history/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="568be0fa2023d1a447e7bd150dda7068ece26898" resname="homepage">
+        <source>/app/example</source>
+        <target state="new">/app/example</target>
+      </trans-unit>
+      <trans-unit id="212e03febfc03a713ea302a5671eef82940dd9ac" resname="locale_redirect">
+        <source>/</source>
+        <target state="new">/</target>
+      </trans-unit>
+      <trans-unit id="2736fab291f04e69b62d490c3c09361f5b82461a" resname="login">
+        <source>/{_locale}/login</source>
+        <target state="new">/{_locale}/login</target>
+      </trans-unit>
+      <trans-unit id="28d0a05f740a9ea14d454c9040a3ad29c22f61e2" resname="login_check">
+        <source>/login_check</source>
+        <target state="new">/login_check</target>
+      </trans-unit>
+      <trans-unit id="55525e1b3dfd8787fd202aed45fb04494e3242d0" resname="logout">
+        <source>/{_locale}/logout</source>
+        <target state="new">/{_locale}/logout</target>
+      </trans-unit>
+      <trans-unit id="eb2d8c95f95ddebb07531dcd1a1ec62138fc9201" resname="migrationversions">
+        <source>/{_locale}/migrationversions/</source>
+        <target state="new">/{_locale}/migrationversions/</target>
+      </trans-unit>
+      <trans-unit id="35349a497588efa839739a7d2f14ab9edadcdded" resname="migrationversions_create">
+        <source>/{_locale}/migrationversions/create</source>
+        <target state="new">/{_locale}/migrationversions/create</target>
+      </trans-unit>
+      <trans-unit id="3d63aa6bdbbb2c75c8bd3652be81c6ec42e342ec" resname="migrationversions_edit">
+        <source>/{_locale}/migrationversions/{id}/edit</source>
+        <target state="new">/{_locale}/migrationversions/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="c1df1c7baea77de59d0589689f1f8efd9d856321" resname="migrationversions_new">
+        <source>/{_locale}/migrationversions/new</source>
+        <target state="new">/{_locale}/migrationversions/new</target>
+      </trans-unit>
+      <trans-unit id="464dfd2f0344e025a226905f3f93170bb32af734" resname="migrationversions_show">
+        <source>/{_locale}/migrationversions/{id}/show</source>
+        <target state="new">/{_locale}/migrationversions/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="4c854a0c3ce5bab51f97f1dc3491eb7e46be6aa1" resname="migrationversions_update">
+        <source>/{_locale}/migrationversions/{id}/update</source>
+        <target state="new">/{_locale}/migrationversions/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="767013ce0ee0f6d7a07587912eba3104cfaabc15" resname="page">
+        <source>/{_locale}/page/</source>
+        <target state="new">/{_locale}/page/</target>
+      </trans-unit>
+      <trans-unit id="68d65ab474d3116660cd51854d31e3a70ce3d875" resname="page_create">
+        <source>/{_locale}/page/create</source>
+        <target state="new">/{_locale}/page/create</target>
+      </trans-unit>
+      <trans-unit id="7c0da853dcc79e72523c22f0e606851ce2bd3a2a" resname="page_edit">
+        <source>/{_locale}/page/{id}/edit</source>
+        <target state="new">/{_locale}/page/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="dfc901a9eddd5c1339ebb63e352bdabe9efff1ce" resname="page_new">
+        <source>/{_locale}/page/new</source>
+        <target state="new">/{_locale}/page/new</target>
+      </trans-unit>
+      <trans-unit id="b8953612017ed59b525a3f13dde852341a50bc59" resname="page_show">
+        <source>/{_locale}/page/{id}/show</source>
+        <target state="new">/{_locale}/page/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="dfe606a62dc66d26b30357a32bfd08119637ac59" resname="page_update">
+        <source>/{_locale}/page/{id}/update</source>
+        <target state="new">/{_locale}/page/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="98f54143ab4e86b28c3afee0f50f2f51cfb2ed38" resname="project">
+        <source>/{_locale}/project/</source>
+        <target state="new">/{_locale}/project/</target>
+      </trans-unit>
+      <trans-unit id="216bb9f0a8c945ea381c7aa91ac45dcaa8353e64" resname="project_create">
+        <source>/{_locale}/project/create</source>
+        <target state="new">/{_locale}/project/create</target>
+      </trans-unit>
+      <trans-unit id="5c0cc7ddc64bb6911131e6a81672056baef107cd" resname="project_edit">
+        <source>/{_locale}/project/{id}/edit</source>
+        <target state="new">/{_locale}/project/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="dd79e862120c8c6bc46f5ae18c35373a4c5f6ff0" resname="project_new">
+        <source>/{_locale}/project/new</source>
+        <target state="new">/{_locale}/project/new</target>
+      </trans-unit>
+      <trans-unit id="e2868379d25df349d8a3f3cfea4d13909e42466d" resname="project_show">
+        <source>/{_locale}/project/{id}/show</source>
+        <target state="new">/{_locale}/project/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="959ec7c76b715f3eba6bea88d6799ad3fb45ba92" resname="project_update">
+        <source>/{_locale}/project/{id}/update</source>
+        <target state="new">/{_locale}/project/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="b5676bfd2b43eea3bf817a03cd8401c84fa64e86" resname="projectcrew">
+        <source>/{_locale}/projectcrew/</source>
+        <target state="new">/{_locale}/projectcrew/</target>
+      </trans-unit>
+      <trans-unit id="e4e9d0a10255e20d213ed19ab6046a90b4dc27ad" resname="projectcrew_create">
+        <source>/{_locale}/projectcrew/create</source>
+        <target state="new">/{_locale}/projectcrew/create</target>
+      </trans-unit>
+      <trans-unit id="75af704801b0ef89baf689651811563afb8d1804" resname="projectcrew_edit">
+        <source>/{_locale}/projectcrew/{id}/edit</source>
+        <target state="new">/{_locale}/projectcrew/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="6deca9bafc37298f0a30af92236059b4d9663db9" resname="projectcrew_new">
+        <source>/{_locale}/projectcrew/new</source>
+        <target state="new">/{_locale}/projectcrew/new</target>
+      </trans-unit>
+      <trans-unit id="421ddb9929e33f6bce0f7ceaac1fd396931757b8" resname="projectcrew_show">
+        <source>/{_locale}/projectcrew/{id}/show</source>
+        <target state="new">/{_locale}/projectcrew/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="8e5679de2967fec0d21fbd3b72fe0f62031a950b" resname="projectcrew_update">
+        <source>/{_locale}/projectcrew/{id}/update</source>
+        <target state="new">/{_locale}/projectcrew/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="0aa3708c0f02cd6a161af10ed03bcd5f7048b41f" resname="projectrole">
+        <source>/{_locale}/projectrole/</source>
+        <target state="new">/{_locale}/projectrole/</target>
+      </trans-unit>
+      <trans-unit id="b5b73d96f7d71677b94c6176ec75d92e19cbca91" resname="projectrole_create">
+        <source>/{_locale}/projectrole/create</source>
+        <target state="new">/{_locale}/projectrole/create</target>
+      </trans-unit>
+      <trans-unit id="a1edbb9d4acb702105ab390f62cdc0ab2877dc6e" resname="projectrole_edit">
+        <source>/{_locale}/projectrole/{id}/edit</source>
+        <target state="new">/{_locale}/projectrole/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="66514b2b11da618c9e1fbeee1823fecc3e389091" resname="projectrole_new">
+        <source>/{_locale}/projectrole/new</source>
+        <target state="new">/{_locale}/projectrole/new</target>
+      </trans-unit>
+      <trans-unit id="d20a14c424c311ec17d4360da91f5505632a7e54" resname="projectrole_show">
+        <source>/{_locale}/projectrole/{id}/show</source>
+        <target state="new">/{_locale}/projectrole/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="e951b42cd5c87be645e57bc47a725d09359fabeb" resname="projectrole_update">
+        <source>/{_locale}/projectrole/{id}/update</source>
+        <target state="new">/{_locale}/projectrole/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="4a8bc16de441c278418a0adf98012d83db7712f1" resname="projectupload">
+        <source>/{_locale}/projectupload/</source>
+        <target state="new">/{_locale}/projectupload/</target>
+      </trans-unit>
+      <trans-unit id="87e57d05c5d1139f0e59c546da6fb7bc328dbf73" resname="projectupload_create">
+        <source>/{_locale}/projectupload/create</source>
+        <target state="new">/{_locale}/projectupload/create</target>
+      </trans-unit>
+      <trans-unit id="af3bdb601ac1f9223883b42f36fe6a111174b6ce" resname="projectupload_edit">
+        <source>/{_locale}/projectupload/{id}/edit</source>
+        <target state="new">/{_locale}/projectupload/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="c6f14b53687830d771b8d58fed6a30186d8ecbbb" resname="projectupload_new">
+        <source>/{_locale}/projectupload/new</source>
+        <target state="new">/{_locale}/projectupload/new</target>
+      </trans-unit>
+      <trans-unit id="1323fbd83471aa0c3c793794f1dea8bef8629a0a" resname="projectupload_show">
+        <source>/{_locale}/projectupload/{id}/show</source>
+        <target state="new">/{_locale}/projectupload/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="0216733cabe3947b0e54acccbaa1a2287330c54a" resname="projectupload_update">
+        <source>/{_locale}/projectupload/{id}/update</source>
+        <target state="new">/{_locale}/projectupload/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="2a1dae77ddf4f4914874688d61a18ab6e603983a" resname="projectvendorclientlink">
+        <source>/{_locale}/projectvendorclientlink/</source>
+        <target state="new">/{_locale}/projectvendorclientlink/</target>
+      </trans-unit>
+      <trans-unit id="07a84ee7a90402c1c00b8bfbd42aba7a8f13f3d1" resname="projectvendorclientlink_create">
+        <source>/{_locale}/projectvendorclientlink/create</source>
+        <target state="new">/{_locale}/projectvendorclientlink/create</target>
+      </trans-unit>
+      <trans-unit id="53ae063d53163a306b92561364889ca92067c7f8" resname="projectvendorclientlink_edit">
+        <source>/{_locale}/projectvendorclientlink/{id}/edit</source>
+        <target state="new">/{_locale}/projectvendorclientlink/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="e9d995c4b8cc59048dc8ae7f1feedc21c4b8cef4" resname="projectvendorclientlink_new">
+        <source>/{_locale}/projectvendorclientlink/new</source>
+        <target state="new">/{_locale}/projectvendorclientlink/new</target>
+      </trans-unit>
+      <trans-unit id="ef5e5c5a4ee0eb95e318b9f9f970bccd2e720d36" resname="projectvendorclientlink_show">
+        <source>/{_locale}/projectvendorclientlink/{id}/show</source>
+        <target state="new">/{_locale}/projectvendorclientlink/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="e2ff6a58e26295cf421f2df8a0e2d06f3441080e" resname="projectvendorclientlink_update">
+        <source>/{_locale}/projectvendorclientlink/{id}/update</source>
+        <target state="new">/{_locale}/projectvendorclientlink/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="70a32e4e74fb2ee887e0c11f343ceff616671408" resname="recoveryPassword">
+        <source>/password-recovery</source>
+        <target state="new">/password-recovery</target>
+      </trans-unit>
+      <trans-unit id="02ab610f42452d706ba305f258e0f91fd271be3b" resname="reference">
+        <source>/{_locale}/reference/</source>
+        <target state="new">/{_locale}/reference/</target>
+      </trans-unit>
+      <trans-unit id="5f350596820b4328d27851b54ebf4bee93d15efb" resname="reference_create">
+        <source>/{_locale}/reference/create</source>
+        <target state="new">/{_locale}/reference/create</target>
+      </trans-unit>
+      <trans-unit id="29d93fe9bd6aa68a435a3256de52a4c9aff8c4cf" resname="reference_edit">
+        <source>/{_locale}/reference/{id}/edit</source>
+        <target state="new">/{_locale}/reference/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="18f853612a083d279af687268c2ee9ed1190b2c3" resname="reference_new">
+        <source>/{_locale}/reference/new</source>
+        <target state="new">/{_locale}/reference/new</target>
+      </trans-unit>
+      <trans-unit id="01a1fcf9520e8ee9b030737fd2b2e802bc9629cf" resname="reference_show">
+        <source>/{_locale}/reference/{id}/show</source>
+        <target state="new">/{_locale}/reference/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="7560efa48ad21c9826b924bd25b40f68da8b095c" resname="reference_update">
+        <source>/{_locale}/reference/{id}/update</source>
+        <target state="new">/{_locale}/reference/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="13a2828b3adecc1c32ea3888d08afa51e147b3f3" resname="register">
+        <source>/{_locale}/register</source>
+        <target state="new">/{_locale}/register</target>
+      </trans-unit>
+      <trans-unit id="d73cac7935d777a554b2955076f4104355cb4ad0" resname="socialnetwork">
+        <source>/{_locale}/socialnetwork/</source>
+        <target state="new">/{_locale}/socialnetwork/</target>
+      </trans-unit>
+      <trans-unit id="a5b944a4f76f3765189f84e144f3ba4e2188c1f5" resname="socialnetwork_create">
+        <source>/{_locale}/socialnetwork/create</source>
+        <target state="new">/{_locale}/socialnetwork/create</target>
+      </trans-unit>
+      <trans-unit id="262c8a8166a56947be953f0f5162e5511f56ae11" resname="socialnetwork_edit">
+        <source>/{_locale}/socialnetwork/{id}/edit</source>
+        <target state="new">/{_locale}/socialnetwork/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="55c647e18b5c6d39ba6f81bddef5171089a26479" resname="socialnetwork_new">
+        <source>/{_locale}/socialnetwork/new</source>
+        <target state="new">/{_locale}/socialnetwork/new</target>
+      </trans-unit>
+      <trans-unit id="c39396fc8a3f65af15b9a584a13a4d3c35d2d75e" resname="socialnetwork_show">
+        <source>/{_locale}/socialnetwork/{id}/show</source>
+        <target state="new">/{_locale}/socialnetwork/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="ac7ecabe305e1da859d863771205a686cf6be4ca" resname="socialnetwork_update">
+        <source>/{_locale}/socialnetwork/{id}/update</source>
+        <target state="new">/{_locale}/socialnetwork/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="aa4a5f8125f234182e2dea92805afdfb747a86be" resname="state">
+        <source>/{_locale}/state/</source>
+        <target state="new">/{_locale}/state/</target>
+      </trans-unit>
+      <trans-unit id="e9862b0fd7f31da1c8fecce1e38e089800c8b221" resname="state_create">
+        <source>/{_locale}/state/create</source>
+        <target state="new">/{_locale}/state/create</target>
+      </trans-unit>
+      <trans-unit id="ec1d4916470d40671a7ccf856f8e613e73c5d890" resname="state_edit">
+        <source>/{_locale}/state/{id}/edit</source>
+        <target state="new">/{_locale}/state/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="f8e221f0f3209e8aa77a6c997c6c09562666530e" resname="state_new">
+        <source>/{_locale}/state/new</source>
+        <target state="new">/{_locale}/state/new</target>
+      </trans-unit>
+      <trans-unit id="b6fe16eb6732d4da8cb070856b9361fa45f4f0e3" resname="state_show">
+        <source>/{_locale}/state/{id}/show</source>
+        <target state="new">/{_locale}/state/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="e3fa7a2b7c7d90164cb5bb946c39bbf15fa53c46" resname="state_update">
+        <source>/{_locale}/state/{id}/update</source>
+        <target state="new">/{_locale}/state/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="48a3661d846478fa991a825ebd10b78671444b5b" resname="status">
+        <source>/{_locale}/status/</source>
+        <target state="new">/{_locale}/status/</target>
+      </trans-unit>
+      <trans-unit id="134ac1e13f33d2aac1bb9397371c57a061b98ff3" resname="status_create">
+        <source>/{_locale}/status/create</source>
+        <target state="new">/{_locale}/status/create</target>
+      </trans-unit>
+      <trans-unit id="393188b7e775b517ec0a015a7288fe3b03c5a825" resname="status_edit">
+        <source>/{_locale}/status/{id}/edit</source>
+        <target state="new">/{_locale}/status/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="ff99e3822bda6e461324b0be9e820a45b7ab2fea" resname="status_new">
+        <source>/{_locale}/status/new</source>
+        <target state="new">/{_locale}/status/new</target>
+      </trans-unit>
+      <trans-unit id="96585de90a31e6cec682ce2d5ac59187124cc5b9" resname="status_show">
+        <source>/{_locale}/status/{id}/show</source>
+        <target state="new">/{_locale}/status/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="92f5ea015bcf3e49ab9bff84a0be494402091078" resname="status_update">
+        <source>/{_locale}/status/{id}/update</source>
+        <target state="new">/{_locale}/status/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="b0c77b22b4ae5f68687b2320f8889b16f8ab80f6" resname="unions">
+        <source>/{_locale}/unions/</source>
+        <target state="new">/{_locale}/unions/</target>
+      </trans-unit>
+      <trans-unit id="2844ccbcc0077b8f3f5774926ff413bde1baac8e" resname="unions_create">
+        <source>/{_locale}/unions/create</source>
+        <target state="new">/{_locale}/unions/create</target>
+      </trans-unit>
+      <trans-unit id="c5b38f8b7eef9626c272192cf41634b33b482275" resname="unions_edit">
+        <source>/{_locale}/unions/{id}/edit</source>
+        <target state="new">/{_locale}/unions/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="16093cdf0f5445d8cd0e354c8d335062a6a90faa" resname="unions_new">
+        <source>/{_locale}/unions/new</source>
+        <target state="new">/{_locale}/unions/new</target>
+      </trans-unit>
+      <trans-unit id="8cd7424127235bf360fe1b87ed8e007aebc11f1e" resname="unions_show">
+        <source>/{_locale}/unions/{id}/show</source>
+        <target state="new">/{_locale}/unions/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="ce25e019deef8a9853948f718663462216335bde" resname="unions_update">
+        <source>/{_locale}/unions/{id}/update</source>
+        <target state="new">/{_locale}/unions/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="12dea96fec20593566ab75692c9949596833adc9" resname="user">
+        <source>/{_locale}/user/</source>
+        <target state="new">/{_locale}/user/</target>
+      </trans-unit>
+      <trans-unit id="5b5d897346e5c8ae2eb5f842a934025634ff4efa" resname="user_change_password">
+        <source>/{_locale}/user/change-password</source>
+        <target state="new">/{_locale}/user/change-password</target>
+      </trans-unit>
+      <trans-unit id="e52126be85bad69631e93f249cdb188798e0513d" resname="user_create">
+        <source>/{_locale}/user/create</source>
+        <target state="new">/{_locale}/user/create</target>
+      </trans-unit>
+      <trans-unit id="6b8216d9a758824a2e03a3e46e5c804f5c66fdfe" resname="user_edit">
+        <source>/{_locale}/user/{id}/edit</source>
+        <target state="new">/{_locale}/user/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="66627e53f50116a0a355f292048f1b0f7104ab98" resname="user_new">
+        <source>/{_locale}/user/new</source>
+        <target state="new">/{_locale}/user/new</target>
+      </trans-unit>
+      <trans-unit id="3536716a8b146aece3c6155af04e1710fc67f648" resname="user_profile">
+        <source>/{_locale}/user/profile</source>
+        <target state="new">/{_locale}/user/profile</target>
+      </trans-unit>
+      <trans-unit id="bfdcdda989a863105582ec73305a4249e62d2331" resname="user_show">
+        <source>/{_locale}/user/{id}/show</source>
+        <target state="new">/{_locale}/user/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="351e0c6a0952a75122c703560b168a0d299ba945" resname="user_update">
+        <source>/{_locale}/user/{id}/update</source>
+        <target state="new">/{_locale}/user/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="ccd4bd2a8af4dd6ae74935d7da21ce932c3931d1" resname="user_update_bio">
+        <source>/{_locale}/user/{id}/bio</source>
+        <target state="new">/{_locale}/user/{id}/bio</target>
+      </trans-unit>
+      <trans-unit id="4778b327e053e6daa04b941fe0425db925170c8b" resname="usercityworklink">
+        <source>/{_locale}/usercityworklink/</source>
+        <target state="new">/{_locale}/usercityworklink/</target>
+      </trans-unit>
+      <trans-unit id="14a6b1b547336ce889e5a141bb6a65696b12f3e1" resname="usercityworklink_create">
+        <source>/{_locale}/usercityworklink/create</source>
+        <target state="new">/{_locale}/usercityworklink/create</target>
+      </trans-unit>
+      <trans-unit id="4fc718226a1404f2105295308c4068dbd712e2a3" resname="usercityworklink_delete">
+        <source>/{_locale}/usercityworklink/{id}/delete</source>
+        <target state="new">/{_locale}/usercityworklink/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="0f4dbc2fce7a51e854147236dc8007fb4c1fb101" resname="usercityworklink_edit">
+        <source>/{_locale}/usercityworklink/{id}/edit</source>
+        <target state="new">/{_locale}/usercityworklink/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="5171ad2cfe7186f4ea805c5c421bd5c58edf4e8d" resname="usercityworklink_new">
+        <source>/{_locale}/usercityworklink/new</source>
+        <target state="new">/{_locale}/usercityworklink/new</target>
+      </trans-unit>
+      <trans-unit id="01f11f4702b7c2ec2c58e00c328284614b5293de" resname="usercityworklink_show">
+        <source>/{_locale}/usercityworklink/{id}/show</source>
+        <target state="new">/{_locale}/usercityworklink/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="9d30edfbb7242b68ac648dfe7e15635945162fb4" resname="usercityworklink_update">
+        <source>/{_locale}/usercityworklink/{id}/update</source>
+        <target state="new">/{_locale}/usercityworklink/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="5dacb1f313f45503ba818652892c3af61adce849" resname="userclearancelink">
+        <source>/{_locale}/userclearancelink/</source>
+        <target state="new">/{_locale}/userclearancelink/</target>
+      </trans-unit>
+      <trans-unit id="9dc35cc07d15a2b59251704f80aa627aa14c984b" resname="userclearancelink_create">
+        <source>/{_locale}/userclearancelink/create</source>
+        <target state="new">/{_locale}/userclearancelink/create</target>
+      </trans-unit>
+      <trans-unit id="0a5d5cf279018b26216cf2036d442a0e4c3bbc1b" resname="userclearancelink_delete">
+        <source>/{_locale}/userclearancelink/{id}/delete</source>
+        <target state="new">/{_locale}/userclearancelink/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="711c48e454c28276a3b01fef88b1aa91d8907012" resname="userclearancelink_edit">
+        <source>/{_locale}/userclearancelink/{id}/edit</source>
+        <target state="new">/{_locale}/userclearancelink/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="e3eade00de315c260c0dcdc8aef12e80c1e0abfa" resname="userclearancelink_new">
+        <source>/{_locale}/userclearancelink/new</source>
+        <target state="new">/{_locale}/userclearancelink/new</target>
+      </trans-unit>
+      <trans-unit id="a54b33310f0a2287739802ba842c621d02a73706" resname="userclearancelink_show">
+        <source>/{_locale}/userclearancelink/{id}/show</source>
+        <target state="new">/{_locale}/userclearancelink/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="066feabc2c66615a5a2a60a41cb65cacbd1e35f9" resname="userclearancelink_update">
+        <source>/{_locale}/userclearancelink/{id}/update</source>
+        <target state="new">/{_locale}/userclearancelink/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="81f0a8c41324e7d8621fa7cd9a756aa74c65b7f7" resname="userexperiencejoblink">
+        <source>/{_locale}/userexperiencejoblink/</source>
+        <target state="new">/{_locale}/userexperiencejoblink/</target>
+      </trans-unit>
+      <trans-unit id="dcee4359243dfb16cd456e86bbf942d6d150d382" resname="userexperiencejoblink_create">
+        <source>/{_locale}/userexperiencejoblink/create</source>
+        <target state="new">/{_locale}/userexperiencejoblink/create</target>
+      </trans-unit>
+      <trans-unit id="478c433e520608cf1041ce2f20a0cb851d1964ca" resname="userexperiencejoblink_delete">
+        <source>/{_locale}/userexperiencejoblink/{id}/delete</source>
+        <target state="new">/{_locale}/userexperiencejoblink/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="9cb60eee5cbaa6679e68d45e1559c53c6ce1c595" resname="userexperiencejoblink_edit">
+        <source>/{_locale}/userexperiencejoblink/{id}/edit</source>
+        <target state="new">/{_locale}/userexperiencejoblink/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="88171ab9d14ca4733ab61299430aa3937e7605c8" resname="userexperiencejoblink_new">
+        <source>/{_locale}/userexperiencejoblink/new</source>
+        <target state="new">/{_locale}/userexperiencejoblink/new</target>
+      </trans-unit>
+      <trans-unit id="4c3d67a4337634f257f5f93fe8f1ec8ffaa79768" resname="userexperiencejoblink_show">
+        <source>/{_locale}/userexperiencejoblink/{id}/show</source>
+        <target state="new">/{_locale}/userexperiencejoblink/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="112338264469652c21f63302491f8499f8137aba" resname="userexperiencejoblink_update">
+        <source>/{_locale}/userexperiencejoblink/{id}/update</source>
+        <target state="new">/{_locale}/userexperiencejoblink/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="d53cc3b25d048cace11c8179293b1201826f742f" resname="userexperiencelink">
+        <source>/{_locale}/userexperiencelink/</source>
+        <target state="new">/{_locale}/userexperiencelink/</target>
+      </trans-unit>
+      <trans-unit id="d3c2ecf1c3786a925773cbb72b6406d0db3e598e" resname="userexperiencelink_create">
+        <source>/{_locale}/userexperiencelink/create</source>
+        <target state="new">/{_locale}/userexperiencelink/create</target>
+      </trans-unit>
+      <trans-unit id="9a249746c0ca932ec67c95b290d5ced94e6e05bb" resname="userexperiencelink_delete">
+        <source>/{_locale}/userexperiencelink/{id}/delete</source>
+        <target state="new">/{_locale}/userexperiencelink/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="b559ba6e51c14e59d4e04ac21c2dfd001fa1ef25" resname="userexperiencelink_edit">
+        <source>/{_locale}/userexperiencelink/{id}/edit</source>
+        <target state="new">/{_locale}/userexperiencelink/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="a696be66e62627e0d784e544755bbc41d4378ef7" resname="userexperiencelink_new">
+        <source>/{_locale}/userexperiencelink/new</source>
+        <target state="new">/{_locale}/userexperiencelink/new</target>
+      </trans-unit>
+      <trans-unit id="6c02d2da976b7bb311653ba1540337918f3ea1fa" resname="userexperiencelink_show">
+        <source>/{_locale}/userexperiencelink/{id}/show</source>
+        <target state="new">/{_locale}/userexperiencelink/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="46f6ec5fe54a7987c5ff7785109d5aeb750dfb9e" resname="userexperiencelink_update">
+        <source>/{_locale}/userexperiencelink/{id}/update</source>
+        <target state="new">/{_locale}/userexperiencelink/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="897e61c2c58916034167a0f5a681db5a0665f42b" resname="userrecoverypasswordhash">
+        <source>/{_locale}/userrecoverypasswordhash/</source>
+        <target state="new">/{_locale}/userrecoverypasswordhash/</target>
+      </trans-unit>
+      <trans-unit id="f3f48eed61cba29cd5b46ae23ee74eaefcf0e828" resname="userrecoverypasswordhash_create">
+        <source>/{_locale}/userrecoverypasswordhash/create</source>
+        <target state="new">/{_locale}/userrecoverypasswordhash/create</target>
+      </trans-unit>
+      <trans-unit id="5ae44332657813621baf3d91bbc0853130e63c2a" resname="userrecoverypasswordhash_edit">
+        <source>/{_locale}/userrecoverypasswordhash/{id}/edit</source>
+        <target state="new">/{_locale}/userrecoverypasswordhash/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="75dbcad0b89b04d07f93201f79152939fed56861" resname="userrecoverypasswordhash_new">
+        <source>/{_locale}/userrecoverypasswordhash/new</source>
+        <target state="new">/{_locale}/userrecoverypasswordhash/new</target>
+      </trans-unit>
+      <trans-unit id="1badb7ae12f647f49d598a022bfb74a375d99af2" resname="userrecoverypasswordhash_show">
+        <source>/{_locale}/userrecoverypasswordhash/{id}/show</source>
+        <target state="new">/{_locale}/userrecoverypasswordhash/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="75e2b7a75227c84c9b58851d925618ca33094d28" resname="userrecoverypasswordhash_update">
+        <source>/{_locale}/userrecoverypasswordhash/{id}/update</source>
+        <target state="new">/{_locale}/userrecoverypasswordhash/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="25fa2442383e0d80985cd7ee57195147e7c4b6e6" resname="userrentallink">
+        <source>/{_locale}/userrentallink/</source>
+        <target state="new">/{_locale}/userrentallink/</target>
+      </trans-unit>
+      <trans-unit id="1921763755471c070e4b32eff2a39fe0d978462d" resname="userrentallink_create">
+        <source>/{_locale}/userrentallink/create</source>
+        <target state="new">/{_locale}/userrentallink/create</target>
+      </trans-unit>
+      <trans-unit id="57735dec8b9d21922efa0d685361e67ea60892fa" resname="userrentallink_delete">
+        <source>/{_locale}/userrentallink/{id}/delete</source>
+        <target state="new">/{_locale}/userrentallink/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="9e497eb93074202644fb8c80adfb020e9a9e2e23" resname="userrentallink_edit">
+        <source>/{_locale}/userrentallink/{id}/edit</source>
+        <target state="new">/{_locale}/userrentallink/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="fc30481bb5852de547b0a06ad982823dc5d62c00" resname="userrentallink_new">
+        <source>/{_locale}/userrentallink/new</source>
+        <target state="new">/{_locale}/userrentallink/new</target>
+      </trans-unit>
+      <trans-unit id="3b0e39a832765f41120282206ceeca032e3d3cb7" resname="userrentallink_show">
+        <source>/{_locale}/userrentallink/{id}/show</source>
+        <target state="new">/{_locale}/userrentallink/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="1349b199f2cdd2090d657535e0e52c022307f3d7" resname="userrentallink_update">
+        <source>/{_locale}/userrentallink/{id}/update</source>
+        <target state="new">/{_locale}/userrentallink/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="b317512012305455055b90bd456078cc8c9e04b5" resname="usersocialnetworklink">
+        <source>/{_locale}/usersocialnetworklink/</source>
+        <target state="new">/{_locale}/usersocialnetworklink/</target>
+      </trans-unit>
+      <trans-unit id="83beb3f6da39638c89ba02421b642fa99cb7782c" resname="usersocialnetworklink_create">
+        <source>/{_locale}/usersocialnetworklink/create</source>
+        <target state="new">/{_locale}/usersocialnetworklink/create</target>
+      </trans-unit>
+      <trans-unit id="b52e351c319407b8a5ec05736ed0bd1c7dd90397" resname="usersocialnetworklink_delete">
+        <source>/{_locale}/usersocialnetworklink/{id}/delete</source>
+        <target state="new">/{_locale}/usersocialnetworklink/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="cdaa6d71f4ef3cfb8f46f757363d41f951d84956" resname="usersocialnetworklink_edit">
+        <source>/{_locale}/usersocialnetworklink/{id}/edit</source>
+        <target state="new">/{_locale}/usersocialnetworklink/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="56e3f302e29d7b21f07c19fe89db859acf1f66f7" resname="usersocialnetworklink_new">
+        <source>/{_locale}/usersocialnetworklink/new</source>
+        <target state="new">/{_locale}/usersocialnetworklink/new</target>
+      </trans-unit>
+      <trans-unit id="aa905e7be85ece9c5af969697b53522ffbab8553" resname="usersocialnetworklink_show">
+        <source>/{_locale}/usersocialnetworklink/{id}/show</source>
+        <target state="new">/{_locale}/usersocialnetworklink/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="2e7984ae9a813a8129f835377a436248f3955afe" resname="usersocialnetworklink_update">
+        <source>/{_locale}/usersocialnetworklink/{id}/update</source>
+        <target state="new">/{_locale}/usersocialnetworklink/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="f4aa56edab79e1f0893e574572192664673b8b44" resname="userunionlink">
+        <source>/{_locale}/userunionlink/</source>
+        <target state="new">/{_locale}/userunionlink/</target>
+      </trans-unit>
+      <trans-unit id="98fc68ab05f1ed0732f041eebb8077f5ef903ba1" resname="userunionlink_create">
+        <source>/{_locale}/userunionlink/create</source>
+        <target state="new">/{_locale}/userunionlink/create</target>
+      </trans-unit>
+      <trans-unit id="a8a08f080a254c657a2a7a9ba706c3b192cb87c3" resname="userunionlink_delete">
+        <source>/{_locale}/userunionlink/{id}/delete</source>
+        <target state="new">/{_locale}/userunionlink/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="9178da4982d3f2a4d8ba67dd1dac4576131cdc00" resname="userunionlink_edit">
+        <source>/{_locale}/userunionlink/{id}/edit</source>
+        <target state="new">/{_locale}/userunionlink/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="afe84bdaaee43fe83b1532c65f73791fd03185ac" resname="userunionlink_new">
+        <source>/{_locale}/userunionlink/new</source>
+        <target state="new">/{_locale}/userunionlink/new</target>
+      </trans-unit>
+      <trans-unit id="cea23fb965047d40d0e8291604ccfe8594065be0" resname="userunionlink_show">
+        <source>/{_locale}/userunionlink/{id}/show</source>
+        <target state="new">/{_locale}/userunionlink/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="70c9ea3c84c30a751103b6bf6fb1e7973799838a" resname="userunionlink_update">
+        <source>/{_locale}/userunionlink/{id}/update</source>
+        <target state="new">/{_locale}/userunionlink/{id}/update</target>
+      </trans-unit>
+      <trans-unit id="4a037a40f197a0390bf5bff98a36e1abf6259a33" resname="validateEmail">
+        <source>/{_locale}/validateEmail</source>
+        <target state="new">/{_locale}/validateEmail</target>
+      </trans-unit>
+      <trans-unit id="99dc71581aa2be69bcbc6ffe46beb46402c1159f" resname="vendorsocialnetwork">
+        <source>/{_locale}/vendorsocialnetwork/</source>
+        <target state="new">/{_locale}/vendorsocialnetwork/</target>
+      </trans-unit>
+      <trans-unit id="79b34162a100120852f350470c1a40441739d0f2" resname="vendorsocialnetwork_create">
+        <source>/{_locale}/vendorsocialnetwork/create</source>
+        <target state="new">/{_locale}/vendorsocialnetwork/create</target>
+      </trans-unit>
+      <trans-unit id="679b707323ab54edac940741db52e185fa22a8a3" resname="vendorsocialnetwork_edit">
+        <source>/{_locale}/vendorsocialnetwork/{id}/edit</source>
+        <target state="new">/{_locale}/vendorsocialnetwork/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="2614563bf65743e55bfe79c824a247b32aaadf2f" resname="vendorsocialnetwork_new">
+        <source>/{_locale}/vendorsocialnetwork/new</source>
+        <target state="new">/{_locale}/vendorsocialnetwork/new</target>
+      </trans-unit>
+      <trans-unit id="ceac2eddb3cfb428a62d34dfd010e709ec992b04" resname="vendorsocialnetwork_show">
+        <source>/{_locale}/vendorsocialnetwork/{id}/show</source>
+        <target state="new">/{_locale}/vendorsocialnetwork/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="ccc54e3e8ade32a3ab5e230be1f95d252da2874c" resname="vendorsocialnetwork_update">
+        <source>/{_locale}/vendorsocialnetwork/{id}/update</source>
+        <target state="new">/{_locale}/vendorsocialnetwork/{id}/update</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

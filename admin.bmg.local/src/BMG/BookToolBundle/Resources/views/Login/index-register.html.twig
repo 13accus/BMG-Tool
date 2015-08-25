@@ -1,0 +1,52 @@
+
+            <div id="post-area" class="col span_12">
+
+                {% if message_content is defined %}
+                {% if message_content %}
+                    <div class="alert alert-{{ message_status }}">
+                        <button data-dismiss="alert" class="close">x</button>
+                        <i class="fa fa-check-circle"></i>
+                        <strong>{{ message_title }}</strong> {{ message_content }}.
+                    </div>
+                {% endif %}
+                {% endif %}
+
+                <table width="100%" border="0" cellspacing="10" cellpadding="10">
+                    <tbody>
+                    <tr>
+                        <td width="45%" valign="top">
+                            <h2>{{ site_name }}</h2>
+
+                            <p style="text-align: justify;">Broadcast Management Group is a full-service production management
+                                company specializing in live news, sports and entertainment series and specials. Our projects can
+                                happen in any location at any time. That’s where you come in.</p>
+
+                            <p style="text-align: justify;">We’re always in need of talented, local freelancers for our production
+                                projects. To help us get to know you, we’ve developed the BMG Tool in order to gather vital
+                                information about you and your experience.</p>
+                            <p style="text-align: justify;">That way we can quickly match you expertise to the
+                                appropriate production project. Once you’ve been booked on a project, through the BMG Tool, we can
+                                send you call sheets, production books and even handle your invoicing and crew payments.</p>
+
+                            <p style="text-align: justify;">So please take a few minutes to create a freelancer profile and be sure
+                                to keep it current so we know what you’ve been up to. We hope to be working together soon.</p>
+                        </td>
+                        <td width="2%" valign="top">&nbsp; </td>
+                        <td width="53%" valign="top">
+
+                            <!-- start: REGISTER BOX -->
+
+                            {% include 'BMGBookToolBundle:Register:create-account-alternative.html.twig' %}
+
+                            <!-- end: REGISTER BOX -->
+
+
+                            <p style="text-align: justify;">&nbsp;</p>
+
+
+                        </td>
+
+                    </tr>
+                    </tbody>
+                </table>
+            </div>

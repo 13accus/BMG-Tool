@@ -1,0 +1,36 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>ContactSocialNetworkLink</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Contactsocialnetworklinkaccount</th>
+                <td>{{ entity.contactSocialNetworkLinkAccount }}</td>
+            </tr>
+            <tr>
+                <th>Contactsocialnetworklinkdatetime</th>
+                <td>{{ entity.contactSocialNetworkLinkDatetime|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Contactsocialnetworklinkid</th>
+                <td>{{ entity.contactSocialNetworkLinkId }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('contactsocialnetworklink') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('contactsocialnetworklink_edit', { 'id': entity.contactSocialNetworkLinkId }) }}">
+            Edit
+        </a>
+    </li>
+
+</ul>
+{% endblock %}

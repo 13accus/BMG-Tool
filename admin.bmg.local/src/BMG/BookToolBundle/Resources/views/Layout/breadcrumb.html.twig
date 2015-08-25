@@ -1,0 +1,23 @@
+							<ol class="breadcrumb">
+								<li>
+									<i class="clip-home-3"></i>
+									<a href="{{ path('bmg_book_tool_homepage') }}">
+										Home
+									</a>
+								</li>
+								<li class="active">
+									{{ page_title|raw }}
+								</li>
+								{% if 1 == 2 %}
+								<li class="search-box">
+									<form class="sidebar-search">
+										<div class="form-group">
+											<input type="text" placeholder="{% trans from "common" %}search{% endtrans %}">
+											<button class="submit">
+												<i class="clip-search-3"></i>
+											</button>
+										</div>
+									</form>
+								</li>
+								{% endif %}
+							</ol>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="BMG\BookToolBundle\Entity\City" table="city">
+    <indexes>
+      <index name="fk_city_state1_idx" columns="state_id"/>
+    </indexes>
+    <id name="cityId" type="integer" column="city_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="cityName" type="string" column="city_name" length="45" nullable="false"/>
+    <field name="cityZipcode" type="string" column="city_zipcode" length="10" nullable="false"/>
+    <field name="cityLatitude" type="float" column="city_latitude" precision="10" scale="0" nullable="false"/>
+    <field name="cityLongitude" type="float" column="city_longitude" precision="10" scale="0" nullable="false"/>
+    <field name="cityCounty" type="string" column="city_county" length="50" nullable="false"/>
+    <many-to-one field="state" target-entity="State">
+      <join-columns>
+        <join-column name="state_id" referenced-column-name="state_id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

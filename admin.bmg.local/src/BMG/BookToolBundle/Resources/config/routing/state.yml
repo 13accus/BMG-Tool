@@ -1,0 +1,26 @@
+state:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:State:index" }
+
+state_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:State:show" }
+
+state_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:State:new" }
+
+state_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:State:create" }
+    requirements: { _method: post }
+
+state_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:State:edit" }
+
+state_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:State:update" }
+    requirements: { _method: post|put }
+

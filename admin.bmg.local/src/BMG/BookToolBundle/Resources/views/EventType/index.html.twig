@@ -1,0 +1,41 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>EventType list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Eventtypename</th>
+                <th>Eventtypeid</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('eventtype_show', { 'id': entity.eventTypeId }) }}">{{ entity.eventTypeName }}</a></td>
+                <td>{{ entity.eventTypeId }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('eventtype_show', { 'id': entity.eventTypeId }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('eventtype_edit', { 'id': entity.eventTypeId }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('eventtype_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file date="2015-04-30T13:52:38Z" source-language="en" target-language="en" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="281334abd91b89a0f2a8853664606709d5b62170" resname="account_activated_comfirmation">
+        <source>account_activated_comfirmation</source>
+        <target>Your BMG account is activated</target>
+        <jms:reference-file line="46">views/Register/account_activated.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="7c2a77311d6f9b8959a27042ae638ff9b082a954" resname="account_already_exist_content">
+        <source>account_already_exist_content</source>
+        <target>The email address you specified is already taken, please try another one.</target>
+        <jms:reference-file line="37">BookToolBundle/Controller/LoginController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="2939521c895ab078efccd7cc414ac527bad01882" resname="account_already_exist_title">
+        <source>account_already_exist_title</source>
+        <target>Account already exist</target>
+        <jms:reference-file line="52">views/Register/account_alreaday_exist.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="632637532f881bf94eb07f789202e6da6f8b03c0" resname="account_created_confirmation_text">
+        <source>account_created_confirmation_text</source>
+        <target>Thank you for creating an account with BMG tool.</target>
+        <jms:reference-file line="54">views/Register/account_created_confirmation.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="d999f5e173b1a96bb49b73884ea6349ab23456e9" resname="account_created_confirmation_title">
+        <source>account_created_confirmation_title</source>
+        <target>Account is created</target>
+        <jms:reference-file line="52">views/Register/account_created_confirmation.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="9c38e7a9fecf2d8111d03ad2b99c366db70454fd" resname="activate_account_notice_message">
+        <source>activate_account_notice_message</source>
+        <target>Please check your Email inbox</target>
+        <jms:reference-file line="153">BookToolBundle/Controller/RegisterController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="5ffd89544d6bd7c2cdb126424f59714f4a8cfc11" resname="activate_account_notice_title">
+        <source>activate_account_notice_title</source>
+        <target>Account unactivated!</target>
+        <jms:reference-file line="152">BookToolBundle/Controller/RegisterController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="667503358b4b35c98a25717c1323b48348201ab2" resname="create_account">
+        <source>create_account</source>
+        <target>Create your account</target>
+        <jms:reference-file line="5">views/Register/create-account-alternative.html.twig</jms:reference-file>
+        <jms:reference-file line="5">views/Register/create-account.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="161d164f340eebe7b27583385a557c84857de04a" resname="go_to_login">
+        <source>go_to_login</source>
+        <target>Go To Login</target>
+        <jms:reference-file line="61">views/Register/account_activated.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="0a4a8a6b98cb0a3ba0a6b8d029d49bdffce4a36b" resname="profile_register_success_message">
+        <source>profile_register_success_message</source>
+        <target>Your email address has been confirmed successfully. Please login now using your regular email and password</target>
+        <jms:reference-file line="197">BookToolBundle/Controller/RegisterController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="5b362fc89802d314bd62c19ad9f32250ebd75a01" resname="profile_register_success_title">
+        <source>profile_register_success_title</source>
+        <target>Great job !</target>
+        <jms:reference-file line="196">BookToolBundle/Controller/RegisterController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="9fde0321cea3f869ba8da6f03c6be1d4ba47e089" resname="recaptcha_validation_content">
+        <source>recaptcha_validation_content</source>
+        <target>Are you a robot?</target>
+        <jms:reference-file line="33">BookToolBundle/Controller/LoginController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="3650cf7c078b0afd12ea5efc5d67ad4aecc80d3d" resname="thank_activate_account">
+        <source>thank_activate_account</source>
+        <target>Thank you for using BMG Tool!</target>
+        <jms:reference-file line="55">views/Register/account_activated.html.twig</jms:reference-file>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

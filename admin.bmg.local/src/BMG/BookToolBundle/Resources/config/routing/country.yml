@@ -1,0 +1,26 @@
+country:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:Country:index" }
+
+country_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:Country:show" }
+
+country_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:Country:new" }
+
+country_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:Country:create" }
+    requirements: { _method: post }
+
+country_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:Country:edit" }
+
+country_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:Country:update" }
+    requirements: { _method: post|put }
+

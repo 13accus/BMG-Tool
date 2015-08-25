@@ -1,0 +1,55 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Contact list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Contactfirstname</th>
+                <th>Contactlastname</th>
+                <th>Contacttitle</th>
+                <th>Contactemail</th>
+                <th>Contactmobile</th>
+                <th>Contactphone</th>
+                <th>Contactphoto</th>
+                <th>Contactnote</th>
+                <th>Contactid</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('contact_show', { 'id': entity.contactId }) }}">{{ entity.contactFirstname }}</a></td>
+                <td>{{ entity.contactLastname }}</td>
+                <td>{{ entity.contactTitle }}</td>
+                <td>{{ entity.contactEmail }}</td>
+                <td>{{ entity.contactMobile }}</td>
+                <td>{{ entity.contactPhone }}</td>
+                <td>{{ entity.contactPhoto }}</td>
+                <td>{{ entity.contactNote }}</td>
+                <td>{{ entity.contactId }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('contact_show', { 'id': entity.contactId }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('contact_edit', { 'id': entity.contactId }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('contact_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

@@ -1,0 +1,30 @@
+usercityworklink:
+    path:     /
+    defaults: { _controller: "BMGBookToolBundle:UserCityWorkLink:index" }
+
+usercityworklink_show:
+    path:     /{id}/show
+    defaults: { _controller: "BMGBookToolBundle:UserCityWorkLink:show" }
+
+usercityworklink_new:
+    path:     /new
+    defaults: { _controller: "BMGBookToolBundle:UserCityWorkLink:new" }
+
+usercityworklink_create:
+    path:     /create
+    defaults: { _controller: "BMGBookToolBundle:UserCityWorkLink:create" }
+    requirements: { _method: post }
+
+usercityworklink_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BMGBookToolBundle:UserCityWorkLink:edit" }
+
+usercityworklink_update:
+    path:     /{id}/update
+    defaults: { _controller: "BMGBookToolBundle:UserCityWorkLink:update" }
+    requirements: { _method: post|put }
+
+usercityworklink_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "BMGBookToolBundle:UserCityworkLink:delete" }
+    requirements: { _method: post|delete }
